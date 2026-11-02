@@ -64,4 +64,4 @@ The full diagram, with the QA-only branch and my three review gates, is in `crew
 
 ## What is not here
 
-The pinned source texts (game rules, design document, card sheets and card images) are withheld. They are my unpublished design work. In this copy every mode of `run_crew.py` stops before any agent step, because the source files are missing (live mode is also blocked by design). I tested all six modes. Ask me for a walkthrough or a screen share of a full run.
+The pinned source texts (game rules, design document, card sheets and card images) are withheld. They are my unpublished design work. In this copy every mode of `run_crew.py` stops before any agent step. Replay stops at a missing source file. Dry run, canary and stop demo stop on a local error. The skip demo stops on its skipped stage. Live mode has no model connection by design. I tested all six modes. Ask me for a walkthrough or a screen share of a full run.
