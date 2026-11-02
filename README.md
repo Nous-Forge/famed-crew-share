@@ -2,7 +2,7 @@
 
 This repository holds the agent crew for **F.A.M-E.D.**, my co-op deck-building dungeon crawler. Game page: https://pierofolly.gamedesignskills.com/f-a-m-e-d/
 
-Report (PDF): [FAMED_Assignment3_Ready_v7.pdf](FAMED_Assignment3_Ready_v7.pdf)
+Report (PDF): [FAMED_Assignment3_Ready_v8.pdf](FAMED_Assignment3_Ready_v8.pdf)
 
 ## What the crew produces
 
@@ -15,7 +15,7 @@ The crew turns six printed skill cards (SK1_01, SK1_02, SK1_03, SK1_04, SK3_01, 
 | Card Data (`agents/card-data.md`) | Extracts the exact card fields from the pinned sources | No rows, the pack is refused |
 | Rule Audit (`agents/rule-audit.md`) | Checks the rows against the game rules, independently | No rule result, the pack is refused |
 | Print Match (`agents/print-match.md`) | Reads the printed card images blind, then compares | No blind read, the pack is refused |
-| Orchestrator (`run_crew.py`) | Only writer of files. Sends each agent its packet, enforces call and token caps | No run |
+| Orchestrator (`run_crew.py`) | Only writer of files. Builds each agent's packet and enforces call and token caps. This copy has no live model connection | No run |
 | Validator (`validate.py`) | Checks sources, schema and the blind read before any CSV is released | No CSV release |
 
 ## Diagram
@@ -49,18 +49,18 @@ flowchart LR
   V -->|eligible validated rows| C[DT_Cards.csv and QA report]
 ```
 
-The same diagram is in `crew-diagram.mmd`.
+The full diagram, with the QA-only branch and my three review gates, is in `crew-diagram.mmd`.
 
 ## How it works
 
-- Each agent has zero tools and sees only the packet the orchestrator builds. Print Match never sees the other agents' output.
+- By design, each agent sees only the packet the orchestrator builds, and Print Match never sees the other agents' output. In my fresh run, the workers were told to read only their packet or images. That was an instruction, not a locked sandbox.
 - A stage that fails its format check retries up to 3 times. Global caps: 10 calls, 400,000 tokens.
 - Source or rule failures stop the run for review. They never retry.
 - Files: `agents/` (agent instructions), `schema/` (row contract and the three stage schemas), `run_crew.py`, `validate.py`, `packet_support.py`, `source_policy.py`.
 
 ## Evidence in this repository
 
-`sample-run/` holds the log and QA report of one offline replay. It made 0 new model calls. It shows the pipeline and the validator working on recorded answers. It is not a live model run, and I approved no release.
+`sample-run/` holds the log and QA report of one offline replay from 28 October 2026. It made 0 new model calls. It ran the pipeline and the validator on made-up test answers, not on real worker answers. It is a historical record, not proof of the current code, and the QA report is a reworded display copy. It is not a live model run, and I approved no release.
 
 ## What is not here
 
