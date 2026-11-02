@@ -1,0 +1,31 @@
+flowchart LR
+  O[Orchestrator verifies pinned sources and global caps]
+  subgraph DataStage[Card Data stage]
+    D[Card Data Low] --> DF{FORMAT check}
+    DF -->|retry remaining| D
+  end
+  subgraph AuditStage[Rule Audit stage]
+    A[Rule Audit High] --> AF{FORMAT check}
+    AF -->|retry remaining| A
+  end
+  subgraph PrintStage[Print Match stage]
+    P[Print Match High first blind read retained] --> PF{FORMAT check}
+    PF -->|retry remaining and no replacement| P
+  end
+  O -->|pinned source packet| D
+  O -->|pinned source packet| A
+  DF -->|accepted producer rows| A
+  O -->|only pinned images IDs and names| P
+  DF -->|accepted data| V[Final source rule and print validation]
+  AF -->|accepted audit| V
+  PF -->|accepted first blind evidence| V
+  DF -->|exhausted| S[Stop with preserved diagnostics]
+  AF -->|exhausted| S
+  PF -->|exhausted| S
+  V -->|source or rule failure| S
+  V -->|synthetic or unresolved print| Q[QA diagnostics only no CSV]
+  V -->|eligible validated real rows| C[DT_Cards.csv and QA report]
+  C --> H1[My review, Gate 1]
+  H1 --> H2[Independent check, Gate 2]
+  H2 --> H3[My sign-off, Gate 3]
+%% © 2026 Piero L. S. Folly | Khi-Rho Studios | Copy GDD-HO-96807F71FB | All rights reserved.

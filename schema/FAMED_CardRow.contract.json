@@ -1,0 +1,126 @@
+{
+  "schema_version": "v1",
+  "status": "FROZEN, 2026-10-28",
+  "prepared_at": "2026-10-28T23:41:47.684127-07:00",
+  "freeze_at": "2026-10-28T23:45:47.081638-07:00",
+  "selected_card_ids": [
+    "SK1_01",
+    "SK1_02",
+    "SK1_03",
+    "SK1_04",
+    "SK3_01",
+    "SK4_01"
+  ],
+  "producer_fields": [
+    "RowName",
+    "CardName",
+    "Type",
+    "SupplyCopies",
+    "CombatText",
+    "ExplorationText",
+    "RawTimingCode",
+    "PrintedTimingLabel",
+    "OwnerTimingRule",
+    "Duration",
+    "DurationSource",
+    "EffectTags",
+    "PileAfterUse",
+    "PileText",
+    "ArtRef",
+    "SourcePath",
+    "SourceSHA256",
+    "SchemaVersion",
+    "Notes",
+    "Unmapped"
+  ],
+  "csv_columns": [
+    "Name",
+    "CardName",
+    "Type",
+    "SupplyCopies",
+    "CombatText",
+    "ExplorationText",
+    "RawTimingCode",
+    "PrintedTimingLabel",
+    "OwnerTimingRule",
+    "Duration",
+    "DurationSource",
+    "EffectTags",
+    "PileAfterUse",
+    "PileText",
+    "ArtRef",
+    "SourcePath",
+    "SourceSHA256",
+    "SchemaVersion",
+    "Notes",
+    "Unmapped",
+    "WindowSupport",
+    "RuleStatus",
+    "PrintMatch"
+  ],
+  "wire": {
+    "row_key": "Name",
+    "internal_row_key": "RowName",
+    "display_name_property": "CardName",
+    "Name_is_struct_property": false,
+    "import_key_field": "Name",
+    "property_types": "All wire columns except Name are FString except SupplyCopies:int32. EffectTags and Unmapped serialize as JSON strings. PileAfterUse is validated string enum; future C++ enum adapter must preserve these spellings."
+  },
+  "enums": {
+    "PileAfterUse": [
+      "Discard Pile",
+      "Removed-From-Deck pile",
+      "UNSET"
+    ],
+    "Duration": [
+      "round",
+      "turn",
+      "instant",
+      "UNSET"
+    ],
+    "DurationSource": [
+      "csv",
+      "text",
+      "none"
+    ],
+    "WindowSupport": [
+      "fits",
+      "pending_owner",
+      "none"
+    ],
+    "RuleStatus": [
+      "PASS",
+      "PENDING_OWNER",
+      "STOP"
+    ],
+    "PrintMatch": [
+      "match",
+      "mismatch",
+      "unreadable"
+    ]
+  },
+  "pile_source": {
+    "path": "docs/gdd/review-kit/inputs/rev4b-2026-10-26-single-sol-high.json",
+    "section": "6.1",
+    "note": "Only named piles in 6.1. Character sheet is a location, not a pile. PileText preserves printed exceptions including R.F.D."
+  },
+  "caps": {
+    "MAX_CALLS": 10,
+    "MAX_TOKENS": 400000,
+    "MAX_ATTEMPTS_PER_STAGE": 4
+  },
+  "runtime_status": "RUNTIME_BLOCKED",
+  "live_gates": [
+    "my approval of the model run",
+    "subscription CLI account and structured output preflight",
+    "tool-less image delivery and legibility",
+    "my budget decision; the proposed 48% guard is still a proposal",
+    "seal receipt before actual crew run"
+  ],
+  "unreal_import_tested": false,
+  "static_freeze_evidence": {
+    "row_key": "My technical decision, 2026-10-28: Name is key only; CardName is display property. No colliding Name property exists by construction.",
+    "pile_enum": "Rev4b6.1 primary text plus my decision: two named after-use piles+UNSET. Unsupported destinations UNSET with explicit finding.",
+    "import_limit": "Static wire contract frozen. No Unreal import or engine test performed."
+  }
+}

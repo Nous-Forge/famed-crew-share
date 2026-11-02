@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rows",
+    "usage_tokens"
+  ],
+  "properties": {
+    "rows": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "RowName",
+          "CardName",
+          "Type",
+          "SupplyCopies",
+          "CombatText",
+          "ExplorationText",
+          "RawTimingCode",
+          "PrintedTimingLabel",
+          "OwnerTimingRule",
+          "Duration",
+          "DurationSource",
+          "EffectTags",
+          "PileAfterUse",
+          "PileText",
+          "ArtRef",
+          "SourcePath",
+          "SourceSHA256",
+          "SchemaVersion",
+          "Notes",
+          "Unmapped"
+        ],
+        "properties": {
+          "RowName": {
+            "type": "string",
+            "enum": [
+              "SK1_01",
+              "SK1_02",
+              "SK1_03",
+              "SK1_04",
+              "SK3_01",
+              "SK4_01"
+            ]
+          },
+          "CardName": {
+            "type": "string"
+          },
+          "Type": {
+            "type": "string"
+          },
+          "SupplyCopies": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "CombatText": {
+            "type": "string"
+          },
+          "ExplorationText": {
+            "type": "string"
+          },
+          "RawTimingCode": {
+            "type": "string"
+          },
+          "PrintedTimingLabel": {
+            "type": "string"
+          },
+          "OwnerTimingRule": {
+            "type": "string"
+          },
+          "Duration": {
+            "type": "string",
+            "enum": [
+              "round",
+              "turn",
+              "instant",
+              "UNSET"
+            ]
+          },
+          "DurationSource": {
+            "type": "string",
+            "enum": [
+              "csv",
+              "text",
+              "none"
+            ]
+          },
+          "EffectTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "PileAfterUse": {
+            "type": "string",
+            "enum": [
+              "Discard Pile",
+              "Removed-From-Deck pile",
+              "UNSET"
+            ]
+          },
+          "PileText": {
+            "type": "string"
+          },
+          "ArtRef": {
+            "type": "string"
+          },
+          "SourcePath": {
+            "type": "string"
+          },
+          "SourceSHA256": {
+            "type": "string"
+          },
+          "SchemaVersion": {
+            "type": "string"
+          },
+          "Notes": {
+            "type": "string"
+          },
+          "Unmapped": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "usage_tokens": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

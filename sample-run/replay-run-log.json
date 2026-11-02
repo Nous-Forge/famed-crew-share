@@ -1,0 +1,72 @@
+{
+  "started_at": "2026-10-28T23:46:08.984823-07:00",
+  "mode": "replay",
+  "new_model_calls": 0,
+  "new_model_tokens": 0,
+  "recorded_calls": 3,
+  "recorded_tokens": 0,
+  "status": "PENDING_OWNER",
+  "release_approved": false,
+  "events": [
+    {
+      "at": "2026-10-28T23:46:09.012915-07:00",
+      "kind": "stage_start",
+      "stage": "data"
+    },
+    {
+      "at": "2026-10-28T23:46:09.078854-07:00",
+      "kind": "stage_complete",
+      "stage": "data"
+    },
+    {
+      "at": "2026-10-28T23:46:09.082855-07:00",
+      "kind": "stage_start",
+      "stage": "audit"
+    },
+    {
+      "at": "2026-10-28T23:46:09.143309-07:00",
+      "kind": "stage_complete",
+      "stage": "audit"
+    },
+    {
+      "at": "2026-10-28T23:46:09.147827-07:00",
+      "kind": "stage_start",
+      "stage": "print"
+    },
+    {
+      "at": "2026-10-28T23:46:09.249976-07:00",
+      "kind": "stage_complete",
+      "stage": "print"
+    }
+  ],
+  "inputs": {
+    "corpus_sha256": "10e6c0838b3be6af2c65c055174013210236bc203c532d00fe666207faff8b55",
+    "contract_sha256": "f7e7f16c55ab92f082ea7f80cf107a5360cb87580cc6c9076acd7bbbc844e9d5",
+    "data_packet_sha256": "5440991b858279845edafbce4775722234ad343228fff74715651df523ffd0c7",
+    "audit_packet_sha256": "4e09b47efda11445d922553eec219388137c25c7c6208087e262ea897983f927",
+    "print_packet_sha256": "890ef0bdc74e9a2da44fb9eca1792fe16fe4872856e7f60cda6692c9387f0261"
+  },
+  "outputs": {
+    "first_blind_sha256": "5ddcf1d48d2b49486097063467cab2158de8729aaf21eef9de8665bc75d8779f",
+    "attempts\\audit-1.json": "9b8e6cd075fe2a049e72df10085536feb691a1bd4a3280ffc2d63ca264a7ee2c",
+    "attempts\\data-1.json": "61c94d216356ae1d51ff0253e198661673b77806d58728dc56d808fd9efffcdf",
+    "attempts\\print-1.json": "5ddcf1d48d2b49486097063467cab2158de8729aaf21eef9de8665bc75d8779f",
+    "audit.json": "9b8e6cd075fe2a049e72df10085536feb691a1bd4a3280ffc2d63ca264a7ee2c",
+    "DT_Cards.csv": "c469b57aaf590324f49ebb36a4fc9ef6e383a0eb5d021bd2be45ba5bb77fadb6",
+    "first-blind-read.json": "5ddcf1d48d2b49486097063467cab2158de8729aaf21eef9de8665bc75d8779f",
+    "packets\\audit.json": "4e09b47efda11445d922553eec219388137c25c7c6208087e262ea897983f927",
+    "packets\\data.json": "5440991b858279845edafbce4775722234ad343228fff74715651df523ffd0c7",
+    "packets\\print.json": "890ef0bdc74e9a2da44fb9eca1792fe16fe4872856e7f60cda6692c9387f0261",
+    "print-match.json": "5ddcf1d48d2b49486097063467cab2158de8729aaf21eef9de8665bc75d8779f",
+    "qa-report.md": "bb99cf9c05971b4b673c74fe615b3b9b637ba972d1eeabf469a4c4489729e4a1",
+    "rows.json": "61c94d216356ae1d51ff0253e198661673b77806d58728dc56d808fd9efffcdf",
+    "validation.json": "82726a7469aacf0713c9d67e0e6f64748c9ec667f1b6051b0c3abe1045c50027"
+  },
+  "fixture_only": true,
+  "stage_history": [
+    "data",
+    "audit",
+    "print"
+  ],
+  "finished_at": "2026-10-28T23:46:09.274517-07:00"
+}

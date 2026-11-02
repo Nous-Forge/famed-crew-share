@@ -1,0 +1,176 @@
+{
+  "schema_version": "v1",
+  "supported": {
+    "<triggerCheck_IconRD/>": {
+      "meaning": "red role die, Captain",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 4
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 2
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<skillProwessIconBW/>": {
+      "meaning": "Prowess",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 3
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<triggerCheck_IconGR/>": {
+      "meaning": "green role die, Pathfinder",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 4
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 2
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<skillNimbleIconBW/>": {
+      "meaning": "Nimble",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 3
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<triggerCheck_IconBL/>": {
+      "meaning": "blue role die, Lorekeeper",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 4
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 2
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<skillWitsIconBW/>": {
+      "meaning": "Wits",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 3
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<triggerCheck_IconYW/>": {
+      "meaning": "yellow role die, Vaultwarden",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 4
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 2
+        }
+      ],
+      "runtime_binding_tested": false
+    },
+    "<skillCraftIconBW/>": {
+      "meaning": "Craft",
+      "references": [
+        {
+          "path": "withheld-sources/Start Guide Playtest [Full Game] 5.2.pdf",
+          "physical_page": 3
+        },
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ],
+      "runtime_binding_tested": false
+    }
+  },
+  "template_gaps": {
+    "{{ game.vars.cardIcon_subType_monster }}": {
+      "status": "UNRESOLVED_BINDING",
+      "gap": "No renderer variable-definition export established.",
+      "references": [
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ]
+    },
+    "{{ game.vars.cardIcon_subType_freep }}": {
+      "status": "UNRESOLVED_BINDING",
+      "gap": "No renderer variable-definition export established.",
+      "references": [
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ]
+    },
+    "{{ game.vars.cardIcon_type_reward }}": {
+      "status": "UNRESOLVED_BINDING",
+      "gap": "Printed correspondence does not select the specific reward pile; renderer binding unverified.",
+      "references": [
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ]
+    },
+    "{{ game.vars.cardIcon_subType_structure }}": {
+      "status": "UNRESOLVED_BINDING",
+      "gap": "No renderer variable-definition export established.",
+      "references": [
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ]
+    },
+    "{{ game.vars.cardIcon_subType_obstacle }}": {
+      "status": "UNRESOLVED_BINDING",
+      "gap": "No renderer variable-definition export established.",
+      "references": [
+        {
+          "path": "withheld-sources/F.A.M-E.D. - Reference Table.pdf",
+          "physical_page": 1
+        }
+      ]
+    }
+  },
+  "presentation": [
+    "bold",
+    "italic",
+    "small_italic"
+  ],
+  "evidence_path": "withheld-sources/icon-legend-evidence.json",
+  "evidence_sha256": "c085cd1614e57378d1c780cf7094d30bdb8f5774ed1b7b3005ccada0d3e97031"
+}
