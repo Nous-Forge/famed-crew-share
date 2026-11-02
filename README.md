@@ -1,8 +1,8 @@
 # F.A.M-E.D. card crew (Assignment 3)
 
-This repository holds the agent crew for **F.A.M-E.D.**, my co-op deck-building dungeon crawler. Game page: https://pierofolly.gamedesignskills.com/f-a-m-e-d/
+This repository holds the agent crew for **F.A.M-E.D.**, my co-op deck-building dungeon crawler. Game page: https://pierofolly.crafts.games/f-a-m-e-d/
 
-Report (PDF): [FAMED_Assignment3_Ready_v8.pdf](FAMED_Assignment3_Ready_v8.pdf)
+Report (PDF): [FAMED_Assignment3_Agent_Crew_Report.pdf](FAMED_Assignment3_Agent_Crew_Report.pdf)
 
 ## What the crew produces
 
@@ -13,7 +13,7 @@ The crew turns six printed skill cards (SK1_01, SK1_02, SK1_03, SK1_04, SK3_01, 
 | Agent | Job | If removed |
 |---|---|---|
 | Card Data (`agents/card-data.md`) | Extracts the exact card fields from the pinned sources | No rows, the pack is refused |
-| Rule Audit (`agents/rule-audit.md`) | Checks the rows against the game rules, independently | No rule result, the pack is refused |
+| Rule Audit (`agents/rule-audit.md`) | Checks the rows against the game rules on its own | No rule result, the pack is refused |
 | Print Match (`agents/print-match.md`) | Reads the printed card images blind, then compares | No blind read, the pack is refused |
 | Orchestrator (`run_crew.py`) | Only writer of files. Builds each agent's packet and enforces call and token caps. This copy has no live model connection | No run |
 | Validator (`validate.py`) | Checks sources, schema and the blind read before any CSV is released | No CSV release |
@@ -60,8 +60,8 @@ The full diagram, with the QA-only branch and my three review gates, is in `crew
 
 ## Evidence in this repository
 
-`sample-run/` holds the log and QA report of one offline replay from 28 October 2026. It made 0 new model calls. It ran the pipeline and the validator on made-up test answers, not on real worker answers. It is a historical record, not proof of the current code, and the QA report is a reworded display copy. It is not a live model run, and I approved no release.
+`sample-run/` holds the log and QA report of one offline replay from 28 October 2026. It used made-up test answers and made 0 model calls. It is an old record of the pipeline, not a test of the current code. I reworded the QA report text for this copy. I approved no release.
 
 ## What is not here
 
-The pinned source texts (game rules, design document, card sheets and card images) are withheld. They are my unpublished design work. The orchestrator checks them by hash, so `run_crew.py` stops with a typed error at its first input read in this copy (tested). Ask me for a walkthrough or a screen share of a full run.
+The pinned source texts (game rules, design document, card sheets and card images) are withheld. They are my unpublished design work. In this copy every mode of `run_crew.py` stops before any agent step, because the source files are missing (live mode is also blocked by design). I tested all six modes. Ask me for a walkthrough or a screen share of a full run.
