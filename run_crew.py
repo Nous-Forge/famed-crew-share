@@ -108,7 +108,7 @@ def _execute(run,fixture=None,skip=None,mode='replay',state=None,ownership=None)
         corpus=verify_sources();log['inputs']['corpus_sha256']=digest(BASE/'inputs/corpus.json');log['inputs']['contract_sha256']=digest(BASE/'schema/FAMED_CardRow.contract.json')
         if mode=='stop-demo':
             # Synthetic unknown timing is never added to the six production rows.
-            atomic(run/'owner-question.md','# Stop demo\n\nTEST_STOP_01 carries unknown code respond_9. Source/owner review required.\n\n'+footer());raise CrewError('STOP','UNKNOWN_TIMING','TEST_STOP_01: respond_9')
+            atomic(run/'owner-question.md','# Stop demo\n\nTEST_STOP_01 carries unknown code respond_9. Source review or my review required.\n\n'+footer());raise CrewError('STOP','UNKNOWN_TIMING','TEST_STOP_01: respond_9')
         if mode=='dry-run':
             for stage in STAGES:
                 p=packet(stage,corpus,{'rows':[]} if stage=='audit' else None);atomic(run/'packets'/f'{stage}.json',p);log['inputs'][stage+'_packet_sha256']=digest(run/'packets'/f'{stage}.json')

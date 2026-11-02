@@ -132,7 +132,7 @@ def export(run,result):
             wire={('Name' if k=='RowName' else k):(json.dumps(v,ensure_ascii=False) if isinstance(v,list) else v) for k,v in row.items()};w.writerow(wire)
         atomic(Path(run)/'DT_Cards.csv',buf.getvalue())
     atomic(Path(run)/'validation.json',result)
-    atomic(Path(run)/'qa-report.md','# Offline QA report\n\nStatus: '+result['status']+'\n\nRelease approved: false. My review (Gate 1), the independent check (Gate 2) and my sign-off (Gate 3) remain open.\n\nPending owner: '+json.dumps(result['pending_owner'],ensure_ascii=False)+'\n\nIssues: '+json.dumps(result['issues'],ensure_ascii=False)+'\n\nPrint review holds: '+json.dumps(result.get('print_review_holds',[]),ensure_ascii=False)+'\n\nPrint comparisons: '+json.dumps(result.get('print_comparisons',[]),ensure_ascii=False)+'\n\n'+footer())
+    atomic(Path(run)/'qa-report.md','# Offline QA report\n\nStatus: '+result['status']+'\n\nRelease approved: false. My review (Gate 1), the independent check (Gate 2) and my sign-off (Gate 3) remain open.\n\nWaiting for my review: '+json.dumps(result['pending_owner'],ensure_ascii=False)+'\n\nIssues: '+json.dumps(result['issues'],ensure_ascii=False)+'\n\nPrint review holds: '+json.dumps(result.get('print_review_holds',[]),ensure_ascii=False)+'\n\nPrint comparisons: '+json.dumps(result.get('print_comparisons',[]),ensure_ascii=False)+'\n\n'+footer())
 def footer():return '\u00a9 2026 Piero L. S. Folly | Khi-Rho Studios | Copy GDD-HO-'+uuid.uuid4().hex[:10].upper()+' | All rights reserved.\n'
 def cli(argv=None):
     import argparse
