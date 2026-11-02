@@ -60,7 +60,7 @@ The same diagram is in `crew-diagram.mmd`.
 
 ## Evidence in this repository
 
-`sample-run/` holds the log and QA report of one offline replay. It made 0 new model calls and used recorded answers. It proves the pipeline and the validator, not a live model run. No release was approved.
+`sample-run/` holds the log and QA report of one offline replay. It made 0 new model calls. It shows the pipeline and the validator working on recorded answers. It is not a live model run, and I approved no release.
 
 ## What is not here
 
