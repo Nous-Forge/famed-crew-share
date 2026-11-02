@@ -2,7 +2,7 @@
 
 Frozen at 2026-10-28T23:45:47.081638-07:00. This is the actual preparation date. The planned Thursday date was not copied into the freeze status.
 
-I use CSV `Name` exclusively as the DataTable row key. The internal JSON key is `RowName`. Display text uses the distinct property `CardName`. The future struct has no property named `Name`. This removes the key/property collision by construction. The root lead approved this technical choice under the owner's overnight delegation.
+I use CSV `Name` exclusively as the DataTable row key. The internal JSON key is `RowName`. Display text uses the distinct property `CardName`. The future struct has no property named `Name`. This removes the key/property collision by construction. I approved this technical choice.
 
 All fields and their order come from FAMED_CardRow.contract.json. `SupplyCopies` uses int32; other wire properties use FString. EffectTags and Unmapped use JSON arrays inside properly quoted CSV cells. PileAfterUse is a validated string enum with exact wire spellings `Discard Pile`, `Removed-From-Deck pile`, `UNSET`. A future C++ enum adapter must map those strings explicitly. Rev4b section6.1 supplies the two named after-use piles; source soft hyphens are normalized to ASCII hyphens in the wire spelling. The contract preserves raw source text independently. Hand, deck and character sheet are not added as invented after-use piles. Unsupported destinations remain UNSET with a finding. PileText preserves printed exceptions and R.F.D. references.
 
