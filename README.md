@@ -2,7 +2,7 @@
 
 This repository holds the agent crew for **F.A.M-E.D.**, my co-op deck-building dungeon crawler. Game page: https://pierofolly.gamedesignskills.com/f-a-m-e-d/
 
-Report (PDF): [FAMED_Assignment3_Ready_v6.pdf](FAMED_Assignment3_Ready_v6.pdf)
+Report (PDF): [FAMED_Assignment3_Ready_v7.pdf](FAMED_Assignment3_Ready_v7.pdf)
 
 ## What the crew produces
 
