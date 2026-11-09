@@ -1,5 +1,5 @@
 {
-  "kind": "Current public payload manifest after owner-requested local-work ignore rules; all other payload bytes unchanged",
+  "kind": "Current public payload manifest after the owner-requested Word history purge; the two Word report copies are removed; all other payload bytes unchanged",
   "pdfSha256": "732e3b3955a48928915f44ac95aaece923704048ad010c75cdde747e79d60ad6",
   "files": [
     {
@@ -9,13 +9,13 @@
     },
     {
       "path": "README.detailed-v15.md",
-      "bytes": 8322,
-      "sha256": "714da513fed505f1546ed3fde26f04298f9d5aecc31073f97bc8bfe0b54d6cf2"
+      "bytes": 8247,
+      "sha256": "cfef37540e92b14acf95364df951b51582ca2b9be788816f44f9580f1335271c"
     },
     {
       "path": "README.md",
-      "bytes": 3777,
-      "sha256": "1316b461cc8551ad3851d3b1b2b5ba3f7b09b13fa35b91bb1ce6bbf7d68344c9"
+      "bytes": 3688,
+      "sha256": "ee2ec266f3c1027db965fe9ed16490f3b8c3157e50216129b165b4e43f048424"
     },
     {
       "path": "archive/v15-before-doc-update-20261109T050159Z/.gitignore",
@@ -118,19 +118,9 @@
       "sha256": "a154f90f26a3fb0500574293eb6fb735eb9c7038d9a364a649c1ba432a6bc966"
     },
     {
-      "path": "docs/FAMED_Agent_Crew_Report_v14B.docx",
-      "bytes": 3373705,
-      "sha256": "e43c14108d479bc6ee3f3c48ff678cf7d6532c75069a45af56b6ce1d36da50b7"
-    },
-    {
       "path": "docs/FAMED_Agent_Crew_Report_v14B.pdf",
       "bytes": 1130617,
       "sha256": "77880f53f52b938a5292fe9243b652efa57f4e868f5c0e9af2083bfa38da15f9"
-    },
-    {
-      "path": "docs/FAMED_Agent_Crew_Report_v15.docx",
-      "bytes": 3995575,
-      "sha256": "1799b4f5c219c56891026bd5dc10238eadb8b5969e8236a038550d29afd0ab91"
     },
     {
       "path": "docs/FAMED_Agent_Crew_Report_v15.pdf",
@@ -583,6 +573,6 @@
       "sha256": "4c0d903a820c78db25951b847d05a06c4ee86f2b36599eb236475db3d6871148"
     }
   ],
-  "previousManifestSha256": "b22989a88a45a6580fd431be529f40f2ada5e5052274373b0af974c22258088a",
-  "previousPublicCommit": "38bde4a5d6509e0064ce95ceff868280dd145486"
+  "previousManifestSha256": "5361eff88d0eb962b90e0e05035487dd302d65c1069257e856227051f9057527",
+  "previousPublicCommit": "100d9dd4cfbdeb9850b10566f529395314d69327"
 }

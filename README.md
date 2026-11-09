@@ -51,4 +51,4 @@ Read the [\[detailed guide\]](README.detailed-v15.md) for source limits. [\[Crew
 
 Copyright 2026 Piero L. S. Folly, Khi-Rho Studios.
 
-Editable Word sources stay local for future updates. Ignore rules do not remove Word copies already tracked in the repository or its history.
+Editable Word sources stay local for future updates.

@@ -4,7 +4,7 @@ Fire Age Main-Eterra Dungeoneers is my cooperative exploration and deck-building
 
 ## Game design and crew report
 
-[Crew Report 14B PDF](docs/FAMED_Agent_Crew_Report_v14B.pdf) covers the earlier nine test crews, their results and the six-card validation task. The [Word copy](docs/FAMED_Agent_Crew_Report_v14B.docx) has the same text. This is my November 3 report with the final layout and repaired term links. Its studio chart and costs describe that earlier work.
+[Crew Report 14B PDF](docs/FAMED_Agent_Crew_Report_v14B.pdf) covers the earlier nine test crews, their results and the six-card validation task. This is my November 3 report with the final layout and repaired term links. Its studio chart and costs describe that earlier work.
 
 The later ten-demo set has five web presentations and five Godot presentations over two shared implementations. It is not ten independent content pipelines. The current content snapshot contains 16 skill cards and four crew roles.
 
