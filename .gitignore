@@ -1,3 +1,26 @@
+# Local editable Word sources and Office lock files
+*.doc
+*.docx
+*.docm
+*.dotx
+*.dotm
+~$*
+
+# Local credentials and private working material
+.env
+.env.*
+!.env.example
+private/
+.private/
+private-rag-library/
+
+# Installed dependencies and local runtime/cache output
+node_modules/
 __pycache__/
-runs/
 *.pyc
+.DS_Store
+Thumbs.db
+content-pipeline/shared/runs-v2/
+content-pipeline/shared/runs-v3/
+content-pipeline/shared/runs-v4/
+integrated-verification-*.json

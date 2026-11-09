@@ -2,7 +2,7 @@
 
 Fire Age Main-Eterra Dungeoneers is my cooperative exploration and deck-building game for one to four players. This [\[pipeline\]](content-pipeline/shared/run-pipeline.v4.cjs) makes combat content from the game design. It checks the files before the game uses them.
 
-Read the [\[Crew Report 15 PDF\]](docs/FAMED_Agent_Crew_Report_v15.pdf) or [\[Word copy\]](docs/FAMED_Agent_Crew_Report_v15.docx). The report includes both current workflow charts and the dated historical evidence.
+Read the [\[Crew Report 15 PDF\]](docs/FAMED_Agent_Crew_Report_v15.pdf). It includes the current workflow charts, dated historical evidence, and screenshots of the earlier Game 3 Godot and Game 8 Phaser prototypes. These visual builds are historical examples; the current generated outputs are demonstrated separately by the combat-engine tests.
 
 ## Run the pipeline
 
@@ -50,3 +50,5 @@ node tests/v15-integrated-verification.cjs
 Read the [\[detailed guide\]](README.detailed-v15.md) for source limits. [\[Crew Report 14B\]](docs/FAMED_Agent_Crew_Report_v14B.pdf) describes the earlier nine test crews and historical studio chart.
 
 Copyright 2026 Piero L. S. Folly, Khi-Rho Studios.
+
+Editable Word sources stay local for future updates. Ignore rules do not remove Word copies already tracked in the repository or its history.

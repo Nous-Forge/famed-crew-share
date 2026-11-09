@@ -1,7 +1,37 @@
 {
-  "kind": "Exact additive public release allowlist; existing public history preserved",
-  "pdfSha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741",
+  "kind": "Current public payload manifest after documentation-only V15 update; runtime and previously tracked Word bytes retained",
+  "pdfSha256": "732e3b3955a48928915f44ac95aaece923704048ad010c75cdde747e79d60ad6",
   "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 472,
+      "sha256": "75b171e57a5031090fcf610047a4f5f4b0e0594bf7fd30ed7cdf2651501661b2"
+    },
+    {
+      "path": "README.detailed-v15.md",
+      "bytes": 8322,
+      "sha256": "714da513fed505f1546ed3fde26f04298f9d5aecc31073f97bc8bfe0b54d6cf2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3777,
+      "sha256": "1316b461cc8551ad3851d3b1b2b5ba3f7b09b13fa35b91bb1ce6bbf7d68344c9"
+    },
+    {
+      "path": "archive/v15-before-doc-update-20261109T050159Z/FAMED_Agent_Crew_Report_v15.pdf",
+      "bytes": 1890250,
+      "sha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741"
+    },
+    {
+      "path": "archive/v15-before-doc-update-20261109T050159Z/PUBLIC-RELEASE-MANIFEST.json",
+      "bytes": 19653,
+      "sha256": "8551a112dc9d28714f090cbd58158bc23108d3fb3b5ae4d6c1e21643c672bf8e"
+    },
+    {
+      "path": "archive/v15-before-doc-update-20261109T050159Z/README.md",
+      "bytes": 3501,
+      "sha256": "be5cdcb76e0b567ae67aa4a1581f238cf31cb7f077ac19c58719d28ed9571cd2"
+    },
     {
       "path": "content-consumer.cjs",
       "bytes": 2397,
@@ -83,11 +113,6 @@
       "sha256": "a154f90f26a3fb0500574293eb6fb735eb9c7038d9a364a649c1ba432a6bc966"
     },
     {
-      "path": "docs/content-provenance.md",
-      "bytes": 2826,
-      "sha256": "a68ec99d1cefbfd87dae49d9f635cfa66f33b537fb9708beb731a339076dbe67"
-    },
-    {
       "path": "docs/FAMED_Agent_Crew_Report_v14B.docx",
       "bytes": 3373705,
       "sha256": "e43c14108d479bc6ee3f3c48ff678cf7d6532c75069a45af56b6ce1d36da50b7"
@@ -104,8 +129,18 @@
     },
     {
       "path": "docs/FAMED_Agent_Crew_Report_v15.pdf",
-      "bytes": 1890250,
-      "sha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741"
+      "bytes": 2624506,
+      "sha256": "732e3b3955a48928915f44ac95aaece923704048ad010c75cdde747e79d60ad6"
+    },
+    {
+      "path": "docs/content-provenance.md",
+      "bytes": 2826,
+      "sha256": "a68ec99d1cefbfd87dae49d9f635cfa66f33b537fb9708beb731a339076dbe67"
+    },
+    {
+      "path": "docs/game-design/FAMED-GDD-source.txt",
+      "bytes": 2899,
+      "sha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660"
     },
     {
       "path": "docs/game-design/cards-source.json",
@@ -118,9 +153,24 @@
       "sha256": "487ad3e2d049acc49d19455447064725017bc831a525915e4f07114174ee615d"
     },
     {
-      "path": "docs/game-design/FAMED-GDD-source.txt",
-      "bytes": 2899,
-      "sha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660"
+      "path": "docs/historical-prototypes/game-3-1.png",
+      "bytes": 50203,
+      "sha256": "4f5c8f13edee71212ef9eb82bd3b230fcb54de3eb20c53dc71229045237f0b82"
+    },
+    {
+      "path": "docs/historical-prototypes/game-3-2.png",
+      "bytes": 176794,
+      "sha256": "c47a470ef8a8e5f9d12548c9eef9097a599bf4bc2c4521892495115b6e9b93e6"
+    },
+    {
+      "path": "docs/historical-prototypes/game-8-1.png",
+      "bytes": 371514,
+      "sha256": "db667145b83367e365593ed15b0295854e196bc0821378697cbc1eb695bdc56d"
+    },
+    {
+      "path": "docs/historical-prototypes/game-8-2.png",
+      "bytes": 336964,
+      "sha256": "84f604f7f41941eeacb1010928cce1654ae9b0b98fb829f8746861d7fd9eac2d"
     },
     {
       "path": "docs/rag/source-manifest.json",
@@ -303,66 +353,6 @@
       "sha256": "25501202c468f2293679a3d7e7618d992c3e544dad714db5df77758c82b7d5b7"
     },
     {
-      "path": "examples/reviewed-v15/boss-rules.json",
-      "bytes": 2363,
-      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
-    },
-    {
-      "path": "examples/reviewed-v15/card-text.json",
-      "bytes": 20169,
-      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
-    },
-    {
-      "path": "examples/reviewed-v15/complete-fights.json",
-      "bytes": 77524,
-      "sha256": "cf523fa29260da18e029b91326f7b7898c84dc927f12d20c130b8fb9e67c06aa"
-    },
-    {
-      "path": "examples/reviewed-v15/crew-dialogue.json",
-      "bytes": 8267,
-      "sha256": "e9ec313c8d51658e4bdd9a5dc2b9d30c5f78df17faa61d1d63d428ccc4122cfd"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-after.json",
-      "bytes": 756,
-      "sha256": "af8d3a0622d83edcc613106200aa3d747cffead80f67f81de85019e534969508"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-before.json",
-      "bytes": 7058,
-      "sha256": "e46ec0777b64972c374403e98c2cfa11e145b71caf80d672a97a177c611325bc"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-trace.json",
-      "bytes": 25015,
-      "sha256": "b18e8bf46aeeaf8d20b06aa963045afe3d32ff652bdcdb9e08a64b30f97f98d3"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/boss-rules.json",
-      "bytes": 2366,
-      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/card-text.json",
-      "bytes": 20048,
-      "sha256": "19912acd61ed52dfbe93c5e75b349d92924677ccc7fafe7b471fe896636db871"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/crew-dialogue.json",
-      "bytes": 8265,
-      "sha256": "f2a77777553de41f5e233aa56a0ddff22009018c76845f753d1aa105ce7063e2"
-    },
-    {
-      "path": "examples/reviewed-v15/F1-read-binding-regression.json",
-      "bytes": 488,
-      "sha256": "60c1fbded4d1c2e33cabc48ff5cf7634c46d4965967c3d05a6b0066c5842347f"
-    },
-    {
-      "path": "examples/reviewed-v15/repairs.json",
-      "bytes": 2300,
-      "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
-    },
-    {
       "path": "examples/reviewed-v15-final/boss-rules.json",
       "bytes": 2363,
       "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
@@ -418,19 +408,69 @@
       "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
     },
     {
+      "path": "examples/reviewed-v15/F1-read-binding-regression.json",
+      "bytes": 488,
+      "sha256": "60c1fbded4d1c2e33cabc48ff5cf7634c46d4965967c3d05a6b0066c5842347f"
+    },
+    {
+      "path": "examples/reviewed-v15/boss-rules.json",
+      "bytes": 2363,
+      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    {
+      "path": "examples/reviewed-v15/card-text.json",
+      "bytes": 20169,
+      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
+    },
+    {
+      "path": "examples/reviewed-v15/complete-fights.json",
+      "bytes": 77524,
+      "sha256": "cf523fa29260da18e029b91326f7b7898c84dc927f12d20c130b8fb9e67c06aa"
+    },
+    {
+      "path": "examples/reviewed-v15/crew-dialogue.json",
+      "bytes": 8267,
+      "sha256": "e9ec313c8d51658e4bdd9a5dc2b9d30c5f78df17faa61d1d63d428ccc4122cfd"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-after.json",
+      "bytes": 756,
+      "sha256": "af8d3a0622d83edcc613106200aa3d747cffead80f67f81de85019e534969508"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-before.json",
+      "bytes": 7058,
+      "sha256": "e46ec0777b64972c374403e98c2cfa11e145b71caf80d672a97a177c611325bc"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-trace.json",
+      "bytes": 25015,
+      "sha256": "b18e8bf46aeeaf8d20b06aa963045afe3d32ff652bdcdb9e08a64b30f97f98d3"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/boss-rules.json",
+      "bytes": 2366,
+      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/card-text.json",
+      "bytes": 20048,
+      "sha256": "19912acd61ed52dfbe93c5e75b349d92924677ccc7fafe7b471fe896636db871"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/crew-dialogue.json",
+      "bytes": 8265,
+      "sha256": "f2a77777553de41f5e233aa56a0ddff22009018c76845f753d1aa105ce7063e2"
+    },
+    {
+      "path": "examples/reviewed-v15/repairs.json",
+      "bytes": 2300,
+      "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
+    },
+    {
       "path": "package.json",
       "bytes": 326,
       "sha256": "2c4a96b5cc8efc16888f67d987e9bb6f8056fbd2e54de1ed11c9de3ea9f1b868"
-    },
-    {
-      "path": "README.detailed-v15.md",
-      "bytes": 8322,
-      "sha256": "714da513fed505f1546ed3fde26f04298f9d5aecc31073f97bc8bfe0b54d6cf2"
-    },
-    {
-      "path": "README.md",
-      "bytes": 3501,
-      "sha256": "be5cdcb76e0b567ae67aa4a1581f238cf31cb7f077ac19c58719d28ed9571cd2"
     },
     {
       "path": "run-content.cjs",
@@ -443,14 +483,14 @@
       "sha256": "fec3c3519f86cefa9120924c353b788881f2ffbbb82712a6c3930bb8c9282415"
     },
     {
-      "path": "tests/fixtures/captain-calm-final14/current-gdd-pack-before.json",
-      "bytes": 4142,
-      "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c"
-    },
-    {
       "path": "tests/fixtures/captain-calm-final14/FAMED-GDD-source.fixture.txt",
       "bytes": 2885,
       "sha256": "6e702eaf0a427235fe59f645894c5addb5ad9e892860a57a4193e2f4ade7fd46"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/current-gdd-pack-before.json",
+      "bytes": 4142,
+      "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c"
     },
     {
       "path": "tests/fixtures/captain-calm-final14/source-manifest.json",
@@ -537,5 +577,7 @@
       "bytes": 3406,
       "sha256": "4c0d903a820c78db25951b847d05a06c4ee86f2b36599eb236475db3d6871148"
     }
-  ]
+  ],
+  "previousManifestSha256": "8551a112dc9d28714f090cbd58158bc23108d3fb3b5ae4d6c1e21643c672bf8e",
+  "previousPublicCommit": "b7e87ad04cede07a584a6e177b0faca83c94639a"
 }
