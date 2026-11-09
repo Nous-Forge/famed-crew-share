@@ -1,0 +1,36 @@
+{
+  "originalFilename": "Start Guide Playtest [Landscape Mode] 5.2.docx",
+  "originalSha256": "ad522f6bc9f94065e37b1c390ee5a7310c213f81632e04119a94083b4f60548b",
+  "passages": [
+    {
+      "quote": "Welcome adventurers to F.A.M-E.D. — Fire Age Main-Eterra Dungeoneers, the board game! This is a 1–4 player cooperative deckbuilding, landscape exploration, and tactical combat game set in the mythological universe of Main-Eterra, thousands of years in the past of our modern-day planet known as Earth!",
+      "locator": "word/document.xml paragraph 3",
+      "kind": "history"
+    },
+    {
+      "quote": "The Landscape represents the first and starting phase of a full session, where players build their decks through Landscape challenges and encounters—choose to risk entering a Dungeon to defeat the boss within, unlock the next region, and gain powerful perks and boons. To enter a Dungeon, players will need to collect unique cards called Keystones. Because this demo doesn’t include the Dungeon phase, the game will end when all the Keystones are collected.",
+      "locator": "word/document.xml paragraph 7",
+      "kind": "history"
+    },
+    {
+      "quote": "As the TTS session starts, notice the grey square board directly in front of you—that’s your Player Zone. Everything that belongs to you and your character(s) will rest in this area: that includes your deck, your discard pile, your removed-from-deck pile (RFD), your hand (which you may hold hidden or lay out openly—this does not affect gameplay). Any other items, tokens, or cards related to your character’s gameplay too. The board has written designated areas to help with visual organization.",
+      "locator": "word/document.xml paragraph 9",
+      "kind": "history"
+    },
+    {
+      "quote": "Your deck is built of Good Cards: Skills, Consumables, Artifacts and Bad Cards: called Burdens. In this demo you will start with 10 cards (7 Skills, 3 Consumables).",
+      "locator": "word/document.xml paragraph 12",
+      "kind": "history"
+    },
+    {
+      "quote": "More cards can be received as Rewards (Good or Bad depending on outcomes called Checks). The goal is to have more Good than Bad cards on your deck before a combat.",
+      "locator": "word/document.xml paragraph 13",
+      "kind": "history"
+    },
+    {
+      "quote": "Your hand can have up to 7 cards by default; these are called prepared cards. Draw the number necessary to reach its limit or discard by the beginning of every turn.",
+      "locator": "word/document.xml paragraph 14",
+      "kind": "history"
+    }
+  ]
+}

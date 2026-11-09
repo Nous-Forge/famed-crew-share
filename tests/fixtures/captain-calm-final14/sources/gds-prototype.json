@@ -1,0 +1,36 @@
+{
+  "originalFilename": "F.A.M-E.D. rulebook [prototype v.1].docx",
+  "originalSha256": "4515c8443d56b2b0a290a409b943e3cc54ee79ea63f698fa8465a2682bef7067",
+  "passages": [
+    {
+      "quote": "Fire Age Main-eterra Dungeoneers (F.A.M-E.D.) is a deck-building cooperative adventure game with fast-paced tactical combat, combining two layers of gameplay: surface exploration across the landscape and underground dungeon crawling, all set during the fading centuries of the [Fire Age] of [Main-eterra]. Players lead a fellowship of heroes (1 to 4) across [Valouki], revealing hex-based regions, resolving narrative-driven quests, exploring dungeons, and confronting the lingering evils of the [Dark Lord Bauglor] to receive rewards and loot.",
+      "locator": "word/document.xml paragraph 11",
+      "kind": "history"
+    },
+    {
+      "quote": "Each player manages a unique miniature connected to a deck containing artifacts, consumables, and skills divided into physical prowess, magical wit, and craftsmanship utility, representing a hero defined by their chosen heritage and playstyle. The hero deck is used to interact with all actions: exploration, quests, events, encounters, and the discovery of hidden lore for extra treasures.",
+      "locator": "word/document.xml paragraph 13",
+      "kind": "history"
+    },
+    {
+      "quote": "The gameplay blends deck management, encounter choices, tactical combat, and shared open-world exploration, which is softly driven by narrative-guided storyline quest cards, emphasizing balance between teamwork, individual choices, and lasting team consequences.",
+      "locator": "word/document.xml paragraph 17",
+      "kind": "history"
+    },
+    {
+      "quote": "First Session Ever – Players first learn the character, deck, and map rules, then pick a House representing their heritage from Elves, Dwarves, or Men (3 houses each, 9 total). Each player draws a set number of cards from game’s hero card stockpile, based on the ruleset and modifiers used. The drawn cards can be looked at and studied, then shuffled into a face-down deck kept nearby. Players will draw, hold, play, discard, and add cards as the game unfolds.",
+      "locator": "word/document.xml paragraph 21",
+      "kind": "history"
+    },
+    {
+      "quote": "Together, the fellowship selects a starting region and places all miniatures at the center of a flipped tile matching that region’s ruleset. A Master Quest card is drawn from its deck and placed face-up on the table. This quest defines the initial purpose for exploration, unlocking tiles while revealing events, encounters, dungeons, and challenges with greater potential rewards. Completing it creates a checkpoint, after which the session may end, post-pone, or continue. Continuing and pause maintain the same heroes and decks, while ending would reset from start.",
+      "locator": "word/document.xml paragraph 23",
+      "kind": "history"
+    },
+    {
+      "quote": "Before starting the game, a player is designated the role of a Pathfinder, rolling dice to determine travel distance each turn for the party. Crossroads may be decided together, but the Pathfinder is the final tiebreaker for movement and exploration. Another player is the Captain, who rolls the pre-combat and encounter dice and resolves engagement ties. A third acts as the Lorekeeper, handling dice rolls and tiebreaks for events and quests. Lastly, the Vaultwarden manages dice rolls and tiebreaks for dungeon-crawling and general reward decisions.",
+      "locator": "word/document.xml paragraph 25",
+      "kind": "history"
+    }
+  ]
+}

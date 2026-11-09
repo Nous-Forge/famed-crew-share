@@ -1,0 +1,182 @@
+[
+  {
+    "role": "Captain",
+    "description": "Captain leadership should make a choice legible and help the team act together.",
+    "voice": {
+      "start": "Crew, take your places.",
+      "play": "On my mark. We act together.",
+      "hurt": "Hold formation.",
+      "win": "We leave together."
+    },
+    "sourceStatus": "Authored event-line templates conditioned on actual retrieved and pinned GDD role directions; factual grammar checked, literary tone reviewed separately.",
+    "sourceEvidence": [
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 461",
+        "quote": "Captain leadership should make a choice legible and help the team act together."
+      },
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 453",
+        "quote": "Captain | Prowess, muted metallic red | All 16 skills shared; weighted lines Prowess, Wits"
+      }
+    ],
+    "retrievalTrace": {
+      "query": "Captain writing leadership movement knowledge resourcefulness",
+      "filters": {
+        "role": "Captain",
+        "kind": "roleDirection",
+        "authority": "current-packaged-design",
+        "limit": 2
+      },
+      "candidates": 1,
+      "selectedIds": [
+        "current-gdd:8"
+      ],
+      "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+      "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+    },
+    "generationMethod": "Actual local RAG retrieval selects an approved source-bound writing mode. The retained calm-command fixture selects a distinct Captain mode."
+  },
+  {
+    "role": "Pathfinder",
+    "description": "Pathfinder movement and evasion should clarify risk and position.",
+    "voice": {
+      "start": "Check the approach.",
+      "play": "There. An opening.",
+      "hurt": "Keep a way clear.",
+      "win": "The way ahead is clear."
+    },
+    "sourceStatus": "Authored event-line templates conditioned on actual retrieved and pinned GDD role directions; factual grammar checked, literary tone reviewed separately.",
+    "sourceEvidence": [
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 461",
+        "quote": "Pathfinder movement and evasion should clarify risk and position."
+      },
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 455",
+        "quote": "Pathfinder | Nimbleness, muted metallic green | All 16 skills shared; weighted lines Prowess, Nimble"
+      }
+    ],
+    "retrievalTrace": {
+      "query": "Pathfinder writing leadership movement knowledge resourcefulness",
+      "filters": {
+        "role": "Pathfinder",
+        "kind": "roleDirection",
+        "authority": "current-packaged-design",
+        "limit": 2
+      },
+      "candidates": 1,
+      "selectedIds": [
+        "current-gdd:9"
+      ],
+      "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+      "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+    },
+    "generationMethod": "Actual local RAG retrieval selects an approved source-bound writing mode. The retained calm-command fixture selects a distinct Captain mode."
+  },
+  {
+    "role": "Lorekeeper",
+    "description": "Lorekeeper knowledge should explain rather than invent world facts.",
+    "voice": {
+      "start": "Watch the pattern.",
+      "play": "Read the intent before we act.",
+      "hurt": "Keep watching the next move.",
+      "win": "I will record what worked."
+    },
+    "sourceStatus": "Authored event-line templates conditioned on actual retrieved and pinned GDD role directions; factual grammar checked, literary tone reviewed separately.",
+    "sourceEvidence": [
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 461",
+        "quote": "Lorekeeper knowledge should explain rather than invent world facts."
+      },
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 457",
+        "quote": "Lorekeeper | Wits, muted metallic blue | All 16 skills shared; weighted lines Wits, Craft"
+      }
+    ],
+    "retrievalTrace": {
+      "query": "Lorekeeper writing leadership movement knowledge resourcefulness",
+      "filters": {
+        "role": "Lorekeeper",
+        "kind": "roleDirection",
+        "authority": "current-packaged-design",
+        "limit": 2
+      },
+      "candidates": 1,
+      "selectedIds": [
+        "current-gdd:10"
+      ],
+      "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+      "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+    },
+    "generationMethod": "Actual local RAG retrieval selects an approved source-bound writing mode. The retained calm-command fixture selects a distinct Captain mode."
+  },
+  {
+    "role": "Vaultwarden",
+    "description": "Vaultwarden resourcefulness should make resource and artifact choices readable.",
+    "voice": {
+      "start": "Our reserves are ready.",
+      "play": "Use what we need. Waste nothing.",
+      "hurt": "Keep something in reserve.",
+      "win": "Count the crew. Check the reserves."
+    },
+    "sourceStatus": "Authored event-line templates conditioned on actual retrieved and pinned GDD role directions; factual grammar checked, literary tone reviewed separately.",
+    "sourceEvidence": [
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 461",
+        "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+      },
+      {
+        "sourceId": "current-gdd",
+        "filename": "FAMED-GDD-source.txt",
+        "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+        "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+        "locator": "Original GDD line 459",
+        "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+      }
+    ],
+    "retrievalTrace": {
+      "query": "Vaultwarden writing leadership movement knowledge resourcefulness",
+      "filters": {
+        "role": "Vaultwarden",
+        "kind": "roleDirection",
+        "authority": "current-packaged-design",
+        "limit": 2
+      },
+      "candidates": 1,
+      "selectedIds": [
+        "current-gdd:11"
+      ],
+      "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+      "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+    },
+    "generationMethod": "Actual local RAG retrieval selects an approved source-bound writing mode. The retained calm-command fixture selects a distinct Captain mode."
+  }
+]

@@ -1,0 +1,35 @@
+%% Custom SVG/PNG matching editable Mermaid source. Role links are responsibilities, not live runtime wiring.
+flowchart TB
+U["[User Piero]<br/>Goals, source material and final choices"]:::owner
+S["[Sources and history]<br/>GDD, card records, artifact and agent logs"]:::source
+D["[Studio Director]<br/>Delegated decisions and release review"]:::codex
+M["[Studio Manager]<br/>Coordination and status<br/>No current A4 code assignment"]:::claude
+R["[Codex Runner]<br/>Integration, document and publication<br/>One delivery hub"]:::codex
+W["[Lead Web Designer]<br/>Artifact and Home board updates<br/>Single artifact writer"]:::claude
+A["[Art Director]<br/>Charts and visual language<br/>Independent visual review"]:::art
+L["[Lead Designer]<br/>Game, source, voice and perk review<br/>Current candidate reviewed"]:::claude
+C["[Codex Auditor]<br/>Independent code and evidence review<br/>Current candidate reviewed"]:::codex
+Q["[Claude Studio Auditor]<br/>Independent return review<br/>Current candidate reviewed"]:::claude
+B["[Claude Runner]<br/>Claude-side message bridge<br/>Cross-platform coordination"]:::claude
+E["[Lead Engineer]<br/>Standby for a scoped technical task<br/>Not a current A4 code writer"]:::standby
+P["[Packaged content pipeline]<br/>Source and retrieval, generation, critics, repair or HOLD,<br/>final file checks, complete WIN and LOSS, retained proof"]:::pipeline
+U -. "owner direction" .-> D
+S -. "source evidence" .-> D
+D -. "decision and delivery" .-> R
+M -. "status" .-> R
+R -. "artifact handoff" .-> W
+W -. "record updates" .-> S
+A -. "visual review" .-> R
+L -. "game review" .-> R
+C -. "independent findings" .-> D
+Q -. "independent findings" .-> D
+B -. "message bridge" .-> R
+E -. "on request only" .-> R
+R -. "integrates reviewed outputs" .-> P
+classDef owner fill:#FAF9F6,stroke:#C99700,color:#C99700,stroke-width:2px;
+classDef source fill:#FAF9F6,stroke:#1A00C2,color:#1A00C2,stroke-width:2px;
+classDef codex fill:#FAF9F6,stroke:#007099,color:#007099,stroke-width:2px;
+classDef art fill:#FAF9F6,stroke:#0990AE,color:#0990AE,stroke-width:2px;
+classDef claude fill:#FAF9F6,stroke:#E08E00,color:#E08E00,stroke-width:2px;
+classDef standby fill:#FAF9F6,stroke:#777777,color:#777777,stroke-width:2px;
+classDef pipeline fill:#FAF9F6,stroke:#00997A,color:#00997A,stroke-width:2px;

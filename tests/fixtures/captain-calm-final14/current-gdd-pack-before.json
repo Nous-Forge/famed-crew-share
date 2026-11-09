@@ -1,0 +1,79 @@
+{
+  "originalFilename": "FAMED-GDD-source.txt",
+  "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+  "passages": [
+    {
+      "quote": "F.A.M-E.D. is Fire Age Main-Eterra Dungeoneers, a cooperative exploration and deck-building combat game. Four Dungeoneers combine distinct roles, cards and checks. The long-term design connects Combat, Dungeon Crawl and Landscape Exploration. Assignment 4 develops a smaller combat demo called F.A.M-E.D.: Ogre Fight.",
+      "locator": "Original GDD line 5",
+      "kind": "designFact"
+    },
+    {
+      "quote": "The shared screen puts the board in the center, the Ogre and its intent above it, the four crew portraits along the lower board edge and a five-card fan at the bottom. The right-side log has Combat log, Rules and Prototype policy tabs. HP, block and energy show as numbers. A second target click is needed only when a meaningful choice exists.",
+      "locator": "Original GDD line 95",
+      "kind": "designFact"
+    },
+    {
+      "quote": "Keep the draw deck, prepared hand, discard pile, removed-from-deck pile and equipped artifact area as distinct concepts. Historical rules use a starting deck of seven Skills and three Consumables, with a seven-card hand limit. The current demo instead specifies a five-card fan and engine energy. The two models need separate configurations and player-facing policy labels.",
+      "locator": "Original GDD line 367",
+      "kind": "designFact"
+    },
+    {
+      "quote": "The current boss is provisionally the Ogre. The Director requires a canonical website and rules check before identity, statistics or cards become source facts. Historical references to Bauglor are preserved as earlier lore and earlier GDD language; they do not establish the identity of this encounter.",
+      "locator": "Original GDD line 421",
+      "kind": "designFact"
+    },
+    {
+      "quote": "Captain | Prowess, muted metallic red | All 16 skills shared; weighted lines Prowess, Wits",
+      "locator": "Original GDD line 453",
+      "kind": "roleIdentity",
+      "role": "Captain"
+    },
+    {
+      "quote": "Pathfinder | Nimbleness, muted metallic green | All 16 skills shared; weighted lines Prowess, Nimble",
+      "locator": "Original GDD line 455",
+      "kind": "roleIdentity",
+      "role": "Pathfinder"
+    },
+    {
+      "quote": "Lorekeeper | Wits, muted metallic blue | All 16 skills shared; weighted lines Wits, Craft",
+      "locator": "Original GDD line 457",
+      "kind": "roleIdentity",
+      "role": "Lorekeeper"
+    },
+    {
+      "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft",
+      "locator": "Original GDD line 459",
+      "kind": "roleIdentity",
+      "role": "Vaultwarden"
+    },
+    {
+      "quote": "Captain leadership should make a choice legible and help the team act together.",
+      "locator": "Original GDD line 461",
+      "role": "Captain",
+      "kind": "roleDirection"
+    },
+    {
+      "quote": "Pathfinder movement and evasion should clarify risk and position.",
+      "locator": "Original GDD line 461",
+      "role": "Pathfinder",
+      "kind": "roleDirection"
+    },
+    {
+      "quote": "Lorekeeper knowledge should explain rather than invent world facts.",
+      "locator": "Original GDD line 461",
+      "role": "Lorekeeper",
+      "kind": "roleDirection"
+    },
+    {
+      "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable.",
+      "locator": "Original GDD line 461",
+      "role": "Vaultwarden",
+      "kind": "roleDirection"
+    },
+    {
+      "quote": "Designer section 11 defines four prototype perks: Captain gains 3 block at each crew phase start; Pathfinder ignores the first trap or Sweep hit each round; Lorekeeper empowers one ally per round so its next card gains 50 percent; Vaultwarden supplies a free heal-4 potion each round. These are approved digital adaptations; implementation and timing tests still need acceptance evidence. Heritage modifiers remain outside this demo.",
+      "locator": "Original GDD line 465",
+      "kind": "designFact"
+    }
+  ]
+}

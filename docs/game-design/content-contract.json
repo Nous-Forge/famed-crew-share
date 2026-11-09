@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "docs/game-design/FAMED-GDD-source.txt",
+    "sha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660"
+  },
+  "provenance": {
+    "originalFilename": "FAMED_Assignment4_GDD_v8_review.txt",
+    "originalSha256": "0dbadc9ecd43adf5cfd358820517e4c4e84975cc5d8f9cc07f90f0220df7b0af",
+    "version": "GDD v8 review",
+    "note": "Exact selected passages from the retained GDD review text. Original source hash is a provenance record; only the packaged excerpt is revalidated at runtime."
+  },
+  "evidence": {
+    "boss": {
+      "originalLine": 421,
+      "quote": "The current boss is provisionally the Ogre. The Director requires a canonical website and rules check before identity, statistics or cards become source facts. Historical references to Bauglor are preserved as earlier lore and earlier GDD language; they do not establish the identity of this encounter."
+    },
+    "handSize": {
+      "originalLine": 95,
+      "quote": "The shared screen puts the board in the center, the Ogre and its intent above it, the four crew portraits along the lower board edge and a five-card fan at the bottom. The right-side log has Combat log, Rules and Prototype policy tabs. HP, block and energy show as numbers. A second target click is needed only when a meaningful choice exists."
+    },
+    "roles": [
+      {
+        "originalLine": 453,
+        "quote": "Captain | Prowess, muted metallic red | All 16 skills shared; weighted lines Prowess, Wits"
+      },
+      {
+        "originalLine": 455,
+        "quote": "Pathfinder | Nimbleness, muted metallic green | All 16 skills shared; weighted lines Prowess, Nimble"
+      },
+      {
+        "originalLine": 457,
+        "quote": "Lorekeeper | Wits, muted metallic blue | All 16 skills shared; weighted lines Wits, Craft"
+      },
+      {
+        "originalLine": 459,
+        "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+      }
+    ],
+    "roleWritingDirection": {
+      "originalLine": 461,
+      "quote": "Captain leadership should make a choice legible and help the team act together. Pathfinder movement and evasion should clarify risk and position. Lorekeeper knowledge should explain rather than invent world facts. Vaultwarden resourcefulness should make resource and artifact choices readable. These are writing directions derived from the role vocabulary, not new mechanical bonuses."
+    },
+    "prototypePerks": {
+      "originalLine": 465,
+      "quote": "Designer section 11 defines four prototype perks: Captain gains 3 block at each crew phase start; Pathfinder ignores the first trap or Sweep hit each round; Lorekeeper empowers one ally per round so its next card gains 50 percent; Vaultwarden supplies a free heal-4 potion each round. These are approved digital adaptations; implementation and timing tests still need acceptance evidence. Heritage modifiers remain outside this demo."
+    }
+  },
+  "cardSource": {
+    "path": "docs/game-design/cards-source.json",
+    "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+    "selectedIds": [
+      "SK1_01",
+      "SK2_01",
+      "SK3_01",
+      "SK4_01",
+      "SK1_02",
+      "SK2_02",
+      "SK3_02",
+      "SK4_02",
+      "SK1_03",
+      "SK2_03",
+      "SK3_03",
+      "SK4_03",
+      "SK1_04",
+      "SK2_04",
+      "SK3_04",
+      "SK4_04"
+    ],
+    "originalFilename": "Player Deck - All Skill Cards[NEW].csv",
+    "originalSha256": "0bfe0eef7ce247c15972fa981fc92643af7f4c36a375ba0ce0f2ea48507de95b"
+  }
+}

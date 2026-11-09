@@ -1,0 +1,102 @@
+{
+  "originalFilename": "Player Deck - All Skill Cards[NEW].csv",
+  "originalSha256": "0bfe0eef7ce247c15972fa981fc92643af7f4c36a375ba0ce0f2ea48507de95b",
+  "passages": [
+    {
+      "quote": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+      "locator": "CSV record 1; name=SK1_01; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK1_01"
+    },
+    {
+      "quote": "Gain 1 <bold>extra attack</bold> roll this round.",
+      "locator": "CSV record 2; name=SK1_02; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK1_02"
+    },
+    {
+      "quote": "Draw 3 cards from {{ game.vars.cardIcon_type_reward }}. Choose 2 drawn to shuffle back into the {{ game.vars.cardIcon_type_reward }}.",
+      "locator": "CSV record 3; name=SK1_03; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK1_03"
+    },
+    {
+      "quote": "Shuffle any 3 cards from your <bold>R.F.D. pile</bold> back into your deck.",
+      "locator": "CSV record 4; name=SK1_04; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK1_04"
+    },
+    {
+      "quote": "Party gains +1 <bold>attack damage</bold> this round.",
+      "locator": "CSV record 5; name=SK2_01; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK2_01"
+    },
+    {
+      "quote": "Party may individually move 1 tile and prevent all imminent <bold>area effects</bold>.",
+      "locator": "CSV record 6; name=SK2_02; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK2_02"
+    },
+    {
+      "quote": "Choose a character to: Draw 1 {{ game.vars.cardIcon_type_reward }}, <italic>reroll</italic> an attack and defense, and move +1 tile this round.",
+      "locator": "CSV record 7; name=SK2_03; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK2_03"
+    },
+    {
+      "quote": "Choose an enemy miniature or a trap tile. Move it 1 step in any of its adjacent directions.",
+      "locator": "CSV record 8; name=SK2_04; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK2_04"
+    },
+    {
+      "quote": "Party can indiv. <bold>defend</bold> 1 attack each per round with a +2 to it for <bold>1 round</bold>.",
+      "locator": "CSV record 9; name=SK3_01; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK3_01"
+    },
+    {
+      "quote": "You prevent being targeted by any <bold>attack</bold> or <bold>direct combat effects</bold> for <bold>1 round</bold>.",
+      "locator": "CSV record 10; name=SK3_02; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK3_02"
+    },
+    {
+      "quote": "Characters can: both attack and defend each turn for <bold>1 round</bold>. <italic>Reroll</italic> each combat dice and pick the best result.",
+      "locator": "CSV record 11; name=SK3_03; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK3_03"
+    },
+    {
+      "quote": "Party indv. <italic>draws</italic> 1 card from <bold>discard pile</bold> or <bold>R.F.D.</bold> every time a character <bold>attack</bold> or <bold>defend</bold> for <bold>1 round</bold>.",
+      "locator": "CSV record 12; name=SK3_04; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK3_04"
+    },
+    {
+      "quote": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> an attack with <bold>double damage</bold>.",
+      "locator": "CSV record 13; name=SK4_01; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK4_01"
+    },
+    {
+      "quote": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> 2 attacks.",
+      "locator": "CSV record 14; name=SK4_02; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK4_02"
+    },
+    {
+      "quote": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 {{ game.vars.cardIcon_type_reward }} and ignore any direct attacks for <bold>1 round</bold>.",
+      "locator": "CSV record 15; name=SK4_03; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK4_03"
+    },
+    {
+      "quote": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 from <bold>discard</bold> or <bold>R.D.F.</bold> and ignore any direct attacks for <bold>1 round</bold>.",
+      "locator": "CSV record 16; name=SK4_04; field D_text",
+      "kind": "historicalCardText",
+      "cardId": "SK4_04"
+    }
+  ]
+}

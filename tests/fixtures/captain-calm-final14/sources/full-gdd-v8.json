@@ -1,0 +1,46 @@
+{
+  "originalFilename": "FAMED_Assignment4_GDD_v8_review.txt",
+  "originalSha256": "0dbadc9ecd43adf5cfd358820517e4c4e84975cc5d8f9cc07f90f0220df7b0af",
+  "passages": [
+    {
+      "quote": "F.A.M-E.D. is Fire Age Main-Eterra Dungeoneers, a cooperative exploration and deck-building combat game. Four Dungeoneers combine distinct roles, cards and checks. The long-term design connects Combat, Dungeon Crawl and Landscape Exploration. Assignment 4 develops a smaller combat demo called F.A.M-E.D.: Ogre Fight.",
+      "locator": "line 5",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "The current production task combines card text, crew voice lines, ogre behavior and ten comparable local builds. Five web variants and five Godot variants share a rules engine and source content. The Lead Designer accepts the game work. The Studio Director governs integration and publication. The course submission belongs to Piero.",
+      "locator": "line 7",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Preserve the world and card identity | Use existing card names, original effect text and art references | OGRE identity and numerical rules await canonical source verification",
+      "locator": "line 19",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Combat is the immediate proof of mastery. Dungeon Crawl supplies the changing route, pressure and encounters. Landscape adds shared exploration and progression. Individual deck building begins inside Combat and extends through the other loops. Each later loop should fill interfaces established by the earlier one.",
+      "locator": "line 53",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Combat | Prepare, enemy and player actions, card timing, damage, result | Ogre fight is the bounded current target",
+      "locator": "line 57",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "The shared screen puts the board in the center, the Ogre and its intent above it, the four crew portraits along the lower board edge and a five-card fan at the bottom. The right-side log has Combat log, Rules and Prototype policy tabs. HP, block and energy show as numbers. A second target click is needed only when a meaningful choice exists.",
+      "locator": "line 95",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Designer section 13 adds two layout rules that earlier text lacked. The Ogre intent and its target always show outside the log. A picture never makes a rule.",
+      "locator": "line 115",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "The first export grouped four unique skills and six copies per crew. Version 2 supersedes that design: every crew has all 16 unique skills once, with eight role-line skills repeated once, for 24 cards. Captain weights Prowess and Wits; Pathfinder weights Prowess and Nimble; Lorekeeper weights Wits and Craft; Vaultwarden weights Nimble and Craft. These are producer configuration choices with source-line attribution, not proof of approved tabletop deck composition.",
+      "locator": "line 387",
+      "kind": "historicalDesign"
+    }
+  ]
+}

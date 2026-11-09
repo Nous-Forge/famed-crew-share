@@ -1,0 +1,102 @@
+{
+  "originalFilename": "cards-source.json",
+  "originalSha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+  "passages": [
+    {
+      "quote": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+      "locator": "card SK1_01 field D_text; original record 1",
+      "kind": "cardText",
+      "cardId": "SK1_01"
+    },
+    {
+      "quote": "Party gains +1 <bold>attack damage</bold> this round.",
+      "locator": "card SK2_01 field D_text; original record 5",
+      "kind": "cardText",
+      "cardId": "SK2_01"
+    },
+    {
+      "quote": "Party can indiv. <bold>defend</bold> 1 attack each per round with a +2 to it for <bold>1 round</bold>.",
+      "locator": "card SK3_01 field D_text; original record 9",
+      "kind": "cardText",
+      "cardId": "SK3_01"
+    },
+    {
+      "quote": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> an attack with <bold>double damage</bold>.",
+      "locator": "card SK4_01 field D_text; original record 13",
+      "kind": "cardText",
+      "cardId": "SK4_01"
+    },
+    {
+      "quote": "Gain 1 <bold>extra attack</bold> roll this round.",
+      "locator": "card SK1_02 field D_text; original record 2",
+      "kind": "cardText",
+      "cardId": "SK1_02"
+    },
+    {
+      "quote": "Party may individually move 1 tile and prevent all imminent <bold>area effects</bold>.",
+      "locator": "card SK2_02 field D_text; original record 6",
+      "kind": "cardText",
+      "cardId": "SK2_02"
+    },
+    {
+      "quote": "You prevent being targeted by any <bold>attack</bold> or <bold>direct combat effects</bold> for <bold>1 round</bold>.",
+      "locator": "card SK3_02 field D_text; original record 10",
+      "kind": "cardText",
+      "cardId": "SK3_02"
+    },
+    {
+      "quote": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> 2 attacks.",
+      "locator": "card SK4_02 field D_text; original record 14",
+      "kind": "cardText",
+      "cardId": "SK4_02"
+    },
+    {
+      "quote": "Draw 3 cards from {{ game.vars.cardIcon_type_reward }}. Choose 2 drawn to shuffle back into the {{ game.vars.cardIcon_type_reward }}.",
+      "locator": "card SK1_03 field D_text; original record 3",
+      "kind": "cardText",
+      "cardId": "SK1_03"
+    },
+    {
+      "quote": "Choose a character to: Draw 1 {{ game.vars.cardIcon_type_reward }}, <italic>reroll</italic> an attack and defense, and move +1 tile this round.",
+      "locator": "card SK2_03 field D_text; original record 7",
+      "kind": "cardText",
+      "cardId": "SK2_03"
+    },
+    {
+      "quote": "Characters can: both attack and defend each turn for <bold>1 round</bold>. <italic>Reroll</italic> each combat dice and pick the best result.",
+      "locator": "card SK3_03 field D_text; original record 11",
+      "kind": "cardText",
+      "cardId": "SK3_03"
+    },
+    {
+      "quote": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 {{ game.vars.cardIcon_type_reward }} and ignore any direct attacks for <bold>1 round</bold>.",
+      "locator": "card SK4_03 field D_text; original record 15",
+      "kind": "cardText",
+      "cardId": "SK4_03"
+    },
+    {
+      "quote": "Shuffle any 3 cards from your <bold>R.F.D. pile</bold> back into your deck.",
+      "locator": "card SK1_04 field D_text; original record 4",
+      "kind": "cardText",
+      "cardId": "SK1_04"
+    },
+    {
+      "quote": "Choose an enemy miniature or a trap tile. Move it 1 step in any of its adjacent directions.",
+      "locator": "card SK2_04 field D_text; original record 8",
+      "kind": "cardText",
+      "cardId": "SK2_04"
+    },
+    {
+      "quote": "Party indv. <italic>draws</italic> 1 card from <bold>discard pile</bold> or <bold>R.F.D.</bold> every time a character <bold>attack</bold> or <bold>defend</bold> for <bold>1 round</bold>.",
+      "locator": "card SK3_04 field D_text; original record 12",
+      "kind": "cardText",
+      "cardId": "SK3_04"
+    },
+    {
+      "quote": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 from <bold>discard</bold> or <bold>R.D.F.</bold> and ignore any direct attacks for <bold>1 round</bold>.",
+      "locator": "card SK4_04 field D_text; original record 16",
+      "kind": "cardText",
+      "cardId": "SK4_04"
+    }
+  ]
+}

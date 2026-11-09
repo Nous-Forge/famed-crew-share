@@ -1,0 +1,196 @@
+{
+  "verdict": "HOLD",
+  "checks": 377,
+  "findings": [
+    {
+      "file": "card-text.json",
+      "jsonPath": "$[0].printedSourceText",
+      "path": [
+        0,
+        "printedSourceText"
+      ],
+      "code": "printed-text",
+      "actual": "Deal 999 damage. Invented demonstration text.",
+      "expected": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+      "source": {
+        "kind": "original-card-csv",
+        "id": "SK1_01",
+        "provenance": {
+          "originalRecord": 1,
+          "originalStartLine": 2,
+          "originalEndLine": 2
+        }
+      },
+      "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+      "repairable": true,
+      "severity": "error"
+    },
+    {
+      "file": "boss-rules.json",
+      "jsonPath": "$.boss.name",
+      "path": [
+        "boss",
+        "name"
+      ],
+      "code": "boss-rule-field",
+      "actual": "Bauglor",
+      "expected": "Ogre",
+      "source": {
+        "gameDesign": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+        "prototype": "Labeled prototype boss configuration"
+      },
+      "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+      "repairable": true,
+      "severity": "error"
+    },
+    {
+      "file": "card-text.json",
+      "path": [
+        0,
+        "prototypeText"
+      ],
+      "jsonPath": "$[0].prototypeText",
+      "code": "false-prototype-text",
+      "actual": "Digital prototype: deal 999 damage.",
+      "expected": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+      "source": {
+        "prototypeId": "SK1_01",
+        "kind": "declared digital effect/cost/target"
+      },
+      "repairable": true
+    },
+    {
+      "file": "crew-dialogue.json",
+      "path": [
+        3,
+        "voice",
+        "win"
+      ],
+      "jsonPath": "$[3].voice.win",
+      "code": "unsupported-dialogue-fact-or-mode",
+      "actual": "Count the crew before the spoils.",
+      "expected": "Count the crew. Check the reserves.",
+      "source": [
+        {
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "locator": "Original GDD line 461",
+          "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+        },
+        {
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "locator": "Original GDD line 459",
+          "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+        }
+      ],
+      "repairable": true
+    }
+  ],
+  "structure": {
+    "verdict": "HOLD",
+    "checks": 273,
+    "findings": [
+      {
+        "file": "card-text.json",
+        "jsonPath": "$[0].printedSourceText",
+        "path": [
+          0,
+          "printedSourceText"
+        ],
+        "code": "printed-text",
+        "actual": "Deal 999 damage. Invented demonstration text.",
+        "expected": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+        "source": {
+          "kind": "original-card-csv",
+          "id": "SK1_01",
+          "provenance": {
+            "originalRecord": 1,
+            "originalStartLine": 2,
+            "originalEndLine": 2
+          }
+        },
+        "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+        "repairable": true,
+        "severity": "error"
+      },
+      {
+        "file": "boss-rules.json",
+        "jsonPath": "$.boss.name",
+        "path": [
+          "boss",
+          "name"
+        ],
+        "code": "boss-rule-field",
+        "actual": "Bauglor",
+        "expected": "Ogre",
+        "source": {
+          "gameDesign": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+          "prototype": "Labeled prototype boss configuration"
+        },
+        "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+        "repairable": true,
+        "severity": "error"
+      }
+    ],
+    "limits": "Deterministic source and structure checks, not a language-model judgment of tone, complete lore, balance, or faithful tabletop mechanics. Digital effects are compared with the labeled prototype configuration, not promoted to printed rules."
+  },
+  "semantics": {
+    "verdict": "HOLD",
+    "checks": 104,
+    "findings": [
+      {
+        "file": "card-text.json",
+        "path": [
+          0,
+          "prototypeText"
+        ],
+        "jsonPath": "$[0].prototypeText",
+        "code": "false-prototype-text",
+        "actual": "Digital prototype: deal 999 damage.",
+        "expected": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+        "source": {
+          "prototypeId": "SK1_01",
+          "kind": "declared digital effect/cost/target"
+        },
+        "repairable": true
+      },
+      {
+        "file": "crew-dialogue.json",
+        "path": [
+          3,
+          "voice",
+          "win"
+        ],
+        "jsonPath": "$[3].voice.win",
+        "code": "unsupported-dialogue-fact-or-mode",
+        "actual": "Count the crew before the spoils.",
+        "expected": "Count the crew. Check the reserves.",
+        "source": [
+          {
+            "sourceId": "current-gdd",
+            "filename": "FAMED-GDD-source.txt",
+            "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+            "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+            "locator": "Original GDD line 461",
+            "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+          },
+          {
+            "sourceId": "current-gdd",
+            "filename": "FAMED-GDD-source.txt",
+            "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+            "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+            "locator": "Original GDD line 459",
+            "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+          }
+        ],
+        "repairable": true
+      }
+    ],
+    "limits": "Exact factual/structural checks against pinned sources and approved controlled language. Free-form tone, full lore, balance and faithful tabletop conversion require separate review. Unknown source directions hold rather than silently using stale templates."
+  }
+}

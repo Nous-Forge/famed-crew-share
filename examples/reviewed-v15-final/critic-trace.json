@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 4,
+  "mode": "explicit fault demonstration",
+  "demoFaults": true,
+  "input": {
+    "path": "content-pipeline/shared/content.v2.json",
+    "sha256": "e10b9b8e190d76f7b763c363f1276aea1c0dabd98da963bdb94a3997f7c02d53"
+  },
+  "designSources": [
+    {
+      "path": "docs/game-design/FAMED-GDD-source.txt",
+      "sha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660"
+    },
+    {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065"
+    },
+    {
+      "path": "docs/game-design/content-contract.json",
+      "sha256": "487ad3e2d049acc49d19455447064725017bc831a525915e4f07114174ee615d"
+    }
+  ],
+  "designProvenance": {
+    "originalFilename": "FAMED_Assignment4_GDD_v8_review.txt",
+    "originalSha256": "0dbadc9ecd43adf5cfd358820517e4c4e84975cc5d8f9cc07f90f0220df7b0af",
+    "version": "GDD v8 review",
+    "note": "Exact selected passages from the retained GDD review text. Original source hash is a provenance record; only the packaged excerpt is revalidated at runtime."
+  },
+  "cardSourceProvenance": {
+    "originalFilename": "Player Deck - All Skill Cards[NEW].csv",
+    "originalSha256": "0bfe0eef7ce247c15972fa981fc92643af7f4c36a375ba0ce0f2ea48507de95b",
+    "recordNumbering": "One-based data record; header is physical line 1. Physical line references include the header.",
+    "note": "Exact original text and context strings for the 16 selected cards; no normalization or interpretation. Art URLs and unrelated image fields omitted."
+  },
+  "ragManifest": {
+    "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999",
+    "sourceCount": 14,
+    "passageCount": 116
+  },
+  "retrievalEvidence": [
+    {
+      "role": "Captain",
+      "text": "Captain leadership should make a choice legible and help the team act together.",
+      "evidence": [
+        {
+          "quote": "Captain leadership should make a choice legible and help the team act together.",
+          "locator": "Original GDD line 461",
+          "role": "Captain",
+          "kind": "roleDirection",
+          "id": "current-gdd:8",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.57536414,
+          "matchedTerms": [
+            "captain",
+            "leadership"
+          ]
+        },
+        {
+          "quote": "Captain | Prowess, muted metallic red | All 16 skills shared; weighted lines Prowess, Wits",
+          "locator": "Original GDD line 453",
+          "kind": "roleIdentity",
+          "role": "Captain",
+          "id": "current-gdd:4",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.28768207,
+          "matchedTerms": [
+            "captain"
+          ]
+        }
+      ],
+      "trace": {
+        "query": "Captain writing leadership movement knowledge resourcefulness",
+        "filters": {
+          "role": "Captain",
+          "kind": "roleDirection",
+          "authority": "current-packaged-design",
+          "limit": 2
+        },
+        "candidates": 1,
+        "selectedIds": [
+          "current-gdd:8"
+        ],
+        "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+        "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+      }
+    },
+    {
+      "role": "Pathfinder",
+      "text": "Pathfinder movement and evasion should clarify risk and position.",
+      "evidence": [
+        {
+          "quote": "Pathfinder movement and evasion should clarify risk and position.",
+          "locator": "Original GDD line 461",
+          "role": "Pathfinder",
+          "kind": "roleDirection",
+          "id": "current-gdd:9",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.57536414,
+          "matchedTerms": [
+            "pathfinder",
+            "movement"
+          ]
+        },
+        {
+          "quote": "Pathfinder | Nimbleness, muted metallic green | All 16 skills shared; weighted lines Prowess, Nimble",
+          "locator": "Original GDD line 455",
+          "kind": "roleIdentity",
+          "role": "Pathfinder",
+          "id": "current-gdd:5",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.28768207,
+          "matchedTerms": [
+            "pathfinder"
+          ]
+        }
+      ],
+      "trace": {
+        "query": "Pathfinder writing leadership movement knowledge resourcefulness",
+        "filters": {
+          "role": "Pathfinder",
+          "kind": "roleDirection",
+          "authority": "current-packaged-design",
+          "limit": 2
+        },
+        "candidates": 1,
+        "selectedIds": [
+          "current-gdd:9"
+        ],
+        "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+        "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+      }
+    },
+    {
+      "role": "Lorekeeper",
+      "text": "Lorekeeper knowledge should explain rather than invent world facts.",
+      "evidence": [
+        {
+          "quote": "Lorekeeper knowledge should explain rather than invent world facts.",
+          "locator": "Original GDD line 461",
+          "role": "Lorekeeper",
+          "kind": "roleDirection",
+          "id": "current-gdd:10",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.57536414,
+          "matchedTerms": [
+            "lorekeeper",
+            "knowledge"
+          ]
+        },
+        {
+          "quote": "Lorekeeper | Wits, muted metallic blue | All 16 skills shared; weighted lines Wits, Craft",
+          "locator": "Original GDD line 457",
+          "kind": "roleIdentity",
+          "role": "Lorekeeper",
+          "id": "current-gdd:6",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.28768207,
+          "matchedTerms": [
+            "lorekeeper"
+          ]
+        }
+      ],
+      "trace": {
+        "query": "Lorekeeper writing leadership movement knowledge resourcefulness",
+        "filters": {
+          "role": "Lorekeeper",
+          "kind": "roleDirection",
+          "authority": "current-packaged-design",
+          "limit": 2
+        },
+        "candidates": 1,
+        "selectedIds": [
+          "current-gdd:10"
+        ],
+        "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+        "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+      }
+    },
+    {
+      "role": "Vaultwarden",
+      "text": "Vaultwarden resourcefulness should make resource and artifact choices readable.",
+      "evidence": [
+        {
+          "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable.",
+          "locator": "Original GDD line 461",
+          "role": "Vaultwarden",
+          "kind": "roleDirection",
+          "id": "current-gdd:11",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.57536414,
+          "matchedTerms": [
+            "vaultwarden",
+            "resourcefulness"
+          ]
+        },
+        {
+          "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft",
+          "locator": "Original GDD line 459",
+          "kind": "roleIdentity",
+          "role": "Vaultwarden",
+          "id": "current-gdd:7",
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "version": "Assignment4 GDD v8 packaged excerpt / v14B baseline",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "authority": "current-packaged-design",
+          "priority": 100,
+          "score": 0.28768207,
+          "matchedTerms": [
+            "vaultwarden"
+          ]
+        }
+      ],
+      "trace": {
+        "query": "Vaultwarden writing leadership movement knowledge resourcefulness",
+        "filters": {
+          "role": "Vaultwarden",
+          "kind": "roleDirection",
+          "authority": "current-packaged-design",
+          "limit": 2
+        },
+        "candidates": 1,
+        "selectedIds": [
+          "current-gdd:11"
+        ],
+        "algorithm": "authority-first BM25 k1=1.2 b=0.75; stable passage ID tie break",
+        "corpusHash": "a8e8ad528ad9f12948d6e785ce1e291d06ab9ab828c8a9e6917764a792602999"
+      }
+    }
+  ],
+  "sourceCheck": [
+    {
+      "key": "boss.name",
+      "value": "Ogre",
+      "verdict": "accepted",
+      "expected": "Ogre",
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+      "sourceStatus": "Provisional digital encounter; canonical boss identity not verified"
+    },
+    {
+      "key": "crew.roles",
+      "value": [
+        "Captain",
+        "Pathfinder",
+        "Lorekeeper",
+        "Vaultwarden"
+      ],
+      "verdict": "accepted",
+      "expected": [
+        "Captain",
+        "Pathfinder",
+        "Lorekeeper",
+        "Vaultwarden"
+      ],
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 453); docs/game-design/FAMED-GDD-source.txt (original GDD line 455); docs/game-design/FAMED-GDD-source.txt (original GDD line 457); docs/game-design/FAMED-GDD-source.txt (original GDD line 459)",
+      "sourceStatus": "Crew roles from the packaged FAMED GDD excerpt"
+    },
+    {
+      "key": "prototype.handSize",
+      "value": 5,
+      "verdict": "accepted",
+      "expected": 5,
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 95)",
+      "sourceStatus": "Digital prototype policy; not the tabletop hand limit"
+    }
+  ],
+  "events": [
+    {
+      "stage": "Verify pinned design and retrieve current role identity and writing direction from local RAG",
+      "at": "2026-11-09T03:21:56.995Z"
+    },
+    {
+      "stage": "Generate three files using verified cards, retrieved role directions and labeled prototype configuration",
+      "at": "2026-11-09T03:21:57.006Z"
+    },
+    {
+      "stage": "Introduce four explicit actual-file faults: identity, printed source, tooltip meaning and unsupported loot",
+      "at": "2026-11-09T03:21:57.008Z"
+    },
+    {
+      "stage": "Repair only evidence-backed fields, preserving faulty original files",
+      "at": "2026-11-09T03:21:57.030Z"
+    },
+    {
+      "stage": "Release re-read final files with structural and semantic PASS",
+      "at": "2026-11-09T03:21:57.038Z"
+    }
+  ],
+  "before": {
+    "verdict": "HOLD",
+    "checks": 377,
+    "findings": [
+      {
+        "file": "card-text.json",
+        "jsonPath": "$[0].printedSourceText",
+        "path": [
+          0,
+          "printedSourceText"
+        ],
+        "code": "printed-text",
+        "actual": "Deal 999 damage. Invented demonstration text.",
+        "expected": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+        "source": {
+          "kind": "original-card-csv",
+          "id": "SK1_01",
+          "provenance": {
+            "originalRecord": 1,
+            "originalStartLine": 2,
+            "originalEndLine": 2
+          }
+        },
+        "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+        "repairable": true,
+        "severity": "error"
+      },
+      {
+        "file": "boss-rules.json",
+        "jsonPath": "$.boss.name",
+        "path": [
+          "boss",
+          "name"
+        ],
+        "code": "boss-rule-field",
+        "actual": "Bauglor",
+        "expected": "Ogre",
+        "source": {
+          "gameDesign": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+          "prototype": "Labeled prototype boss configuration"
+        },
+        "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+        "repairable": true,
+        "severity": "error"
+      },
+      {
+        "file": "card-text.json",
+        "path": [
+          0,
+          "prototypeText"
+        ],
+        "jsonPath": "$[0].prototypeText",
+        "code": "false-prototype-text",
+        "actual": "Digital prototype: deal 999 damage.",
+        "expected": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+        "source": {
+          "prototypeId": "SK1_01",
+          "kind": "declared digital effect/cost/target"
+        },
+        "repairable": true
+      },
+      {
+        "file": "crew-dialogue.json",
+        "path": [
+          3,
+          "voice",
+          "win"
+        ],
+        "jsonPath": "$[3].voice.win",
+        "code": "unsupported-dialogue-fact-or-mode",
+        "actual": "Count the crew before the spoils.",
+        "expected": "Count the crew. Check the reserves.",
+        "source": [
+          {
+            "sourceId": "current-gdd",
+            "filename": "FAMED-GDD-source.txt",
+            "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+            "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+            "locator": "Original GDD line 461",
+            "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+          },
+          {
+            "sourceId": "current-gdd",
+            "filename": "FAMED-GDD-source.txt",
+            "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+            "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+            "locator": "Original GDD line 459",
+            "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+          }
+        ],
+        "repairable": true
+      }
+    ],
+    "structure": {
+      "verdict": "HOLD",
+      "checks": 273,
+      "findings": [
+        {
+          "file": "card-text.json",
+          "jsonPath": "$[0].printedSourceText",
+          "path": [
+            0,
+            "printedSourceText"
+          ],
+          "code": "printed-text",
+          "actual": "Deal 999 damage. Invented demonstration text.",
+          "expected": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+          "source": {
+            "kind": "original-card-csv",
+            "id": "SK1_01",
+            "provenance": {
+              "originalRecord": 1,
+              "originalStartLine": 2,
+              "originalEndLine": 2
+            }
+          },
+          "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+          "repairable": true,
+          "severity": "error"
+        },
+        {
+          "file": "boss-rules.json",
+          "jsonPath": "$.boss.name",
+          "path": [
+            "boss",
+            "name"
+          ],
+          "code": "boss-rule-field",
+          "actual": "Bauglor",
+          "expected": "Ogre",
+          "source": {
+            "gameDesign": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+            "prototype": "Labeled prototype boss configuration"
+          },
+          "evidence": "Compared actual generated file field with the cited source or explicit structural rule.",
+          "repairable": true,
+          "severity": "error"
+        }
+      ],
+      "limits": "Deterministic source and structure checks, not a language-model judgment of tone, complete lore, balance, or faithful tabletop mechanics. Digital effects are compared with the labeled prototype configuration, not promoted to printed rules."
+    },
+    "semantics": {
+      "verdict": "HOLD",
+      "checks": 104,
+      "findings": [
+        {
+          "file": "card-text.json",
+          "path": [
+            0,
+            "prototypeText"
+          ],
+          "jsonPath": "$[0].prototypeText",
+          "code": "false-prototype-text",
+          "actual": "Digital prototype: deal 999 damage.",
+          "expected": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+          "source": {
+            "prototypeId": "SK1_01",
+            "kind": "declared digital effect/cost/target"
+          },
+          "repairable": true
+        },
+        {
+          "file": "crew-dialogue.json",
+          "path": [
+            3,
+            "voice",
+            "win"
+          ],
+          "jsonPath": "$[3].voice.win",
+          "code": "unsupported-dialogue-fact-or-mode",
+          "actual": "Count the crew before the spoils.",
+          "expected": "Count the crew. Check the reserves.",
+          "source": [
+            {
+              "sourceId": "current-gdd",
+              "filename": "FAMED-GDD-source.txt",
+              "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+              "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+              "locator": "Original GDD line 461",
+              "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+            },
+            {
+              "sourceId": "current-gdd",
+              "filename": "FAMED-GDD-source.txt",
+              "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+              "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+              "locator": "Original GDD line 459",
+              "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+            }
+          ],
+          "repairable": true
+        }
+      ],
+      "limits": "Exact factual/structural checks against pinned sources and approved controlled language. Free-form tone, full lore, balance and faithful tabletop conversion require separate review. Unknown source directions hold rather than silently using stale templates."
+    }
+  },
+  "changes": [
+    {
+      "file": "card-text.json",
+      "jsonPath": "$[0].printedSourceText",
+      "before": "Deal 999 damage. Invented demonstration text.",
+      "after": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+      "code": "printed-text",
+      "source": {
+        "kind": "original-card-csv",
+        "id": "SK1_01",
+        "provenance": {
+          "originalRecord": 1,
+          "originalStartLine": 2,
+          "originalEndLine": 2
+        }
+      }
+    },
+    {
+      "file": "boss-rules.json",
+      "jsonPath": "$.boss.name",
+      "before": "Bauglor",
+      "after": "Ogre",
+      "code": "boss-rule-field",
+      "source": {
+        "gameDesign": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+        "prototype": "Labeled prototype boss configuration"
+      }
+    },
+    {
+      "file": "card-text.json",
+      "jsonPath": "$[0].prototypeText",
+      "code": "false-prototype-text",
+      "before": "Digital prototype: deal 999 damage.",
+      "after": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+      "source": {
+        "prototypeId": "SK1_01",
+        "kind": "declared digital effect/cost/target"
+      }
+    },
+    {
+      "file": "crew-dialogue.json",
+      "jsonPath": "$[3].voice.win",
+      "code": "unsupported-dialogue-fact-or-mode",
+      "before": "Count the crew before the spoils.",
+      "after": "Count the crew. Check the reserves.",
+      "source": [
+        {
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "locator": "Original GDD line 461",
+          "quote": "Vaultwarden resourcefulness should make resource and artifact choices readable."
+        },
+        {
+          "sourceId": "current-gdd",
+          "filename": "FAMED-GDD-source.txt",
+          "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c",
+          "originalSha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660",
+          "locator": "Original GDD line 459",
+          "quote": "Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft"
+        }
+      ]
+    }
+  ],
+  "after": {
+    "verdict": "PASS",
+    "checks": 377,
+    "findings": [],
+    "structure": {
+      "verdict": "PASS",
+      "checks": 273,
+      "findings": [],
+      "limits": "Deterministic source and structure checks, not a language-model judgment of tone, complete lore, balance, or faithful tabletop mechanics. Digital effects are compared with the labeled prototype configuration, not promoted to printed rules."
+    },
+    "semantics": {
+      "verdict": "PASS",
+      "checks": 104,
+      "findings": [],
+      "limits": "Exact factual/structural checks against pinned sources and approved controlled language. Free-form tone, full lore, balance and faithful tabletop conversion require separate review. Unknown source directions hold rather than silently using stale templates."
+    }
+  },
+  "outputSha256": {
+    "card-text.json": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b",
+    "crew-dialogue.json": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da",
+    "boss-rules.json": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+  },
+  "modelCalls": 0,
+  "limits": [
+    "Deterministic source and structure checks, not a language-model judgment of tone, complete lore, balance, or faithful tabletop mechanics. Digital effects are compared with the labeled prototype configuration, not promoted to printed rules.",
+    "Exact factual/structural checks against pinned sources and approved controlled language. Free-form tone, full lore, balance and faithful tabletop conversion require separate review. Unknown source directions hold rather than silently using stale templates.",
+    "Local authority-first lexical retrieval over reviewed pinned passages; historical sources do not override current design. Generation receives the retrieved role direction. No hosted embedding service or full-document reasoning is claimed."
+  ],
+  "generationLimits": "Source normalization and authored controlled templates selected by actual retrieval. No fresh model calls or unrestricted literary judgment. Unresolved source variables remain visible."
+}

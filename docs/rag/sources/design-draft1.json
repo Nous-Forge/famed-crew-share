@@ -1,0 +1,46 @@
+{
+  "originalFilename": "gdd.txt",
+  "originalSha256": "9b7cc65162971588f801653fcf4fd0cfd89d18fc91e5e0663a19172c6139dd89",
+  "passages": [
+    {
+      "quote": "F.A.M-E.D. is a co-op exploration, deck-building and combat game for 1 to 4 players, set in the Fire Age of Main-Eterra. The tabletop version is a finished proof-of-concept prototype, built on paper first and then in Tabletop Simulator over 12 weeks, through 8 iterations and 4 playtests. Rules, card set, dice, icons and art all exist. This project rebuilds it in Unreal Engine 5 with the same systems, easier handling and a faster play flow.",
+      "locator": "line 5",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "The first target is the full [Combat] loop, working end to end. If time allows, the work then moves to the [Dungeon Crawl], and after that to [Landscape Exploration] with the systems that belong to it. The order is deliberate. Each stage builds sockets that the next stage fills, so that adding the later loops does not force a rewrite of the earlier ones.",
+      "locator": "line 7",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Two colour families run through this document. The core loops use flat, fully saturated colour. The in-game legend, which already exists on the cards and dice, uses the same hues at lower saturation with a metallic value shift, so the two families never read as one.",
+      "locator": "line 9",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Left: the original landscape-only system that evolved into the three core loops, Combat, Dungeon and Landscape. Right: how the three core loops feed one another.",
+      "locator": "line 60",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Game Premise: Set in the waning years of the early Fire Age, a fellowship of four Dungeoneers (prowess warriors, nimble wanderers, witful scholars and crafty treasure-seekers) hear a call to explore ancient ruins, hidden cities and the land of Valouki, to expel the lingering shadow of the Dark Lord Bauglor. The quest is not for glory alone, but to heal and preserve what light remains for future generations.",
+      "locator": "line 62",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Slay the Spire, Darkest Dungeon, Gloomhaven, Escape the Dark Castle (with MMO tactical combat for dungeon bosses and instances as a reference)",
+      "locator": "line 78",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Vintage black and white, ASCII games and early print board games. Some colour already exists on boss cards and artifacts. Watercolour mixed with pixel art stays open for later, and is not the focus now.",
+      "locator": "line 80",
+      "kind": "historicalDesign"
+    },
+    {
+      "quote": "Four Dungeoneers, one of each class, descend into a dungeon that redraws itself unpredictably behind and in front of them. The deck is the body: every wound burns a card.",
+      "locator": "line 82",
+      "kind": "historicalDesign"
+    }
+  ]
+}

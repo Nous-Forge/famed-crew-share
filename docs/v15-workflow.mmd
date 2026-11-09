@@ -1,0 +1,49 @@
+%% Custom SVG/PNG accompanies this editable Mermaid source; no Mermaid runtime rendering claimed.
+%% Current packaged pipeline only; external task coordination does not install studio automation.
+flowchart TB
+subgraph PKG["Current packaged workflow"]
+direction TB
+  S["[Design sources]<br/>Pinned GDD + 16 original card rows"]:::source
+  R["[Local retrieval]<br/>14 reviewed source packs"]:::source
+  V["[Source and format gate]<br/>Verify pins, evidence and input shape"]:::check
+  G["[Controlled generation]<br/>Source-bound, authored text templates"]:::check
+  O["[Three draft files]<br/>Card text  /  crew dialogue  /  boss rules"]:::check
+  C["[Structure and factual critic]<br/>Compare actual files with source contracts"]:::check
+  A["[Exact repair]<br/>Known source value"]:::check
+  H["[HOLD]<br/>Unknown or unsupported"]:::hold
+  F["[Final re-read and hashes]<br/>Accept only checked file bytes"]:::check
+  T["[Complete WIN and LOSS]<br/>All three outputs drive engine events"]:::check
+  E["[Retained evidence]<br/>Drafts, repairs, actions and terminal results"]:::source
+  S --> V
+  R --> V
+  V --> G
+  G --> O
+  O --> C
+  C -->|supported fix| A
+  A -->|recheck| C
+  C -->|open finding| H
+  C -->|PASS| F
+  F --> T
+  T --> E
+end
+subgraph EXT["External V15 task roles not continuous uptime"]
+direction LR
+  D["[Studio Director]<br/>Decisions and approval gate"]:::codex
+  U["[Codex Runner]<br/>Package and document integration"]:::codex
+  AD["[Art Director]<br/>Chart and visual review"]:::art
+  CA["[Codex Auditor]<br/>Independent code review"]:::codex
+  LD["[Lead Designer]<br/>Game design and tone review"]:::claude
+  AU["[Claude Studio Auditor]<br/>Independent return review"]:::claude
+end
+E -.-> U
+D -.-> U
+AD -.-> U
+CA -.-> U
+LD -.-> U
+AU -.-> U
+classDef source fill:#FAF9F6,stroke:#1A00C2,color:#1A00C2,stroke-width:2px;
+classDef check fill:#FAF9F6,stroke:#00997A,color:#00997A,stroke-width:2px;
+classDef codex fill:#FAF9F6,stroke:#007099,color:#007099,stroke-width:2px;
+classDef art fill:#FAF9F6,stroke:#0990AE,color:#0990AE,stroke-width:2px;
+classDef claude fill:#FAF9F6,stroke:#E08E00,color:#E08E00,stroke-width:2px;
+classDef hold fill:#FAF9F6,stroke:#B04A35,color:#B04A35,stroke-width:2px;

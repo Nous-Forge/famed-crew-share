@@ -1,0 +1,13 @@
+{
+  "name": "famed-crew-share",
+  "private": true,
+  "version": "0.4.1",
+  "scripts": {
+    "generate": "node run-content.cjs",
+    "demo": "node run-content.cjs --demo-faults",
+    "test": "node --test tests/artifact-critic.test.cjs tests/source-connection.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

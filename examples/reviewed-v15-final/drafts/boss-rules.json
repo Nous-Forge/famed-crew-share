@@ -1,0 +1,79 @@
+{
+  "boss": {
+    "name": "Bauglor",
+    "hpPerSeat": 20,
+    "moves": [
+      {
+        "id": "smash",
+        "name": "Smash",
+        "intent": "fist",
+        "effect": {
+          "damage": 6,
+          "targets": "one"
+        }
+      },
+      {
+        "id": "sweep",
+        "name": "Sweep",
+        "intent": "arc",
+        "effect": {
+          "damage": 3,
+          "targets": "all"
+        }
+      },
+      {
+        "id": "roar",
+        "name": "Roar",
+        "intent": "horn",
+        "effect": {
+          "strength": 2
+        }
+      }
+    ],
+    "loop": [
+      "smash",
+      "sweep",
+      "roar"
+    ],
+    "enrage": {
+      "atHpFraction": 0.5,
+      "loop": [
+        "smash",
+        "sweep"
+      ]
+    }
+  },
+  "rules": {
+    "handSize": 5,
+    "energy": 3,
+    "seed": 4107,
+    "maxRounds": 40,
+    "sourceStatus": "Lead Designer digital prototype",
+    "limitations": [
+      "Printed card text is shown separately; executable effects are labeled prototype substitutions.",
+      "HP, energy, reshuffle and fixed damage differ from tabletop deck health/dice.",
+      "Grid, range, Burdens and printed response windows are outside this comparison.",
+      "Local room access only; hosted login partially unverified.",
+      "Dialogue is text only; no recorded or synthetic speech."
+    ]
+  },
+  "sourceStatus": "Provisional Ogre encounter; numerical effects are the labeled digital prototype configuration.",
+  "sourceEvidence": [
+    {
+      "key": "boss.name",
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 421)",
+      "sourceStatus": "Provisional digital encounter; canonical boss identity not verified"
+    },
+    {
+      "key": "crew.roles",
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 453); docs/game-design/FAMED-GDD-source.txt (original GDD line 455); docs/game-design/FAMED-GDD-source.txt (original GDD line 457); docs/game-design/FAMED-GDD-source.txt (original GDD line 459)",
+      "sourceStatus": "Crew roles from the packaged FAMED GDD excerpt"
+    },
+    {
+      "key": "prototype.handSize",
+      "source": "docs/game-design/FAMED-GDD-source.txt (original GDD line 95)",
+      "sourceStatus": "Digital prototype policy; not the tabletop hand limit"
+    }
+  ],
+  "generationMethod": "Structured encounter configuration checked against extracted design facts."
+}

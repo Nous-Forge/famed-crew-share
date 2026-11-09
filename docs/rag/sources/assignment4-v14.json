@@ -1,0 +1,36 @@
+{
+  "originalFilename": "FAMED_Agent_Crew_Report_v14.docx",
+  "originalSha256": "eb3023fa7374f154c0c5e75d858de5e4e8db2ff02b4291987194357a9e99adf4",
+  "passages": [
+    {
+      "quote": "[F.A.M-E.D.] is a co-op exploration, dungeon and deck-building game for 1 to 4 players. This report shows the [agent crew] I built for it: the studio roles, how the agents pass work to each other, the game data they make, the checks they run and a playable [dungeon combat] prototype. It connects nine test builds and my final [gameplay feedback] to create an optimized studio crew idea for the production workflow I plan to use.",
+      "locator": "word/document.xml paragraph 5",
+      "kind": "history"
+    },
+    {
+      "quote": "The agent instructions, the checks and the [runner] script for a six-card test. I can share better details as needed.",
+      "locator": "word/document.xml paragraph 10",
+      "kind": "history"
+    },
+    {
+      "quote": "[crew-diagram.mmd], also drawn in the [README]. This report also shows my hand sketch, the [Test Crew 8] chart and my studio crew chart.",
+      "locator": "word/document.xml paragraph 12",
+      "kind": "history"
+    },
+    {
+      "quote": "Names the game, the output, the crew roles and the folder map, and says what the files can show.",
+      "locator": "word/document.xml paragraph 14",
+      "kind": "history"
+    },
+    {
+      "quote": "A playable dungeon combat prototype from [Test Crew 8], with its card and rule data. I can show it on request. I have not imported it into [Unreal Engine] yet, but tested in Web games and [Godot] successfully.",
+      "locator": "word/document.xml paragraph 16",
+      "kind": "history"
+    },
+    {
+      "quote": "For this report I ran nine [test crews]. Each one used its own workflow [chart] and built the same [Combat] demo (competing with one another for a grade). Each [crew] is numbered in build order, and the Legend names its [chart]. [Test Crew 8] was the winner and its [chart] puts a [format check] before every [other check].",
+      "locator": "word/document.xml paragraph 18",
+      "kind": "history"
+    }
+  ]
+}

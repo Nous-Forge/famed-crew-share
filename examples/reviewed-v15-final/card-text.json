@@ -1,0 +1,467 @@
+[
+  {
+    "id": "SK1_01",
+    "name": "Knockout!",
+    "printedSourceText": "Your attacks deal <bold>double damage</bold> and <bold>stun</bold> this round.",
+    "readablePrintedText": "Your attacks deal double damage and stun this round.",
+    "prototypeText": "Digital prototype: deal 8 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 8
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK1_01",
+      "field": "D_text",
+      "originalRecord": 1
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK2_01",
+    "name": "Onslaught",
+    "printedSourceText": "Party gains +1 <bold>attack damage</bold> this round.",
+    "readablePrintedText": "Party gains +1 attack damage this round.",
+    "prototypeText": "Digital prototype: deal 4 damage. Target: enemy. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 4
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK2_01",
+      "field": "D_text",
+      "originalRecord": 5
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK3_01",
+    "name": "Stand as One",
+    "printedSourceText": "Party can indiv. <bold>defend</bold> 1 attack each per round with a +2 to it for <bold>1 round</bold>.",
+    "readablePrintedText": "Party can indiv. defend 1 attack each per round with a +2 to it for 1 round.",
+    "prototypeText": "Digital prototype: gain 5 block. Target: allies. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "allies",
+    "digitalType": "defend",
+    "digitalEffect": {
+      "block": 5
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.block"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK3_01",
+      "field": "D_text",
+      "originalRecord": 9
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK4_01",
+    "name": "Edan’s Leap",
+    "printedSourceText": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> an attack with <bold>double damage</bold>.",
+    "readablePrintedText": "Move up to 3 straight steps and ignore area effects and obstacles. In combat, if you land adjacent to an enemy, roll an attack with double damage.",
+    "prototypeText": "Digital prototype: deal 6 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 6
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK4_01",
+      "field": "D_text",
+      "originalRecord": 13
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK1_02",
+    "name": "Double Strike",
+    "printedSourceText": "Gain 1 <bold>extra attack</bold> roll this round.",
+    "readablePrintedText": "Gain 1 extra attack roll this round.",
+    "prototypeText": "Digital prototype: deal 6 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 6
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK1_02",
+      "field": "D_text",
+      "originalRecord": 2
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK2_02",
+    "name": "Sprinted Pace",
+    "printedSourceText": "Party may individually move 1 tile and prevent all imminent <bold>area effects</bold>.",
+    "readablePrintedText": "Party may individually move 1 tile and prevent all imminent area effects.",
+    "prototypeText": "Digital prototype: gain 4 block. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "defend",
+    "digitalEffect": {
+      "block": 4
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.block"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK2_02",
+      "field": "D_text",
+      "originalRecord": 6
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK3_02",
+    "name": "Shadow Hide",
+    "printedSourceText": "You prevent being targeted by any <bold>attack</bold> or <bold>direct combat effects</bold> for <bold>1 round</bold>.",
+    "readablePrintedText": "You prevent being targeted by any attack or direct combat effects for 1 round.",
+    "prototypeText": "Digital prototype: gain 6 block. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "defend",
+    "digitalEffect": {
+      "block": 6
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.block"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK3_02",
+      "field": "D_text",
+      "originalRecord": 10
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK4_02",
+    "name": "Firstborn Step",
+    "printedSourceText": "Move up to 3 straight steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, <italic>roll</italic> 2 attacks.",
+    "readablePrintedText": "Move up to 3 straight steps and ignore area effects and obstacles. In combat, if you land adjacent to an enemy, roll 2 attacks.",
+    "prototypeText": "Digital prototype: deal 5 damage. Target: enemy. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 5
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK4_02",
+      "field": "D_text",
+      "originalRecord": 14
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK1_03",
+    "name": "Mental Push",
+    "printedSourceText": "Draw 3 cards from {{ game.vars.cardIcon_type_reward }}. Choose 2 drawn to shuffle back into the {{ game.vars.cardIcon_type_reward }}.",
+    "readablePrintedText": "Draw 3 cards from {{ game.vars.cardIcon_type_reward }}. Choose 2 drawn to shuffle back into the {{ game.vars.cardIcon_type_reward }}.",
+    "prototypeText": "Digital prototype: draw 3 cards. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 3
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK1_03",
+      "field": "D_text",
+      "originalRecord": 3
+    },
+    "unresolvedSourceTokens": [
+      "{{ game.vars.cardIcon_type_reward }}",
+      "{{ game.vars.cardIcon_type_reward }}"
+    ],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK2_03",
+    "name": "Motivate Will",
+    "printedSourceText": "Choose a character to: Draw 1 {{ game.vars.cardIcon_type_reward }}, <italic>reroll</italic> an attack and defense, and move +1 tile this round.",
+    "readablePrintedText": "Choose a character to: Draw 1 {{ game.vars.cardIcon_type_reward }}, reroll an attack and defense, and move +1 tile this round.",
+    "prototypeText": "Digital prototype: draw 1 card. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 1
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK2_03",
+      "field": "D_text",
+      "originalRecord": 7
+    },
+    "unresolvedSourceTokens": [
+      "{{ game.vars.cardIcon_type_reward }}"
+    ],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK3_03",
+    "name": "Inspired Resolution",
+    "printedSourceText": "Characters can: both attack and defend each turn for <bold>1 round</bold>. <italic>Reroll</italic> each combat dice and pick the best result.",
+    "readablePrintedText": "Characters can: both attack and defend each turn for 1 round. Reroll each combat dice and pick the best result.",
+    "prototypeText": "Digital prototype: gain 4 block. Target: allies. Cost: 2 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 2,
+    "digitalTarget": "allies",
+    "digitalType": "defend",
+    "digitalEffect": {
+      "block": 4
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.block"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK3_03",
+      "field": "D_text",
+      "originalRecord": 11
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK4_03",
+    "name": "Language of the Land",
+    "printedSourceText": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 {{ game.vars.cardIcon_type_reward }} and ignore any direct attacks for <bold>1 round</bold>.",
+    "readablePrintedText": "Move up to 3 steps and ignore area effects and obstacles. In combat, if you land adjacent to an enemy, draw 2 {{ game.vars.cardIcon_type_reward }} and ignore any direct attacks for 1 round.",
+    "prototypeText": "Digital prototype: draw 2 cards. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 2
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK4_03",
+      "field": "D_text",
+      "originalRecord": 15
+    },
+    "unresolvedSourceTokens": [
+      "{{ game.vars.cardIcon_type_reward }}"
+    ],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK1_04",
+    "name": "Salvage Resources",
+    "printedSourceText": "Shuffle any 3 cards from your <bold>R.F.D. pile</bold> back into your deck.",
+    "readablePrintedText": "Shuffle any 3 cards from your R.F.D. pile back into your deck.",
+    "prototypeText": "Digital prototype: draw 3 cards. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 3
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK1_04",
+      "field": "D_text",
+      "originalRecord": 4
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK2_04",
+    "name": "Field Adjust",
+    "printedSourceText": "Choose an enemy miniature or a trap tile. Move it 1 step in any of its adjacent directions.",
+    "readablePrintedText": "Choose an enemy miniature or a trap tile. Move it 1 step in any of its adjacent directions.",
+    "prototypeText": "Digital prototype: deal 3 damage. Target: enemy. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "enemy",
+    "digitalType": "attack",
+    "digitalEffect": {
+      "damage": 3
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target",
+      "effect.damage"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK2_04",
+      "field": "D_text",
+      "originalRecord": 8
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK3_04",
+    "name": "Contagious Cunning",
+    "printedSourceText": "Party indv. <italic>draws</italic> 1 card from <bold>discard pile</bold> or <bold>R.F.D.</bold> every time a character <bold>attack</bold> or <bold>defend</bold> for <bold>1 round</bold>.",
+    "readablePrintedText": "Party indv. draws 1 card from discard pile or R.F.D. every time a character attack or defend for 1 round.",
+    "prototypeText": "Digital prototype: draw 1 card. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 1
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK3_04",
+      "field": "D_text",
+      "originalRecord": 12
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  },
+  {
+    "id": "SK4_04",
+    "name": "Crafty Vault",
+    "printedSourceText": "Move up to 3 steps and ignore <bold>area effects and obstacles</bold>. In combat, if you land adjacent to an enemy, draw 2 from <bold>discard</bold> or <bold>R.D.F.</bold> and ignore any direct attacks for <bold>1 round</bold>.",
+    "readablePrintedText": "Move up to 3 steps and ignore area effects and obstacles. In combat, if you land adjacent to an enemy, draw 2 from discard or R.D.F. and ignore any direct attacks for 1 round.",
+    "prototypeText": "Digital prototype: draw 2 cards. Target: self. Cost: 1 energy. These simplified effects do not replace the printed rules.",
+    "digitalCost": 1,
+    "digitalTarget": "self",
+    "digitalType": "skill",
+    "digitalEffect": {
+      "draw": 2
+    },
+    "prototypeFields": [
+      "cost",
+      "type",
+      "target"
+    ],
+    "sourceStatus": "Original printed Dungeon text preserved; digital fields are separately labeled prototype adaptations.",
+    "sourceEvidence": {
+      "path": "docs/game-design/cards-source.json",
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "id": "SK4_04",
+      "field": "D_text",
+      "originalRecord": 16
+    },
+    "unresolvedSourceTokens": [],
+    "generationMethod": "Source text normalization plus explicit prototype effect templates; unresolved source variables remain visible."
+  }
+]

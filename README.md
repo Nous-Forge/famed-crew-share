@@ -1,67 +1,52 @@
-# F.A.M-E.D. card crew (Assignment 3)
+# F.A.M-E.D. content pipeline
 
-This repository holds the agent crew for **F.A.M-E.D.**, my co-op deck-building dungeon crawler. Game page: https://pierofolly.crafts.games/f-a-m-e-d/
+Fire Age Main-Eterra Dungeoneers is my cooperative exploration and deck-building game for one to four players. This [\[pipeline\]](content-pipeline/shared/run-pipeline.v4.cjs) makes combat content from the game design. It checks the files before the game uses them.
 
-Report (PDF): [FAMED_Assignment3_Agent_Crew_Report.pdf](FAMED_Assignment3_Agent_Crew_Report.pdf)
+Read the [\[Crew Report 15 PDF\]](docs/FAMED_Agent_Crew_Report_v15.pdf) or [\[Word copy\]](docs/FAMED_Agent_Crew_Report_v15.docx). The report includes both current workflow charts and the dated historical evidence.
 
-## What the crew produces
+## Run the pipeline
 
-The crew turns six printed skill cards (SK1_01, SK1_02, SK1_03, SK1_04, SK3_01, SK4_01) into game-ready card data. The planned output is `DT_Cards.csv`, one row per card. The F.A.M-E.D. Unreal Engine data table `DT_Cards` will read the file. A `qa-report.md` comes with it.
+Use Node.js 20 or later. You do not need an account, API key or package installation.
 
-## The crew
-
-| Agent | Job | If removed |
-|---|---|---|
-| Card Data (`agents/card-data.md`) | Extracts the exact card fields from the pinned sources | No rows, the pack is refused |
-| Rule Audit (`agents/rule-audit.md`) | Checks the rows against the game rules on its own | No rule result, the pack is refused |
-| Print Match (`agents/print-match.md`) | Reads the printed card images blind, then compares | No blind read, the pack is refused |
-| Orchestrator (`run_crew.py`) | Only writer of files. Builds each agent's packet and enforces call and token caps. This copy has no live model connection | No run |
-| Validator (`validate.py`) | Checks sources, schema and the blind read before any CSV is released | No CSV release |
-
-## Diagram
-
-```mermaid
-flowchart LR
-  O[Orchestrator verifies pinned sources and global caps]
-  subgraph DataStage[Card Data stage]
-    D[Card Data] --> DF{FORMAT check}
-    DF -->|retry remaining| D
-  end
-  subgraph AuditStage[Rule Audit stage]
-    A[Rule Audit] --> AF{FORMAT check}
-    AF -->|retry remaining| A
-  end
-  subgraph PrintStage[Print Match stage]
-    P[Print Match, first blind read kept] --> PF{FORMAT check}
-    PF -->|retry remaining| P
-  end
-  O -->|pinned source packet| D
-  O -->|pinned source packet| A
-  DF -->|accepted rows| A
-  O -->|only images, IDs and names| P
-  DF -->|accepted data| V[Final source, rule and print validation]
-  AF -->|accepted audit| V
-  PF -->|accepted blind read| V
-  DF -->|exhausted| S[Stop, keep diagnostics]
-  AF -->|exhausted| S
-  PF -->|exhausted| S
-  V -->|failure| S
-  V -->|eligible validated rows| C[DT_Cards.csv and QA report]
+```sh
+node run-content.cjs
 ```
 
-The full diagram, with the QA-only branch and my three review gates, is in `crew-diagram.mmd`.
+The command shows the new output folder. It keeps the first drafts, checked files and [\[critic report\]](examples/reviewed-v15-final/critic-trace.json). It does not change earlier runs.
 
-## How it works
+| Output | Game use |
+|---|---|
+| [\[Card text\]](examples/reviewed-v15-final/card-text.json) | 16 skill cards, with printed rules and separate digital effects |
+| [\[Crew dialogue\]](examples/reviewed-v15-final/crew-dialogue.json) | Four roles, with lines for start, play, injury and victory |
+| [\[Boss rules\]](examples/reviewed-v15-final/boss-rules.json) | The provisional Ogre encounter and digital combat rules |
 
-- By design, each agent sees only the packet the orchestrator builds, and Print Match never sees the other agents' output. In my fresh run, the workers were told to read only their packet or images. That was an instruction, not a locked sandbox.
-- A stage that fails its format check retries up to 3 times. Global caps: 10 calls, 400,000 tokens.
-- Source or rule failures stop the run for review. They never retry.
-- Files: `agents/` (agent instructions), `schema/` (row contract and the three stage schemas), `run_crew.py`, `validate.py`, `packet_support.py`, `source_policy.py`.
+Use the output folder in this command:
 
-## Evidence in this repository
+```sh
+node content-pipeline/shared/full-fight-consumer.cjs "PATH_TO_RUN"
+```
 
-`sample-run/` holds the log and QA report of one offline replay from 28 October 2026. It used made-up test answers and made 0 model calls. It is an old record of the pipeline, not a test of the current code. I reworded the QA report text for this copy. I approved no release.
+The command runs one winning fight and one losing fight. It uses all three output files. The [\[fight record\]](examples/reviewed-v15-final/complete-fights.json) shows card plays, boss actions, dialogue and all four crew perks. This is an engine test. It is not a human or multiplayer test.
 
-## What is not here
+## Check and repair errors
 
-The pinned source texts (game rules, design document, card sheets and card images) are withheld. They are my unpublished design work. In this copy every mode of `run_crew.py` stops before any agent step. Replay stops at a missing fixture file. Dry run, canary and stop demo stop on a local error. The skip demo stops on its skipped stage. Live mode has no model connection by design. I tested all six modes. Ask me for a walkthrough or a screen share of a full run.
+```sh
+node run-content.cjs --demo-faults
+```
+
+This test adds four errors to the draft files. The [\[critic\]](content-pipeline/shared/run-pipeline.v4.cjs) finds the wrong boss, false card text, a false tooltip and unsupported loot dialogue. It changes “Count the crew before the spoils” to “Count the crew. Check the reserves.” The [\[repair record\]](examples/reviewed-v15-final/repairs.json) keeps the changes. The [\[final check\]](examples/reviewed-v15-final/critic-after.json) contains 377 checks. The normal command does not add test errors.
+
+## Use the design sources
+
+The pipeline checks the GDD and card records first. [\[Retrieval\]](content-pipeline/shared/rag-retrieval.cjs) searches 14 reviewed source packs. The [\[source manifest\]](docs/rag/source-manifest.json) identifies each pack. Retrieved quotes, locations and file hashes stay in the record.
+
+The Captain says, “On my mark. We act together.” This follows the leadership direction in GDD line 461 and identity row 453. See the [\[role evidence\]](examples/reviewed-v15-final/crew-dialogue.json). Retrieved role directions select fixed text templates. The Lead Designer reviewed their tone against the game design. No live model call occurs. Unknown claims stop the run for review. Digital effects are simplified adaptations of the printed rules. Private source files stay private.
+
+```sh
+node --test tests/artifact-critic.test.cjs tests/source-connection.test.cjs
+node tests/v15-integrated-verification.cjs
+```
+
+Read the [\[detailed guide\]](README.detailed-v15.md) for source limits. [\[Crew Report 14B\]](docs/FAMED_Agent_Crew_Report_v14B.pdf) describes the earlier nine test crews and historical studio chart.
+
+Copyright 2026 Piero L. S. Folly, Khi-Rho Studios.

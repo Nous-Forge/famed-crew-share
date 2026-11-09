@@ -1,0 +1,541 @@
+{
+  "kind": "Exact additive public release allowlist; existing public history preserved",
+  "pdfSha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741",
+  "files": [
+    {
+      "path": "content-consumer.cjs",
+      "bytes": 2397,
+      "sha256": "0ba253ee7e112cb6564509bc8b8791575008fd175acb3d95c97d2044f432e62d"
+    },
+    {
+      "path": "content-pipeline/shared/artifact-critic.cjs",
+      "bytes": 11581,
+      "sha256": "3abadc26aa2cf20a3fa5a92674d51858ebf2ae491523b08585d386c557bc84c6"
+    },
+    {
+      "path": "content-pipeline/shared/content.v2.json",
+      "bytes": 45773,
+      "sha256": "e10b9b8e190d76f7b763c363f1276aea1c0dabd98da963bdb94a3997f7c02d53"
+    },
+    {
+      "path": "content-pipeline/shared/full-fight-consumer.cjs",
+      "bytes": 9268,
+      "sha256": "1d09cc1a723cd7e675ca430347967a9a759a347aaf2baaf1ba913ae459fd6c0f"
+    },
+    {
+      "path": "content-pipeline/shared/generate-content.cjs",
+      "bytes": 3646,
+      "sha256": "0c71e681297cc9309a8e7b02f7afe55d24884aeff5a379bd68be5db6960aaba3"
+    },
+    {
+      "path": "content-pipeline/shared/load-runtime-context.cjs",
+      "bytes": 1171,
+      "sha256": "11bee1b6a54887378c2e50e2bee3a437c63728ddb00586e621ce336eab9c8d7f"
+    },
+    {
+      "path": "content-pipeline/shared/pipeline.js",
+      "bytes": 2950,
+      "sha256": "c53c2a0e29a08a997d0a7cfab25ae844db2eddc07a644219eb04b8a6d1d012b2"
+    },
+    {
+      "path": "content-pipeline/shared/pipeline.v2.js",
+      "bytes": 2676,
+      "sha256": "d811d02918b5bb3ebd1ab65a230c78972c46e54c96e785fbac444dfc052eb26c"
+    },
+    {
+      "path": "content-pipeline/shared/rag-retrieval.cjs",
+      "bytes": 3616,
+      "sha256": "9a0be3268f35f07129303696f35fcc8dc3b2ed9b64b4157a9af40298fa1755f6"
+    },
+    {
+      "path": "content-pipeline/shared/run-pipeline.v2.cjs",
+      "bytes": 2550,
+      "sha256": "4c2041e6cc172285d649a655cdec58f40f1e7187737eb3690ec144a4fe02657d"
+    },
+    {
+      "path": "content-pipeline/shared/run-pipeline.v3.cjs",
+      "bytes": 3902,
+      "sha256": "04020aeb0932bd3aec5bacedbebe599335a5bf7432f683ef60626c05ebb4352a"
+    },
+    {
+      "path": "content-pipeline/shared/run-pipeline.v4.cjs",
+      "bytes": 4819,
+      "sha256": "cc33e3c54174b40b5c551f2b0a3cbdc63d6217854d373982344fd074e7076a33"
+    },
+    {
+      "path": "content-pipeline/shared/semantic-text.cjs",
+      "bytes": 10067,
+      "sha256": "7faf6fb76546b51437e8ec0942651b3e7494ff37c572fd689dccb82101b9bd1c"
+    },
+    {
+      "path": "content-pipeline/shared/source-connection.cjs",
+      "bytes": 6826,
+      "sha256": "cbf18351a727326431739be62f659671acb4bd54db42a35a6e2e6553eff0e2f7"
+    },
+    {
+      "path": "content-pipeline/snippets/combat-engine.js",
+      "bytes": 12732,
+      "sha256": "5fa19446273238d0f7118569c2217ee3f2458b834831f8da2d766ca0ec2d11ee"
+    },
+    {
+      "path": "content-pipeline/snippets/combat-engine.v2.js",
+      "bytes": 27905,
+      "sha256": "a154f90f26a3fb0500574293eb6fb735eb9c7038d9a364a649c1ba432a6bc966"
+    },
+    {
+      "path": "docs/content-provenance.md",
+      "bytes": 2826,
+      "sha256": "a68ec99d1cefbfd87dae49d9f635cfa66f33b537fb9708beb731a339076dbe67"
+    },
+    {
+      "path": "docs/FAMED_Agent_Crew_Report_v14B.docx",
+      "bytes": 3373705,
+      "sha256": "e43c14108d479bc6ee3f3c48ff678cf7d6532c75069a45af56b6ce1d36da50b7"
+    },
+    {
+      "path": "docs/FAMED_Agent_Crew_Report_v14B.pdf",
+      "bytes": 1130617,
+      "sha256": "77880f53f52b938a5292fe9243b652efa57f4e868f5c0e9af2083bfa38da15f9"
+    },
+    {
+      "path": "docs/FAMED_Agent_Crew_Report_v15.docx",
+      "bytes": 3995575,
+      "sha256": "1799b4f5c219c56891026bd5dc10238eadb8b5969e8236a038550d29afd0ab91"
+    },
+    {
+      "path": "docs/FAMED_Agent_Crew_Report_v15.pdf",
+      "bytes": 1890250,
+      "sha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741"
+    },
+    {
+      "path": "docs/game-design/cards-source.json",
+      "bytes": 26540,
+      "sha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065"
+    },
+    {
+      "path": "docs/game-design/content-contract.json",
+      "bytes": 3660,
+      "sha256": "487ad3e2d049acc49d19455447064725017bc831a525915e4f07114174ee615d"
+    },
+    {
+      "path": "docs/game-design/FAMED-GDD-source.txt",
+      "bytes": 2899,
+      "sha256": "166131125f9cc8fec8c73c393e37d8b19a6735b935348e856db1acb93adb7660"
+    },
+    {
+      "path": "docs/rag/source-manifest.json",
+      "bytes": 9163,
+      "sha256": "35dc7d35b573d4f384fcd49517dd86aea296b2a3e6118b884b5f199c478eb05f"
+    },
+    {
+      "path": "docs/rag/sources/assignment3-v11.json",
+      "bytes": 2085,
+      "sha256": "ecf06285a7f1682e56ee19f00fec0c14b895050f9e3b6a0d6cbf722b50da1986"
+    },
+    {
+      "path": "docs/rag/sources/assignment3-v12.json",
+      "bytes": 2132,
+      "sha256": "86e5dbd0a55bfdf9821d0461d304f4e66b2e76db6a24e2db03aa7680fa86d3fa"
+    },
+    {
+      "path": "docs/rag/sources/assignment3-v13.json",
+      "bytes": 2120,
+      "sha256": "0646a92d7b56c8d63ae3b9e744e7aba6afe82d78b63af3430cb2f52665092699"
+    },
+    {
+      "path": "docs/rag/sources/assignment4-v14.json",
+      "bytes": 2120,
+      "sha256": "46b7a93b082e7cbef43aaf8d47164fc4ce802ee08cbf7fdc7e1a4e7c04eedbcd"
+    },
+    {
+      "path": "docs/rag/sources/assignment4-v14b.json",
+      "bytes": 2121,
+      "sha256": "117868eb4dd4d681c47a4e8184fdcddd7968b07ad2a63bff6d76e818cd007a94"
+    },
+    {
+      "path": "docs/rag/sources/current-cards.json",
+      "bytes": 4556,
+      "sha256": "f1b786a424449f68a3dcfcf6f644ecbde153ba5f93f326ee4dede45d28547b6f"
+    },
+    {
+      "path": "docs/rag/sources/current-gdd.json",
+      "bytes": 4142,
+      "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c"
+    },
+    {
+      "path": "docs/rag/sources/design-draft1.json",
+      "bytes": 3035,
+      "sha256": "9c234a1aff66dd90bb9be2f05d3630c3e5db8350a6dbb7b9852566c4aaeddfda"
+    },
+    {
+      "path": "docs/rag/sources/design-draft2.json",
+      "bytes": 3135,
+      "sha256": "facac1d827c173e440701dbe95ec8fdda9464262046cff728bb93e5a205b2218"
+    },
+    {
+      "path": "docs/rag/sources/full-gdd-v8.json",
+      "bytes": 3136,
+      "sha256": "47faa72aeaf5e8edacb72d527ffa748b8ac9fb8fcdc6b063e948bc16864c0906"
+    },
+    {
+      "path": "docs/rag/sources/gds-original-cards.json",
+      "bytes": 4673,
+      "sha256": "3a28b3964bde1602c061884fd1556b1db3ef92f0ff5b292b23b9e109c28dc02d"
+    },
+    {
+      "path": "docs/rag/sources/gds-prototype.json",
+      "bytes": 3601,
+      "sha256": "533d017c7f6f436f0a24523dd925ce721a060ff5972e58ad5c4afcaa68e755cf"
+    },
+    {
+      "path": "docs/rag/sources/gds-rulebook-intro.json",
+      "bytes": 2718,
+      "sha256": "a982ad0fef0224c9b874775352ade9512697ce0134a00e6469c9e5e71450e1ad"
+    },
+    {
+      "path": "docs/rag/sources/gds-rules.json",
+      "bytes": 2585,
+      "sha256": "b8c1d37ecaf12f88c399f4db7e9d118586b10a852a0767c3aa4ce3d18ca6437e"
+    },
+    {
+      "path": "docs/v15-studio-roles.mmd",
+      "bytes": 2304,
+      "sha256": "4dec68829cb17b579788f5079ad873119bd29b4135f1d92626bb1998ef2a19f9"
+    },
+    {
+      "path": "docs/v15-studio-roles.png",
+      "bytes": 384233,
+      "sha256": "cd8baa02f8baed50efa4a75a54fe96d8485c4d3ecd4058107c6fb691cc9c24fa"
+    },
+    {
+      "path": "docs/v15-studio-roles.svg",
+      "bytes": 9997,
+      "sha256": "a59d2126101a70ce0835cc708989b67cc31200957d60198317068148cfbd5471"
+    },
+    {
+      "path": "docs/v15-workflow.mmd",
+      "bytes": 2211,
+      "sha256": "30a87e6c00df1aa4c0bc87115ab218208db4917615a0a23b76d222de880c5df2"
+    },
+    {
+      "path": "docs/v15-workflow.png",
+      "bytes": 379375,
+      "sha256": "c3a813243480326f54af1acb1674ddde58cacc3af36f8f3bf19d0f4eefa0a897"
+    },
+    {
+      "path": "docs/v15-workflow.svg",
+      "bytes": 10300,
+      "sha256": "5cde426d7d0f782186336242eb8dfa684cd890e3c9a847379c9480c849f7a308"
+    },
+    {
+      "path": "examples/content/boss-rules.json",
+      "bytes": 1753,
+      "sha256": "582bf39346427992467fcac41538c9bc2c03ef6dc3e868607bcdffdfa17570e3"
+    },
+    {
+      "path": "examples/content/card-text.json",
+      "bytes": 33355,
+      "sha256": "77344b9dc1fd2eb38afddebfacf2090a43e0b73b0b2ebb0dbbef3b75319c15b3"
+    },
+    {
+      "path": "examples/content/crew-dialogue.json",
+      "bytes": 1748,
+      "sha256": "895d13b085bb23ebb84f6d2cfed5bf6a872c01477c1c94597811f680ed50c9c4"
+    },
+    {
+      "path": "examples/content/critic-trace.json",
+      "bytes": 5816,
+      "sha256": "1e09f37a655dba92977f69e7ad6c85e7c3bfbebac0af8295933982dbb6eec1cf"
+    },
+    {
+      "path": "examples/reviewed-content/boss-rules.json",
+      "bytes": 2363,
+      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    {
+      "path": "examples/reviewed-content/card-text.json",
+      "bytes": 20169,
+      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
+    },
+    {
+      "path": "examples/reviewed-content/crew-dialogue.json",
+      "bytes": 3004,
+      "sha256": "0c707cd03a8b4db9454a2acfcb58736a9ec0e830da6ecf6956bf3ee6ce57bd46"
+    },
+    {
+      "path": "examples/reviewed-content/critic-after.json",
+      "bytes": 314,
+      "sha256": "a971d37b946ac1fcc0d68fddd4e8c21a366008ac3fe83b0dedc05e335536a79a"
+    },
+    {
+      "path": "examples/reviewed-content/critic-before.json",
+      "bytes": 1599,
+      "sha256": "66a8cc998fc6f99ee3030b0573936847b02e41411cbbd04c0b8a8e58040bac97"
+    },
+    {
+      "path": "examples/reviewed-content/critic-trace.json",
+      "bytes": 7474,
+      "sha256": "c68374cbfd97ef3677337230e3a39fe164a6a2ddf8cac11cdbd65003892f71eb"
+    },
+    {
+      "path": "examples/reviewed-content/drafts/boss-rules.json",
+      "bytes": 2366,
+      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
+    },
+    {
+      "path": "examples/reviewed-content/drafts/card-text.json",
+      "bytes": 20136,
+      "sha256": "c717007d8d901f9dbd8b14b6a94f9bf77c8bda9a12807d8bf767b372596fa352"
+    },
+    {
+      "path": "examples/reviewed-content/drafts/crew-dialogue.json",
+      "bytes": 3004,
+      "sha256": "0c707cd03a8b4db9454a2acfcb58736a9ec0e830da6ecf6956bf3ee6ce57bd46"
+    },
+    {
+      "path": "examples/reviewed-content/engine-consumption.json",
+      "bytes": 760,
+      "sha256": "c1f927b63380e9fd421b96958719ad8ffdf8cac1dab829f3fc838b26c696a278"
+    },
+    {
+      "path": "examples/reviewed-content/repairs.json",
+      "bytes": 782,
+      "sha256": "25501202c468f2293679a3d7e7618d992c3e544dad714db5df77758c82b7d5b7"
+    },
+    {
+      "path": "examples/reviewed-v15/boss-rules.json",
+      "bytes": 2363,
+      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    {
+      "path": "examples/reviewed-v15/card-text.json",
+      "bytes": 20169,
+      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
+    },
+    {
+      "path": "examples/reviewed-v15/complete-fights.json",
+      "bytes": 77524,
+      "sha256": "cf523fa29260da18e029b91326f7b7898c84dc927f12d20c130b8fb9e67c06aa"
+    },
+    {
+      "path": "examples/reviewed-v15/crew-dialogue.json",
+      "bytes": 8267,
+      "sha256": "e9ec313c8d51658e4bdd9a5dc2b9d30c5f78df17faa61d1d63d428ccc4122cfd"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-after.json",
+      "bytes": 756,
+      "sha256": "af8d3a0622d83edcc613106200aa3d747cffead80f67f81de85019e534969508"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-before.json",
+      "bytes": 7058,
+      "sha256": "e46ec0777b64972c374403e98c2cfa11e145b71caf80d672a97a177c611325bc"
+    },
+    {
+      "path": "examples/reviewed-v15/critic-trace.json",
+      "bytes": 25015,
+      "sha256": "b18e8bf46aeeaf8d20b06aa963045afe3d32ff652bdcdb9e08a64b30f97f98d3"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/boss-rules.json",
+      "bytes": 2366,
+      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/card-text.json",
+      "bytes": 20048,
+      "sha256": "19912acd61ed52dfbe93c5e75b349d92924677ccc7fafe7b471fe896636db871"
+    },
+    {
+      "path": "examples/reviewed-v15/drafts/crew-dialogue.json",
+      "bytes": 8265,
+      "sha256": "f2a77777553de41f5e233aa56a0ddff22009018c76845f753d1aa105ce7063e2"
+    },
+    {
+      "path": "examples/reviewed-v15/F1-read-binding-regression.json",
+      "bytes": 488,
+      "sha256": "60c1fbded4d1c2e33cabc48ff5cf7634c46d4965967c3d05a6b0066c5842347f"
+    },
+    {
+      "path": "examples/reviewed-v15/repairs.json",
+      "bytes": 2300,
+      "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
+    },
+    {
+      "path": "examples/reviewed-v15-final/boss-rules.json",
+      "bytes": 2363,
+      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    {
+      "path": "examples/reviewed-v15-final/card-text.json",
+      "bytes": 20169,
+      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
+    },
+    {
+      "path": "examples/reviewed-v15-final/complete-fights.json",
+      "bytes": 77508,
+      "sha256": "9c34588f09ccd877e5003f94c4364613a9d5e0416aa4b8c66f140c91b6bff1a9"
+    },
+    {
+      "path": "examples/reviewed-v15-final/crew-dialogue.json",
+      "bytes": 8251,
+      "sha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+    },
+    {
+      "path": "examples/reviewed-v15-final/critic-after.json",
+      "bytes": 756,
+      "sha256": "af8d3a0622d83edcc613106200aa3d747cffead80f67f81de85019e534969508"
+    },
+    {
+      "path": "examples/reviewed-v15-final/critic-before.json",
+      "bytes": 7058,
+      "sha256": "e46ec0777b64972c374403e98c2cfa11e145b71caf80d672a97a177c611325bc"
+    },
+    {
+      "path": "examples/reviewed-v15-final/critic-trace.json",
+      "bytes": 25015,
+      "sha256": "c98505c21a54829d8afb90d5510fb3d2bf6624a495cfff998d593d4aa7140687"
+    },
+    {
+      "path": "examples/reviewed-v15-final/drafts/boss-rules.json",
+      "bytes": 2366,
+      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
+    },
+    {
+      "path": "examples/reviewed-v15-final/drafts/card-text.json",
+      "bytes": 20048,
+      "sha256": "19912acd61ed52dfbe93c5e75b349d92924677ccc7fafe7b471fe896636db871"
+    },
+    {
+      "path": "examples/reviewed-v15-final/drafts/crew-dialogue.json",
+      "bytes": 8249,
+      "sha256": "f6d5e51e71d438f0a7536fb54de64e8e87592bbf46505d3cd92396f1fd86073e"
+    },
+    {
+      "path": "examples/reviewed-v15-final/repairs.json",
+      "bytes": 2300,
+      "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
+    },
+    {
+      "path": "package.json",
+      "bytes": 326,
+      "sha256": "2c4a96b5cc8efc16888f67d987e9bb6f8056fbd2e54de1ed11c9de3ea9f1b868"
+    },
+    {
+      "path": "README.detailed-v15.md",
+      "bytes": 8322,
+      "sha256": "714da513fed505f1546ed3fde26f04298f9d5aecc31073f97bc8bfe0b54d6cf2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3501,
+      "sha256": "be5cdcb76e0b567ae67aa4a1581f238cf31cb7f077ac19c58719d28ed9571cd2"
+    },
+    {
+      "path": "run-content.cjs",
+      "bytes": 72,
+      "sha256": "f998057ffa2eebb31ef2f6dc4d93de0b82d8ab5176f8d9728cd372797b8f220f"
+    },
+    {
+      "path": "tests/artifact-critic.test.cjs",
+      "bytes": 5103,
+      "sha256": "fec3c3519f86cefa9120924c353b788881f2ffbbb82712a6c3930bb8c9282415"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/current-gdd-pack-before.json",
+      "bytes": 4142,
+      "sha256": "f9b42b93d3d7d76a91c7a2ff165a7be94792b98173d959c388f80b9bb10ce24c"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/FAMED-GDD-source.fixture.txt",
+      "bytes": 2885,
+      "sha256": "6e702eaf0a427235fe59f645894c5addb5ad9e892860a57a4193e2f4ade7fd46"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/source-manifest.json",
+      "bytes": 9861,
+      "sha256": "198f1aed99927f12e7472ad550edfbb2de0479c59f62e40f2dc3b8b842cd556b"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/assignment3-v11.json",
+      "bytes": 2085,
+      "sha256": "ecf06285a7f1682e56ee19f00fec0c14b895050f9e3b6a0d6cbf722b50da1986"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/assignment3-v12.json",
+      "bytes": 2132,
+      "sha256": "86e5dbd0a55bfdf9821d0461d304f4e66b2e76db6a24e2db03aa7680fa86d3fa"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/assignment3-v13.json",
+      "bytes": 2120,
+      "sha256": "0646a92d7b56c8d63ae3b9e744e7aba6afe82d78b63af3430cb2f52665092699"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/assignment4-v14.json",
+      "bytes": 2120,
+      "sha256": "46b7a93b082e7cbef43aaf8d47164fc4ce802ee08cbf7fdc7e1a4e7c04eedbcd"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/assignment4-v14b.json",
+      "bytes": 2121,
+      "sha256": "117868eb4dd4d681c47a4e8184fdcddd7968b07ad2a63bff6d76e818cd007a94"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/current-cards.json",
+      "bytes": 4556,
+      "sha256": "f1b786a424449f68a3dcfcf6f644ecbde153ba5f93f326ee4dede45d28547b6f"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/current-gdd.json",
+      "bytes": 4240,
+      "sha256": "0a612f87ca1c0713aa71b86fba6e21e456f6d9058d1988183f2e15ae16dfd967"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/design-draft1.json",
+      "bytes": 3035,
+      "sha256": "9c234a1aff66dd90bb9be2f05d3630c3e5db8350a6dbb7b9852566c4aaeddfda"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/design-draft2.json",
+      "bytes": 3135,
+      "sha256": "facac1d827c173e440701dbe95ec8fdda9464262046cff728bb93e5a205b2218"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/full-gdd-v8.json",
+      "bytes": 3136,
+      "sha256": "47faa72aeaf5e8edacb72d527ffa748b8ac9fb8fcdc6b063e948bc16864c0906"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/gds-original-cards.json",
+      "bytes": 4673,
+      "sha256": "3a28b3964bde1602c061884fd1556b1db3ef92f0ff5b292b23b9e109c28dc02d"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/gds-prototype.json",
+      "bytes": 3601,
+      "sha256": "533d017c7f6f436f0a24523dd925ce721a060ff5972e58ad5c4afcaa68e755cf"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/gds-rulebook-intro.json",
+      "bytes": 2718,
+      "sha256": "a982ad0fef0224c9b874775352ade9512697ce0134a00e6469c9e5e71450e1ad"
+    },
+    {
+      "path": "tests/fixtures/captain-calm-final14/sources/gds-rules.json",
+      "bytes": 2585,
+      "sha256": "b8c1d37ecaf12f88c399f4db7e9d118586b10a852a0767c3aa4ce3d18ca6437e"
+    },
+    {
+      "path": "tests/source-connection.test.cjs",
+      "bytes": 1836,
+      "sha256": "3b176004dbac4e5f87a17b6ec020d43e5fba4051f770ae74e45c8ac3ccd19ba7"
+    },
+    {
+      "path": "tests/v15-integrated-verification.cjs",
+      "bytes": 3406,
+      "sha256": "4c0d903a820c78db25951b847d05a06c4ee86f2b36599eb236475db3d6871148"
+    }
+  ]
+}

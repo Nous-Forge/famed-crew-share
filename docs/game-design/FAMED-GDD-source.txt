@@ -1,0 +1,33 @@
+FAMED game design source excerpt
+Source: FAMED_Assignment4_GDD_v8_review.txt
+Preserved source passages; original line numbers appear below.
+
+Original line 5
+F.A.M-E.D. is Fire Age Main-Eterra Dungeoneers, a cooperative exploration and deck-building combat game. Four Dungeoneers combine distinct roles, cards and checks. The long-term design connects Combat, Dungeon Crawl and Landscape Exploration. Assignment 4 develops a smaller combat demo called F.A.M-E.D.: Ogre Fight.
+
+Original line 95
+The shared screen puts the board in the center, the Ogre and its intent above it, the four crew portraits along the lower board edge and a five-card fan at the bottom. The right-side log has Combat log, Rules and Prototype policy tabs. HP, block and energy show as numbers. A second target click is needed only when a meaningful choice exists.
+
+Original line 367
+Keep the draw deck, prepared hand, discard pile, removed-from-deck pile and equipped artifact area as distinct concepts. Historical rules use a starting deck of seven Skills and three Consumables, with a seven-card hand limit. The current demo instead specifies a five-card fan and engine energy. The two models need separate configurations and player-facing policy labels.
+
+Original line 421
+The current boss is provisionally the Ogre. The Director requires a canonical website and rules check before identity, statistics or cards become source facts. Historical references to Bauglor are preserved as earlier lore and earlier GDD language; they do not establish the identity of this encounter.
+
+Original line 453
+Captain | Prowess, muted metallic red | All 16 skills shared; weighted lines Prowess, Wits
+
+Original line 455
+Pathfinder | Nimbleness, muted metallic green | All 16 skills shared; weighted lines Prowess, Nimble
+
+Original line 457
+Lorekeeper | Wits, muted metallic blue | All 16 skills shared; weighted lines Wits, Craft
+
+Original line 459
+Vaultwarden | Craftiness, muted metallic gold | All 16 skills shared; weighted lines Nimble, Craft
+
+Original line 461
+Captain leadership should make a choice legible and help the team act together. Pathfinder movement and evasion should clarify risk and position. Lorekeeper knowledge should explain rather than invent world facts. Vaultwarden resourcefulness should make resource and artifact choices readable. These are writing directions derived from the role vocabulary, not new mechanical bonuses.
+
+Original line 465
+Designer section 11 defines four prototype perks: Captain gains 3 block at each crew phase start; Pathfinder ignores the first trap or Sweep hit each round; Lorekeeper empowers one ally per round so its next card gains 50 percent; Vaultwarden supplies a free heal-4 potion each round. These are approved digital adaptations; implementation and timing tests still need acceptance evidence. Heritage modifiers remain outside this demo.

@@ -1,0 +1,3275 @@
+{
+  "result": "PASS",
+  "capturedAt": "2026-11-09T03:21:57.195Z",
+  "inputFileSha256": {
+    "card-text.json": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b",
+    "crew-dialogue.json": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da",
+    "boss-rules.json": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+  },
+  "semanticChecks": 104,
+  "win": {
+    "result": "PASS",
+    "kind": "complete deterministic generated-content encounter",
+    "strategy": "win",
+    "seed": 4107,
+    "terminal": true,
+    "winner": "crew",
+    "terminalRound": 3,
+    "actionsTaken": 32,
+    "stateHash": "2326b135",
+    "inputFileSha256": {
+      "card-text.json": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b",
+      "crew-dialogue.json": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da",
+      "boss-rules.json": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    "cardsLoaded": 16,
+    "crewLoaded": 4,
+    "bossLoaded": "Ogre",
+    "dialogue": [
+      {
+        "role": "Captain",
+        "event": "start",
+        "round": 1,
+        "text": "Crew, take your places.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "start",
+        "round": 1,
+        "text": "Check the approach.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 1
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "start",
+        "round": 1,
+        "text": "Watch the pattern.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 2
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "start",
+        "round": 1,
+        "text": "Our reserves are ready.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 3
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "play",
+        "round": 1,
+        "text": "On my mark. We act together.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK4_01",
+          "engineLog": 16
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "play",
+        "round": 1,
+        "text": "On my mark. We act together.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_04",
+          "engineLog": 19
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "play",
+        "round": 1,
+        "text": "There. An opening.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_04",
+          "engineLog": 22
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "play",
+        "round": 1,
+        "text": "There. An opening.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_04",
+          "engineLog": 24
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "play",
+        "round": 1,
+        "text": "There. An opening.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_01",
+          "engineLog": 26
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "play",
+        "round": 1,
+        "text": "Read the intent before we act.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK4_01",
+          "engineLog": 29
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "play",
+        "round": 1,
+        "text": "Read the intent before we act.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_03",
+          "engineLog": 31
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "play",
+        "round": 1,
+        "text": "Use what we need. Waste nothing.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_01",
+          "engineLog": 34
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "play",
+        "round": 1,
+        "text": "Use what we need. Waste nothing.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK4_04",
+          "engineLog": 36
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "hurt",
+        "round": 1,
+        "text": "Hold formation.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "play",
+        "round": 2,
+        "text": "On my mark. We act together.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_02",
+          "engineLog": 48
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "play",
+        "round": 2,
+        "text": "On my mark. We act together.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_01",
+          "engineLog": 52
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "play",
+        "round": 2,
+        "text": "There. An opening.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_02",
+          "engineLog": 55
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "play",
+        "round": 2,
+        "text": "There. An opening.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_01",
+          "engineLog": 57
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "play",
+        "round": 2,
+        "text": "Read the intent before we act.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK4_03",
+          "engineLog": 60
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "play",
+        "round": 2,
+        "text": "Read the intent before we act.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_01",
+          "engineLog": 62
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "play",
+        "round": 2,
+        "text": "Use what we need. Waste nothing.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_02",
+          "engineLog": 65
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "play",
+        "round": 2,
+        "text": "Use what we need. Waste nothing.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK2_01",
+          "engineLog": 67
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "hurt",
+        "round": 2,
+        "text": "Keep watching the next move.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "hurt",
+        "round": 2,
+        "text": "Keep something in reserve.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "play",
+        "round": 3,
+        "text": "On my mark. We act together.",
+        "trigger": {
+          "kind": "accepted-card-play",
+          "cardId": "SK1_01",
+          "engineLog": 82
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "win",
+        "round": 3,
+        "text": "We leave together.",
+        "trigger": {
+          "kind": "actual-terminal-crew-victory"
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "win",
+        "round": 3,
+        "text": "The way ahead is clear.",
+        "trigger": {
+          "kind": "actual-terminal-crew-victory"
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "win",
+        "round": 3,
+        "text": "I will record what worked.",
+        "trigger": {
+          "kind": "actual-terminal-crew-victory"
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "win",
+        "round": 3,
+        "text": "Count the crew. Check the reserves.",
+        "trigger": {
+          "kind": "actual-terminal-crew-victory"
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      }
+    ],
+    "dialogueCounts": {
+      "start": 4,
+      "play": 18,
+      "hurt": 3,
+      "win": 4,
+      "loss": 0
+    },
+    "bossActions": [
+      {
+        "n": 40,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 71,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      }
+    ],
+    "perkEvidence": [
+      {
+        "round": 1,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 9,
+          "round": 1,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 1,
+        "role": "Lorekeeper",
+        "kind": "empower-grant",
+        "engineLog": {
+          "n": 14,
+          "round": 1,
+          "tab": "combat",
+          "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+          "data": {
+            "seat": 2,
+            "target": 0
+          }
+        }
+      },
+      {
+        "round": 1,
+        "role": "Vaultwarden",
+        "kind": "potion",
+        "engineLog": {
+          "n": 15,
+          "round": 1,
+          "tab": "combat",
+          "text": "Vaultwarden gives a potion to Captain: heals 0. HP 10/10 (perk, prototype).",
+          "data": {
+            "seat": 3,
+            "target": 0
+          }
+        }
+      },
+      {
+        "round": 1,
+        "role": "Captain",
+        "kind": "empower",
+        "engineLog": {
+          "n": 17,
+          "round": 1,
+          "tab": "combat",
+          "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+          "data": {
+            "seat": 0,
+            "perk": "empower"
+          }
+        }
+      },
+      {
+        "round": 2,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 44,
+          "round": 2,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 2,
+        "role": "Lorekeeper",
+        "kind": "empower-grant",
+        "engineLog": {
+          "n": 46,
+          "round": 2,
+          "tab": "combat",
+          "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+          "data": {
+            "seat": 2,
+            "target": 0
+          }
+        }
+      },
+      {
+        "round": 2,
+        "role": "Vaultwarden",
+        "kind": "potion",
+        "engineLog": {
+          "n": 47,
+          "round": 2,
+          "tab": "combat",
+          "text": "Vaultwarden gives a potion to Captain: heals 3. HP 10/10 (perk, prototype).",
+          "data": {
+            "seat": 3,
+            "target": 0
+          }
+        }
+      },
+      {
+        "round": 2,
+        "role": "Captain",
+        "kind": "empower",
+        "engineLog": {
+          "n": 49,
+          "round": 2,
+          "tab": "combat",
+          "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+          "data": {
+            "seat": 0,
+            "perk": "empower"
+          }
+        }
+      },
+      {
+        "round": 2,
+        "role": "Pathfinder",
+        "kind": "bypass",
+        "engineLog": {
+          "n": 73,
+          "round": 2,
+          "tab": "combat",
+          "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+          "data": {
+            "seat": 1,
+            "perk": "bypass"
+          }
+        }
+      },
+      {
+        "round": 3,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 77,
+          "round": 3,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 3,
+        "role": "Lorekeeper",
+        "kind": "empower-grant",
+        "engineLog": {
+          "n": 80,
+          "round": 3,
+          "tab": "combat",
+          "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+          "data": {
+            "seat": 2,
+            "target": 0
+          }
+        }
+      },
+      {
+        "round": 3,
+        "role": "Vaultwarden",
+        "kind": "potion",
+        "engineLog": {
+          "n": 81,
+          "round": 3,
+          "tab": "combat",
+          "text": "Vaultwarden gives a potion to Lorekeeper: heals 3. HP 10/10 (perk, prototype).",
+          "data": {
+            "seat": 3,
+            "target": 2
+          }
+        }
+      },
+      {
+        "round": 3,
+        "role": "Captain",
+        "kind": "empower",
+        "engineLog": {
+          "n": 83,
+          "round": 3,
+          "tab": "combat",
+          "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+          "data": {
+            "seat": 0,
+            "perk": "empower"
+          }
+        }
+      }
+    ],
+    "perkRolesObserved": [
+      "Captain",
+      "Lorekeeper",
+      "Vaultwarden",
+      "Pathfinder"
+    ],
+    "perkRolesNotDemonstrated": [],
+    "actions": [
+      {
+        "n": 1,
+        "round": 1,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "empower",
+          "target": "Captain"
+        },
+        "accepted": true,
+        "stateHash": "b1d197da"
+      },
+      {
+        "n": 2,
+        "round": 1,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "potion",
+          "target": "Captain"
+        },
+        "accepted": true,
+        "stateHash": "8b83effa"
+      },
+      {
+        "n": 3,
+        "round": 1,
+        "role": "Captain",
+        "action": {
+          "type": "play",
+          "cardId": "SK4_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "f3778053"
+      },
+      {
+        "n": 4,
+        "round": 1,
+        "role": "Captain",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_04",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "b2819ba0"
+      },
+      {
+        "n": 5,
+        "round": 1,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "9a7e2ddb"
+      },
+      {
+        "n": 6,
+        "round": 1,
+        "role": "Pathfinder",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_04",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "6e7d4b25"
+      },
+      {
+        "n": 7,
+        "round": 1,
+        "role": "Pathfinder",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_04",
+          "target": "Pathfinder"
+        },
+        "accepted": true,
+        "stateHash": "64d66320"
+      },
+      {
+        "n": 8,
+        "round": 1,
+        "role": "Pathfinder",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "0229d089"
+      },
+      {
+        "n": 9,
+        "round": 1,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "3929895a"
+      },
+      {
+        "n": 10,
+        "round": 1,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "play",
+          "cardId": "SK4_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "0af66b17"
+      },
+      {
+        "n": 11,
+        "round": 1,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_03",
+          "target": "Lorekeeper"
+        },
+        "accepted": true,
+        "stateHash": "ff605e32"
+      },
+      {
+        "n": 12,
+        "round": 1,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "91c1bf5d"
+      },
+      {
+        "n": 13,
+        "round": 1,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "9eee549a"
+      },
+      {
+        "n": 14,
+        "round": 1,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "play",
+          "cardId": "SK4_04",
+          "target": "Vaultwarden"
+        },
+        "accepted": true,
+        "stateHash": "59d17591"
+      },
+      {
+        "n": 15,
+        "round": 1,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "10522c93"
+      },
+      {
+        "n": 16,
+        "round": 2,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "empower",
+          "target": "Captain"
+        },
+        "accepted": true,
+        "stateHash": "b60f2acf"
+      },
+      {
+        "n": 17,
+        "round": 2,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "potion",
+          "target": "Captain"
+        },
+        "accepted": true,
+        "stateHash": "cf97946b"
+      },
+      {
+        "n": 18,
+        "round": 2,
+        "role": "Captain",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_02",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "f0b224f1"
+      },
+      {
+        "n": 19,
+        "round": 2,
+        "role": "Captain",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "ec719afa"
+      },
+      {
+        "n": 20,
+        "round": 2,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "bbdec69d"
+      },
+      {
+        "n": 21,
+        "round": 2,
+        "role": "Pathfinder",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_02",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "c1ee3a4c"
+      },
+      {
+        "n": 22,
+        "round": 2,
+        "role": "Pathfinder",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "7067b0af"
+      },
+      {
+        "n": 23,
+        "round": 2,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "7aea0286"
+      },
+      {
+        "n": 24,
+        "round": 2,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "play",
+          "cardId": "SK4_03",
+          "target": "Lorekeeper"
+        },
+        "accepted": true,
+        "stateHash": "7d5bae43"
+      },
+      {
+        "n": 25,
+        "round": 2,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "70a5d2ee"
+      },
+      {
+        "n": 26,
+        "round": 2,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "9dcd35c9"
+      },
+      {
+        "n": 27,
+        "round": 2,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_02",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "c93d53bf"
+      },
+      {
+        "n": 28,
+        "round": 2,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "play",
+          "cardId": "SK2_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "867dd14b"
+      },
+      {
+        "n": 29,
+        "round": 2,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "f87690cb"
+      },
+      {
+        "n": 30,
+        "round": 3,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "empower",
+          "target": "Captain"
+        },
+        "accepted": true,
+        "stateHash": "7552078b"
+      },
+      {
+        "n": 31,
+        "round": 3,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "potion",
+          "target": "Lorekeeper"
+        },
+        "accepted": true,
+        "stateHash": "5e510a65"
+      },
+      {
+        "n": 32,
+        "round": 3,
+        "role": "Captain",
+        "action": {
+          "type": "play",
+          "cardId": "SK1_01",
+          "target": "boss"
+        },
+        "accepted": true,
+        "stateHash": "2326b135"
+      }
+    ],
+    "engineEvents": [
+      {
+        "n": 1,
+        "round": 1,
+        "tab": "rules",
+        "text": "Game created. Seed 4107, hand 5, energy 3 per turn, round cap 40."
+      },
+      {
+        "n": 2,
+        "round": 1,
+        "tab": "policy",
+        "text": "Boss values (HP 80, moves, enrage) are prototype values."
+      },
+      {
+        "n": 3,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Captain: Free defence: gains 3 block at the start of each crew phase."
+      },
+      {
+        "n": 4,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Pathfinder: Trap bypass: ignores the first trap damage or sweep hit each round."
+      },
+      {
+        "n": 5,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Lorekeeper: Artifact: once per round, action empower on an ally; the ally next card gets +50% effect (round down, at least +1). Free."
+      },
+      {
+        "n": 6,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Vaultwarden: Extra consumable: once per round, action potion on a seat; heals 4. Free. The used potion goes to the removed pile."
+      },
+      {
+        "n": 7,
+        "round": 1,
+        "tab": "rules",
+        "text": "Round 1 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 8,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain draws an opening hand of 5."
+      },
+      {
+        "n": 9,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 10,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder draws an opening hand of 5."
+      },
+      {
+        "n": 11,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper draws an opening hand of 5."
+      },
+      {
+        "n": 12,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden draws an opening hand of 5."
+      },
+      {
+        "n": 13,
+        "round": 1,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\": 6 damage to Captain.",
+        "data": {
+          "move": "smash",
+          "target": 0,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 14,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+        "data": {
+          "seat": 2,
+          "target": 0
+        }
+      },
+      {
+        "n": 15,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden gives a potion to Captain: heals 0. HP 10/10 (perk, prototype).",
+        "data": {
+          "seat": 3,
+          "target": 0
+        }
+      },
+      {
+        "n": 16,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain plays Edan’s Leap (cost 2).",
+        "data": {
+          "seat": 0,
+          "card": "SK4_01"
+        }
+      },
+      {
+        "n": 17,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+        "data": {
+          "seat": 0,
+          "perk": "empower"
+        }
+      },
+      {
+        "n": 18,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 9 damage (0 blocked). HP 71/80."
+      },
+      {
+        "n": 19,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain plays Field Adjust (cost 1).",
+        "data": {
+          "seat": 0,
+          "card": "SK2_04"
+        }
+      },
+      {
+        "n": 20,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 3 damage (0 blocked). HP 68/80."
+      },
+      {
+        "n": 21,
+        "round": 1,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 22,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder plays Field Adjust (cost 1).",
+        "data": {
+          "seat": 1,
+          "card": "SK2_04"
+        }
+      },
+      {
+        "n": 23,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 3 damage (0 blocked). HP 65/80."
+      },
+      {
+        "n": 24,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder plays Salvage Resources (cost 1).",
+        "data": {
+          "seat": 1,
+          "card": "SK1_04"
+        }
+      },
+      {
+        "n": 25,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder draws 3 extra card(s)."
+      },
+      {
+        "n": 26,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder plays Onslaught (cost 1).",
+        "data": {
+          "seat": 1,
+          "card": "SK2_01"
+        }
+      },
+      {
+        "n": 27,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 4 damage (0 blocked). HP 61/80."
+      },
+      {
+        "n": 28,
+        "round": 1,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 29,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper plays Edan’s Leap (cost 2).",
+        "data": {
+          "seat": 2,
+          "card": "SK4_01"
+        }
+      },
+      {
+        "n": 30,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 6 damage (0 blocked). HP 55/80."
+      },
+      {
+        "n": 31,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper plays Mental Push (cost 1).",
+        "data": {
+          "seat": 2,
+          "card": "SK1_03"
+        }
+      },
+      {
+        "n": 32,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper draws 3 extra card(s)."
+      },
+      {
+        "n": 33,
+        "round": 1,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 34,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden plays Knockout! (cost 2).",
+        "data": {
+          "seat": 3,
+          "card": "SK1_01"
+        }
+      },
+      {
+        "n": 35,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre takes 8 damage (0 blocked). HP 47/80."
+      },
+      {
+        "n": 36,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden plays Crafty Vault (cost 1).",
+        "data": {
+          "seat": 3,
+          "card": "SK4_04"
+        }
+      },
+      {
+        "n": 37,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden draws 2 extra card(s)."
+      },
+      {
+        "n": 38,
+        "round": 1,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 39,
+        "round": 1,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 1 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 40,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 41,
+        "round": 1,
+        "tab": "policy",
+        "text": "Ogre hits the telegraphed target Captain."
+      },
+      {
+        "n": 42,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain takes 3 damage (3 blocked). HP 7/10."
+      },
+      {
+        "n": 43,
+        "round": 2,
+        "tab": "rules",
+        "text": "Round 2 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 44,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 45,
+        "round": 2,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Sweep\": 3 damage to all.",
+        "data": {
+          "move": "sweep",
+          "target": null,
+          "targets": "all"
+        }
+      },
+      {
+        "n": 46,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+        "data": {
+          "seat": 2,
+          "target": 0
+        }
+      },
+      {
+        "n": 47,
+        "round": 2,
+        "tab": "combat",
+        "text": "Vaultwarden gives a potion to Captain: heals 3. HP 10/10 (perk, prototype).",
+        "data": {
+          "seat": 3,
+          "target": 0
+        }
+      },
+      {
+        "n": 48,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain plays Double Strike (cost 2).",
+        "data": {
+          "seat": 0,
+          "card": "SK1_02"
+        }
+      },
+      {
+        "n": 49,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+        "data": {
+          "seat": 0,
+          "perk": "empower"
+        }
+      },
+      {
+        "n": 50,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 9 damage (0 blocked). HP 38/80."
+      },
+      {
+        "n": 51,
+        "round": 2,
+        "tab": "policy",
+        "text": "Ogre enrages at 38/80 HP. The loop changes at the next telegraph."
+      },
+      {
+        "n": 52,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain plays Onslaught (cost 1).",
+        "data": {
+          "seat": 0,
+          "card": "SK2_01"
+        }
+      },
+      {
+        "n": 53,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 4 damage (0 blocked). HP 34/80."
+      },
+      {
+        "n": 54,
+        "round": 2,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 55,
+        "round": 2,
+        "tab": "combat",
+        "text": "Pathfinder plays Double Strike (cost 2).",
+        "data": {
+          "seat": 1,
+          "card": "SK1_02"
+        }
+      },
+      {
+        "n": 56,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 6 damage (0 blocked). HP 28/80."
+      },
+      {
+        "n": 57,
+        "round": 2,
+        "tab": "combat",
+        "text": "Pathfinder plays Onslaught (cost 1).",
+        "data": {
+          "seat": 1,
+          "card": "SK2_01"
+        }
+      },
+      {
+        "n": 58,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 4 damage (0 blocked). HP 24/80."
+      },
+      {
+        "n": 59,
+        "round": 2,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 60,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper plays Language of the Land (cost 1).",
+        "data": {
+          "seat": 2,
+          "card": "SK4_03"
+        }
+      },
+      {
+        "n": 61,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper draws 2 extra card(s)."
+      },
+      {
+        "n": 62,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper plays Knockout! (cost 2).",
+        "data": {
+          "seat": 2,
+          "card": "SK1_01"
+        }
+      },
+      {
+        "n": 63,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 8 damage (0 blocked). HP 16/80."
+      },
+      {
+        "n": 64,
+        "round": 2,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 65,
+        "round": 2,
+        "tab": "combat",
+        "text": "Vaultwarden plays Double Strike (cost 2).",
+        "data": {
+          "seat": 3,
+          "card": "SK1_02"
+        }
+      },
+      {
+        "n": 66,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 6 damage (0 blocked). HP 10/80."
+      },
+      {
+        "n": 67,
+        "round": 2,
+        "tab": "combat",
+        "text": "Vaultwarden plays Onslaught (cost 1).",
+        "data": {
+          "seat": 3,
+          "card": "SK2_01"
+        }
+      },
+      {
+        "n": 68,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre takes 4 damage (0 blocked). HP 6/80."
+      },
+      {
+        "n": 69,
+        "round": 2,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 70,
+        "round": 2,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 2 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 71,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 72,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain takes 0 damage (3 blocked). HP 10/10."
+      },
+      {
+        "n": 73,
+        "round": 2,
+        "tab": "combat",
+        "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+        "data": {
+          "seat": 1,
+          "perk": "bypass"
+        }
+      },
+      {
+        "n": 74,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper takes 3 damage (0 blocked). HP 7/10."
+      },
+      {
+        "n": 75,
+        "round": 2,
+        "tab": "combat",
+        "text": "Vaultwarden takes 3 damage (0 blocked). HP 7/10."
+      },
+      {
+        "n": 76,
+        "round": 3,
+        "tab": "rules",
+        "text": "Round 3 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 77,
+        "round": 3,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 78,
+        "round": 3,
+        "tab": "policy",
+        "text": "Ogre switches to the enrage loop."
+      },
+      {
+        "n": 79,
+        "round": 3,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\" (enraged): 6 damage to Lorekeeper.",
+        "data": {
+          "move": "smash",
+          "target": 2,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 80,
+        "round": 3,
+        "tab": "combat",
+        "text": "Lorekeeper empowers Captain: the next card gets +50% (perk, prototype).",
+        "data": {
+          "seat": 2,
+          "target": 0
+        }
+      },
+      {
+        "n": 81,
+        "round": 3,
+        "tab": "combat",
+        "text": "Vaultwarden gives a potion to Lorekeeper: heals 3. HP 10/10 (perk, prototype).",
+        "data": {
+          "seat": 3,
+          "target": 2
+        }
+      },
+      {
+        "n": 82,
+        "round": 3,
+        "tab": "combat",
+        "text": "Captain plays Knockout! (cost 2).",
+        "data": {
+          "seat": 0,
+          "card": "SK1_01"
+        }
+      },
+      {
+        "n": 83,
+        "round": 3,
+        "tab": "combat",
+        "text": "Captain is empowered: the effect is +50% (perk, prototype).",
+        "data": {
+          "seat": 0,
+          "perk": "empower"
+        }
+      },
+      {
+        "n": 84,
+        "round": 3,
+        "tab": "combat",
+        "text": "Ogre takes 12 damage (0 blocked). HP 0/80."
+      },
+      {
+        "n": 85,
+        "round": 3,
+        "tab": "policy",
+        "text": "Result: crew wins. Ogre is down."
+      }
+    ],
+    "limits": "Headless valid-action engine encounter using generated files, not a browser/UI/audio/multiplayer or human playtest. Loss strategy deliberately ends legal turns; no loss line exists. Numerical effects remain labeled prototype adaptations."
+  },
+  "loss": {
+    "result": "PASS",
+    "kind": "complete deterministic generated-content encounter",
+    "strategy": "loss",
+    "seed": 4107,
+    "terminal": true,
+    "winner": "boss",
+    "terminalRound": 10,
+    "actionsTaken": 29,
+    "stateHash": "ebe9668e",
+    "inputFileSha256": {
+      "card-text.json": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b",
+      "crew-dialogue.json": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da",
+      "boss-rules.json": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
+    },
+    "cardsLoaded": 16,
+    "crewLoaded": 4,
+    "bossLoaded": "Ogre",
+    "dialogue": [
+      {
+        "role": "Captain",
+        "event": "start",
+        "round": 1,
+        "text": "Crew, take your places.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "start",
+        "round": 1,
+        "text": "Check the approach.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 1
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "start",
+        "round": 1,
+        "text": "Watch the pattern.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 2
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "start",
+        "round": 1,
+        "text": "Our reserves are ready.",
+        "trigger": {
+          "kind": "engine-created-crew",
+          "seat": 3
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "hurt",
+        "round": 1,
+        "text": "Hold formation.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "hurt",
+        "round": 2,
+        "text": "Keep watching the next move.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "hurt",
+        "round": 2,
+        "text": "Keep something in reserve.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 7
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Lorekeeper",
+        "event": "hurt",
+        "round": 4,
+        "text": "Keep watching the next move.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 7,
+          "after": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "hurt",
+        "round": 5,
+        "text": "Hold formation.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 7,
+          "after": 5
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "hurt",
+        "round": 5,
+        "text": "Keep something in reserve.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 7,
+          "after": 2
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Pathfinder",
+        "event": "hurt",
+        "round": 7,
+        "text": "Keep a way clear.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 10,
+          "after": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "hurt",
+        "round": 8,
+        "text": "Hold formation.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 5,
+          "after": 1
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Vaultwarden",
+        "event": "hurt",
+        "round": 8,
+        "text": "Keep something in reserve.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 2,
+          "after": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      },
+      {
+        "role": "Captain",
+        "event": "hurt",
+        "round": 10,
+        "text": "Hold formation.",
+        "trigger": {
+          "kind": "actual-hp-loss",
+          "before": 1,
+          "after": 0
+        },
+        "file": "crew-dialogue.json",
+        "fileSha256": "60166ef0f5827f8a0fc65f4c764551917b0333fc703afb98fac51cab955948da"
+      }
+    ],
+    "dialogueCounts": {
+      "start": 4,
+      "play": 0,
+      "hurt": 10,
+      "win": 0,
+      "loss": 0
+    },
+    "bossActions": [
+      {
+        "n": 19,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 30,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 43,
+        "round": 3,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 53,
+        "round": 4,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 67,
+        "round": 5,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 78,
+        "round": 6,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 87,
+        "round": 7,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 97,
+        "round": 8,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 107,
+        "round": 9,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 114,
+        "round": 10,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      }
+    ],
+    "perkEvidence": [
+      {
+        "round": 1,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 9,
+          "round": 1,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 2,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 23,
+          "round": 2,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 2,
+        "role": "Pathfinder",
+        "kind": "bypass",
+        "engineLog": {
+          "n": 32,
+          "round": 2,
+          "tab": "combat",
+          "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+          "data": {
+            "seat": 1,
+            "perk": "bypass"
+          }
+        }
+      },
+      {
+        "round": 3,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 36,
+          "round": 3,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 4,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 46,
+          "round": 4,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 5,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 59,
+          "round": 5,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 5,
+        "role": "Pathfinder",
+        "kind": "bypass",
+        "engineLog": {
+          "n": 69,
+          "round": 5,
+          "tab": "combat",
+          "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+          "data": {
+            "seat": 1,
+            "perk": "bypass"
+          }
+        }
+      },
+      {
+        "round": 6,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 72,
+          "round": 6,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 7,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 81,
+          "round": 7,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 8,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 92,
+          "round": 8,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 9,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 103,
+          "round": 9,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      },
+      {
+        "round": 10,
+        "role": "Captain",
+        "kind": "round-start-block",
+        "engineLog": {
+          "n": 110,
+          "round": 10,
+          "tab": "combat",
+          "text": "Captain gains 3 block (perk, prototype). Total 3."
+        }
+      }
+    ],
+    "perkRolesObserved": [
+      "Captain",
+      "Pathfinder"
+    ],
+    "perkRolesNotDemonstrated": [
+      "Lorekeeper",
+      "Vaultwarden"
+    ],
+    "actions": [
+      {
+        "n": 1,
+        "round": 1,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "496f3069"
+      },
+      {
+        "n": 2,
+        "round": 1,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "caaa0bb4"
+      },
+      {
+        "n": 3,
+        "round": 1,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "93525c59"
+      },
+      {
+        "n": 4,
+        "round": 1,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "1f3b077d"
+      },
+      {
+        "n": 5,
+        "round": 2,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "b0b6a126"
+      },
+      {
+        "n": 6,
+        "round": 2,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "571fe51b"
+      },
+      {
+        "n": 7,
+        "round": 2,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "13639598"
+      },
+      {
+        "n": 8,
+        "round": 2,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "07cda07a"
+      },
+      {
+        "n": 9,
+        "round": 3,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "642b0efd"
+      },
+      {
+        "n": 10,
+        "round": 3,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "5c5efc7c"
+      },
+      {
+        "n": 11,
+        "round": 3,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "9a840031"
+      },
+      {
+        "n": 12,
+        "round": 3,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "9436b0b0"
+      },
+      {
+        "n": 13,
+        "round": 4,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "57144ac7"
+      },
+      {
+        "n": 14,
+        "round": 4,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "25596b8a"
+      },
+      {
+        "n": 15,
+        "round": 4,
+        "role": "Lorekeeper",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "465a6923"
+      },
+      {
+        "n": 16,
+        "round": 4,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "4d973e7c"
+      },
+      {
+        "n": 17,
+        "round": 5,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "3d972dcf"
+      },
+      {
+        "n": 18,
+        "round": 5,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "f98468c4"
+      },
+      {
+        "n": 19,
+        "round": 5,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "cfa33f7c"
+      },
+      {
+        "n": 20,
+        "round": 6,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "a75d7087"
+      },
+      {
+        "n": 21,
+        "round": 6,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "e5a39d3e"
+      },
+      {
+        "n": 22,
+        "round": 6,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "f15efbc5"
+      },
+      {
+        "n": 23,
+        "round": 7,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "a00850b2"
+      },
+      {
+        "n": 24,
+        "round": 7,
+        "role": "Pathfinder",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "1d66ef0b"
+      },
+      {
+        "n": 25,
+        "round": 7,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "16b2be9b"
+      },
+      {
+        "n": 26,
+        "round": 8,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "9f030d46"
+      },
+      {
+        "n": 27,
+        "round": 8,
+        "role": "Vaultwarden",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "ba199568"
+      },
+      {
+        "n": 28,
+        "round": 9,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "7e721f76"
+      },
+      {
+        "n": 29,
+        "round": 10,
+        "role": "Captain",
+        "action": {
+          "type": "end_turn"
+        },
+        "accepted": true,
+        "stateHash": "ebe9668e"
+      }
+    ],
+    "engineEvents": [
+      {
+        "n": 1,
+        "round": 1,
+        "tab": "rules",
+        "text": "Game created. Seed 4107, hand 5, energy 3 per turn, round cap 40."
+      },
+      {
+        "n": 2,
+        "round": 1,
+        "tab": "policy",
+        "text": "Boss values (HP 80, moves, enrage) are prototype values."
+      },
+      {
+        "n": 3,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Captain: Free defence: gains 3 block at the start of each crew phase."
+      },
+      {
+        "n": 4,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Pathfinder: Trap bypass: ignores the first trap damage or sweep hit each round."
+      },
+      {
+        "n": 5,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Lorekeeper: Artifact: once per round, action empower on an ally; the ally next card gets +50% effect (round down, at least +1). Free."
+      },
+      {
+        "n": 6,
+        "round": 1,
+        "tab": "policy",
+        "text": "Role perk, prototype. Vaultwarden: Extra consumable: once per round, action potion on a seat; heals 4. Free. The used potion goes to the removed pile."
+      },
+      {
+        "n": 7,
+        "round": 1,
+        "tab": "rules",
+        "text": "Round 1 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 8,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain draws an opening hand of 5."
+      },
+      {
+        "n": 9,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 10,
+        "round": 1,
+        "tab": "combat",
+        "text": "Pathfinder draws an opening hand of 5."
+      },
+      {
+        "n": 11,
+        "round": 1,
+        "tab": "combat",
+        "text": "Lorekeeper draws an opening hand of 5."
+      },
+      {
+        "n": 12,
+        "round": 1,
+        "tab": "combat",
+        "text": "Vaultwarden draws an opening hand of 5."
+      },
+      {
+        "n": 13,
+        "round": 1,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\": 6 damage to Captain.",
+        "data": {
+          "move": "smash",
+          "target": 0,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 14,
+        "round": 1,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 15,
+        "round": 1,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 16,
+        "round": 1,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 17,
+        "round": 1,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 18,
+        "round": 1,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 1 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 19,
+        "round": 1,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 20,
+        "round": 1,
+        "tab": "policy",
+        "text": "Ogre hits the telegraphed target Captain."
+      },
+      {
+        "n": 21,
+        "round": 1,
+        "tab": "combat",
+        "text": "Captain takes 3 damage (3 blocked). HP 7/10."
+      },
+      {
+        "n": 22,
+        "round": 2,
+        "tab": "rules",
+        "text": "Round 2 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 23,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 24,
+        "round": 2,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Sweep\": 3 damage to all.",
+        "data": {
+          "move": "sweep",
+          "target": null,
+          "targets": "all"
+        }
+      },
+      {
+        "n": 25,
+        "round": 2,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 26,
+        "round": 2,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 27,
+        "round": 2,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 28,
+        "round": 2,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 29,
+        "round": 2,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 2 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 30,
+        "round": 2,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 31,
+        "round": 2,
+        "tab": "combat",
+        "text": "Captain takes 0 damage (3 blocked). HP 7/10."
+      },
+      {
+        "n": 32,
+        "round": 2,
+        "tab": "combat",
+        "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+        "data": {
+          "seat": 1,
+          "perk": "bypass"
+        }
+      },
+      {
+        "n": 33,
+        "round": 2,
+        "tab": "combat",
+        "text": "Lorekeeper takes 3 damage (0 blocked). HP 7/10."
+      },
+      {
+        "n": 34,
+        "round": 2,
+        "tab": "combat",
+        "text": "Vaultwarden takes 3 damage (0 blocked). HP 7/10."
+      },
+      {
+        "n": 35,
+        "round": 3,
+        "tab": "rules",
+        "text": "Round 3 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 36,
+        "round": 3,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 37,
+        "round": 3,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Roar\": +2 strength.",
+        "data": {
+          "move": "roar",
+          "target": null,
+          "targets": "self"
+        }
+      },
+      {
+        "n": 38,
+        "round": 3,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 39,
+        "round": 3,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 40,
+        "round": 3,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 41,
+        "round": 3,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 42,
+        "round": 3,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 3 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 43,
+        "round": 3,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 44,
+        "round": 3,
+        "tab": "combat",
+        "text": "Ogre gains 2 strength (total 2)."
+      },
+      {
+        "n": 45,
+        "round": 4,
+        "tab": "rules",
+        "text": "Round 4 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 46,
+        "round": 4,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 47,
+        "round": 4,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\": 8 damage to Lorekeeper.",
+        "data": {
+          "move": "smash",
+          "target": 2,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 48,
+        "round": 4,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 49,
+        "round": 4,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 50,
+        "round": 4,
+        "tab": "rules",
+        "text": "Lorekeeper is ready.",
+        "data": {
+          "seat": 2
+        }
+      },
+      {
+        "n": 51,
+        "round": 4,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 52,
+        "round": 4,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 4 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 53,
+        "round": 4,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 54,
+        "round": 4,
+        "tab": "policy",
+        "text": "Ogre hits the telegraphed target Lorekeeper."
+      },
+      {
+        "n": 55,
+        "round": 4,
+        "tab": "combat",
+        "text": "Lorekeeper takes 8 damage (0 blocked). HP 0/10."
+      },
+      {
+        "n": 56,
+        "round": 4,
+        "tab": "combat",
+        "text": "Lorekeeper is down."
+      },
+      {
+        "n": 57,
+        "round": 5,
+        "tab": "rules",
+        "text": "Round 5 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 58,
+        "round": 5,
+        "tab": "rules",
+        "text": "Captain reshuffles the discard pile (20 cards)."
+      },
+      {
+        "n": 59,
+        "round": 5,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 60,
+        "round": 5,
+        "tab": "rules",
+        "text": "Pathfinder reshuffles the discard pile (20 cards)."
+      },
+      {
+        "n": 61,
+        "round": 5,
+        "tab": "rules",
+        "text": "Vaultwarden reshuffles the discard pile (20 cards)."
+      },
+      {
+        "n": 62,
+        "round": 5,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Sweep\": 5 damage to all.",
+        "data": {
+          "move": "sweep",
+          "target": null,
+          "targets": "all"
+        }
+      },
+      {
+        "n": 63,
+        "round": 5,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 64,
+        "round": 5,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 65,
+        "round": 5,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 66,
+        "round": 5,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 5 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 67,
+        "round": 5,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 68,
+        "round": 5,
+        "tab": "combat",
+        "text": "Captain takes 2 damage (3 blocked). HP 5/10."
+      },
+      {
+        "n": 69,
+        "round": 5,
+        "tab": "combat",
+        "text": "Pathfinder bypasses the sweep (perk, prototype). No damage.",
+        "data": {
+          "seat": 1,
+          "perk": "bypass"
+        }
+      },
+      {
+        "n": 70,
+        "round": 5,
+        "tab": "combat",
+        "text": "Vaultwarden takes 5 damage (0 blocked). HP 2/10."
+      },
+      {
+        "n": 71,
+        "round": 6,
+        "tab": "rules",
+        "text": "Round 6 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 72,
+        "round": 6,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 73,
+        "round": 6,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Roar\": +2 strength.",
+        "data": {
+          "move": "roar",
+          "target": null,
+          "targets": "self"
+        }
+      },
+      {
+        "n": 74,
+        "round": 6,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 75,
+        "round": 6,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 76,
+        "round": 6,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 77,
+        "round": 6,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 6 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 78,
+        "round": 6,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 79,
+        "round": 6,
+        "tab": "combat",
+        "text": "Ogre gains 2 strength (total 4)."
+      },
+      {
+        "n": 80,
+        "round": 7,
+        "tab": "rules",
+        "text": "Round 7 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 81,
+        "round": 7,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 82,
+        "round": 7,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\": 10 damage to Pathfinder.",
+        "data": {
+          "move": "smash",
+          "target": 1,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 83,
+        "round": 7,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 84,
+        "round": 7,
+        "tab": "rules",
+        "text": "Pathfinder is ready.",
+        "data": {
+          "seat": 1
+        }
+      },
+      {
+        "n": 85,
+        "round": 7,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 86,
+        "round": 7,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 7 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 87,
+        "round": 7,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 88,
+        "round": 7,
+        "tab": "policy",
+        "text": "Ogre hits the telegraphed target Pathfinder."
+      },
+      {
+        "n": 89,
+        "round": 7,
+        "tab": "combat",
+        "text": "Pathfinder takes 10 damage (0 blocked). HP 0/10."
+      },
+      {
+        "n": 90,
+        "round": 7,
+        "tab": "combat",
+        "text": "Pathfinder is down."
+      },
+      {
+        "n": 91,
+        "round": 8,
+        "tab": "rules",
+        "text": "Round 8 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 92,
+        "round": 8,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 93,
+        "round": 8,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Sweep\": 7 damage to all.",
+        "data": {
+          "move": "sweep",
+          "target": null,
+          "targets": "all"
+        }
+      },
+      {
+        "n": 94,
+        "round": 8,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 95,
+        "round": 8,
+        "tab": "rules",
+        "text": "Vaultwarden is ready.",
+        "data": {
+          "seat": 3
+        }
+      },
+      {
+        "n": 96,
+        "round": 8,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 8 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 97,
+        "round": 8,
+        "tab": "combat",
+        "text": "Ogre uses Sweep.",
+        "data": {
+          "move": "sweep"
+        }
+      },
+      {
+        "n": 98,
+        "round": 8,
+        "tab": "combat",
+        "text": "Captain takes 4 damage (3 blocked). HP 1/10."
+      },
+      {
+        "n": 99,
+        "round": 8,
+        "tab": "combat",
+        "text": "Vaultwarden takes 7 damage (0 blocked). HP 0/10."
+      },
+      {
+        "n": 100,
+        "round": 8,
+        "tab": "combat",
+        "text": "Vaultwarden is down."
+      },
+      {
+        "n": 101,
+        "round": 9,
+        "tab": "rules",
+        "text": "Round 9 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 102,
+        "round": 9,
+        "tab": "rules",
+        "text": "Captain reshuffles the discard pile (20 cards)."
+      },
+      {
+        "n": 103,
+        "round": 9,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 104,
+        "round": 9,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Roar\": +2 strength.",
+        "data": {
+          "move": "roar",
+          "target": null,
+          "targets": "self"
+        }
+      },
+      {
+        "n": 105,
+        "round": 9,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 106,
+        "round": 9,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 9 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 107,
+        "round": 9,
+        "tab": "combat",
+        "text": "Ogre uses Roar.",
+        "data": {
+          "move": "roar"
+        }
+      },
+      {
+        "n": 108,
+        "round": 9,
+        "tab": "combat",
+        "text": "Ogre gains 2 strength (total 6)."
+      },
+      {
+        "n": 109,
+        "round": 10,
+        "tab": "rules",
+        "text": "Round 10 starts. Phase: crew (shared, any order)."
+      },
+      {
+        "n": 110,
+        "round": 10,
+        "tab": "combat",
+        "text": "Captain gains 3 block (perk, prototype). Total 3."
+      },
+      {
+        "n": 111,
+        "round": 10,
+        "tab": "policy",
+        "text": "Ogre telegraphs \"Smash\": 12 damage to Captain.",
+        "data": {
+          "move": "smash",
+          "target": 0,
+          "targets": "one"
+        }
+      },
+      {
+        "n": 112,
+        "round": 10,
+        "tab": "rules",
+        "text": "Captain is ready.",
+        "data": {
+          "seat": 0
+        }
+      },
+      {
+        "n": 113,
+        "round": 10,
+        "tab": "rules",
+        "text": "Every living human seat is ready. Crew phase of round 10 ends. Hands discarded. Phase: boss."
+      },
+      {
+        "n": 114,
+        "round": 10,
+        "tab": "combat",
+        "text": "Ogre uses Smash.",
+        "data": {
+          "move": "smash"
+        }
+      },
+      {
+        "n": 115,
+        "round": 10,
+        "tab": "policy",
+        "text": "Ogre hits the telegraphed target Captain."
+      },
+      {
+        "n": 116,
+        "round": 10,
+        "tab": "combat",
+        "text": "Captain takes 9 damage (3 blocked). HP 0/10."
+      },
+      {
+        "n": 117,
+        "round": 10,
+        "tab": "combat",
+        "text": "Captain is down."
+      },
+      {
+        "n": 118,
+        "round": 10,
+        "tab": "policy",
+        "text": "Result: boss wins. The crew is down."
+      }
+    ],
+    "limits": "Headless valid-action engine encounter using generated files, not a browser/UI/audio/multiplayer or human playtest. Loss strategy deliberately ends legal turns; no loss line exists. Numerical effects remain labeled prototype adaptations."
+  }
+}

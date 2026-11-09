@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-11-09T02:46:20.623223+00:00",
+  "sources": [
+    {
+      "id": "current-gdd",
+      "filename": "FAMED-GDD-source.txt",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\studio\\prep\\famed-a4-v15-20261109T0242Z\\semantics-contribution\\fixtures\\captain-calm-final14\\FAMED-GDD-source.fixture.txt",
+      "originalSha256": "6e702eaf0a427235fe59f645894c5addb5ad9e892860a57a4193e2f4ade7fd46",
+      "version": "Controlled Captain calm-direction fixture from final14sourcecorpus",
+      "authority": "current-packaged-design",
+      "priority": 100,
+      "path": "sources/current-gdd.json",
+      "sha256": "0a612f87ca1c0713aa71b86fba6e21e456f6d9058d1988183f2e15ae16dfd967"
+    },
+    {
+      "id": "current-cards",
+      "filename": "cards-source.json",
+      "originalPath": "C:\\Users\\wolfi\\Documents\\Codex\\famed-complete-gdd-v1-work\\famed-crew-share-improved-v1\\docs\\game-design\\cards-source.json",
+      "originalSha256": "8521484e7dfaef4ae64777e5fc3343a678344b31d30e8b9f772c6f8bbafa1065",
+      "version": "v14B retained 16 original Dungeon card records",
+      "authority": "current-card-text",
+      "priority": 90,
+      "path": "sources/current-cards.json",
+      "sha256": "f1b786a424449f68a3dcfcf6f644ecbde153ba5f93f326ee4dede45d28547b6f"
+    },
+    {
+      "id": "gds-rules",
+      "filename": "Start Guide Playtest [Landscape Mode] 5.2.docx",
+      "originalPath": "E:\\_GDS\\_courseGDS\\_myWork\\Wk12\\Start Guide Playtest [Landscape Mode] 5.2.docx",
+      "originalSha256": "ad522f6bc9f94065e37b1c390ee5a7310c213f81632e04119a94083b4f60548b",
+      "version": "GDS Week12 guide5.2",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/gds-rules.json",
+      "sha256": "b8c1d37ecaf12f88c399f4db7e9d118586b10a852a0767c3aa4ce3d18ca6437e"
+    },
+    {
+      "id": "gds-prototype",
+      "filename": "F.A.M-E.D. rulebook [prototype v.1].docx",
+      "originalPath": "E:\\_GDS\\_courseGDS\\_myWork\\Wk2\\F.A.M-E.D. rulebook [prototype v.1].docx",
+      "originalSha256": "4515c8443d56b2b0a290a409b943e3cc54ee79ea63f698fa8465a2682bef7067",
+      "version": "GDS Week2 prototype1",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/gds-prototype.json",
+      "sha256": "533d017c7f6f436f0a24523dd925ce721a060ff5972e58ad5c4afcaa68e755cf"
+    },
+    {
+      "id": "assignment3-v11",
+      "filename": "FAMED_Assignment3_Agent_Crew_Report_v11.docx",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\studio\\assignments\\a3-report-v11\\FAMED_Assignment3_Agent_Crew_Report_v11.docx",
+      "originalSha256": "a4636e067b16fcbf8c54b63126bdff07c4775fb25a32255259831fa83438ebf8",
+      "version": "Assignment3 v11",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/assignment3-v11.json",
+      "sha256": "ecf06285a7f1682e56ee19f00fec0c14b895050f9e3b6a0d6cbf722b50da1986"
+    },
+    {
+      "id": "assignment3-v12",
+      "filename": "FAMED_Assignment3_Agent_Crew_Report_v12.docx",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\studio\\assignments\\a3-report-v11\\FAMED_Assignment3_Agent_Crew_Report_v12.docx",
+      "originalSha256": "8b6b9bab70cb09cfffceb4ddf42198cd887dc193115fcc93a0c2deca0900a10d",
+      "version": "Assignment3 v12",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/assignment3-v12.json",
+      "sha256": "86e5dbd0a55bfdf9821d0461d304f4e66b2e76db6a24e2db03aa7680fa86d3fa"
+    },
+    {
+      "id": "assignment3-v13",
+      "filename": "FAMED_Agent_Crew_Report_v13.docx",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\studio\\assignments\\a3-report-v11\\FAMED_Agent_Crew_Report_v13.docx",
+      "originalSha256": "2d22953616e9259e72007547da90b5054de3645ed0d5b0dcab56dacde74fe22b",
+      "version": "Assignment3 v13",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/assignment3-v13.json",
+      "sha256": "0646a92d7b56c8d63ae3b9e744e7aba6afe82d78b63af3430cb2f52665092699"
+    },
+    {
+      "id": "assignment4-v14",
+      "filename": "FAMED_Agent_Crew_Report_v14.docx",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\Assignment 4\\FAMED_Agent_Crew_Report_v14.docx",
+      "originalSha256": "eb3023fa7374f154c0c5e75d858de5e4e8db2ff02b4291987194357a9e99adf4",
+      "version": "Assignment4 v14",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/assignment4-v14.json",
+      "sha256": "46b7a93b082e7cbef43aaf8d47164fc4ce802ee08cbf7fdc7e1a4e7c04eedbcd"
+    },
+    {
+      "id": "assignment4-v14b",
+      "filename": "FAMED_Agent_Crew_Report_v14B.docx",
+      "originalPath": "C:\\Users\\wolfi\\Documents\\Codex\\famed-complete-gdd-v1-work\\famed-crew-share-improved-v1\\docs\\FAMED_Agent_Crew_Report_v14B.docx",
+      "originalSha256": "e43c14108d479bc6ee3f3c48ff678cf7d6532c75069a45af56b6ce1d36da50b7",
+      "version": "Assignment4 v14B",
+      "authority": "historical-context",
+      "priority": 20,
+      "path": "sources/assignment4-v14b.json",
+      "sha256": "117868eb4dd4d681c47a4e8184fdcddd7968b07ad2a63bff6d76e818cd007a94"
+    },
+    {
+      "id": "full-gdd-v8",
+      "filename": "FAMED_Assignment4_GDD_v8_review.txt",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\docs\\studio\\assignments\\a4-content-pipeline\\documents\\v8-review\\FAMED_Assignment4_GDD_v8_review.txt",
+      "originalSha256": "0dbadc9ecd43adf5cfd358820517e4c4e84975cc5d8f9cc07f90f0220df7b0af",
+      "version": "Assignment4 GDD v8 review full text",
+      "authority": "historical-design-review",
+      "priority": 40,
+      "path": "sources/full-gdd-v8.json",
+      "sha256": "47faa72aeaf5e8edacb72d527ffa748b8ac9fb8fcdc6b063e948bc16864c0906"
+    },
+    {
+      "id": "gds-rulebook-intro",
+      "filename": "[Piero Folly] Game Rulebook Intro.md",
+      "originalPath": "E:\\_GDS\\_courseGDS\\_myWork\\firstAge_ttGame\\vsCode_work\\textProof\\[Piero Folly] Game Rulebook Intro.md",
+      "originalSha256": "85062c1cf30313025b86a7b1034a1845fb8ea839b40685cc82e26d3a5bd668b1",
+      "version": "earlier First Age original setting",
+      "authority": "historical-context",
+      "priority": 10,
+      "path": "sources/gds-rulebook-intro.json",
+      "sha256": "a982ad0fef0224c9b874775352ade9512697ce0134a00e6469c9e5e71450e1ad"
+    },
+    {
+      "id": "design-draft1",
+      "filename": "gdd.txt",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\gdd\\gdd.txt",
+      "originalSha256": "9b7cc65162971588f801653fcf4fd0cfd89d18fc91e5e0663a19172c6139dd89",
+      "version": "GDD draft1 retained text 20 October2026; Assignment1 mapping unverified",
+      "authority": "historical-design-draft",
+      "priority": 20,
+      "path": "sources/design-draft1.json",
+      "sha256": "9c234a1aff66dd90bb9be2f05d3630c3e5db8350a6dbb7b9852566c4aaeddfda"
+    },
+    {
+      "id": "design-draft2",
+      "filename": "gdd-draft2.txt",
+      "originalPath": "C:\\Users\\wolfi\\OneDrive\\Documentos\\KhiRho_studios\\.claude\\worktrees\\context-ee5a87\\docs\\gdd\\gdd-draft2.txt",
+      "originalSha256": "3cdaf9e703f63f317dce528e9eb216014ab2e425a8166fc3c53b83bdd1800ad0",
+      "version": "GDD draft2 retained text 25 October2026; Assignment2 mapping unverified",
+      "authority": "historical-design-draft",
+      "priority": 20,
+      "path": "sources/design-draft2.json",
+      "sha256": "facac1d827c173e440701dbe95ec8fdda9464262046cff728bb93e5a205b2218"
+    },
+    {
+      "id": "gds-original-cards",
+      "filename": "Player Deck - All Skill Cards[NEW].csv",
+      "originalPath": "E:\\_GDS\\_courseGDS\\_myWork\\Wk11\\Player Deck - All Skill Cards[NEW].csv",
+      "originalSha256": "0bfe0eef7ce247c15972fa981fc92643af7f4c36a375ba0ce0f2ea48507de95b",
+      "version": "GDS Week11 original skill deck CSV",
+      "authority": "historical-card-original",
+      "priority": 20,
+      "path": "sources/gds-original-cards.json",
+      "sha256": "3a28b3964bde1602c061884fd1556b1db3ef92f0ff5b292b23b9e109c28dc02d"
+    }
+  ],
+  "limits": [
+    "Selected bounded snippets only. Original private documents are not redistributed.",
+    "Older course and assignment history is context, never current mechanical authority.",
+    "Source hashes verify retained source-pack bytes; originalSha256 pins original source bytes read at pack creation. Offline users cannot independently reread unavailable originals.",
+    "GDD draft1/draft2 texts are retrievable, but exact Assignment1/Assignment2 submission mapping remains unverified HOLD."
+  ],
+  "holds": [
+    {
+      "source": "Assignment1 and Assignment2 exact original submissions",
+      "reason": "No exact primary submission identified in bounded filename inventory; do not claim full history coverage. Historical GDS prototype and later report references cannot substitute."
+    }
+  ],
+  "historyExtensionAt": "2026-11-09T02:48:11.315346+00:00",
+  "controlledFixture": {
+    "purpose": "Exactly one role direction change; not canonical GDD",
+    "changedSourceId": "current-gdd",
+    "before": "Captain leadership should make a choice legible and help the team act together.",
+    "after": "Captain leadership should make a choice legible and help the team act together with calm commands.",
+    "otherSourcePacksUnchanged": 13,
+    "sourceCount": 14
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "checks": 377,
+  "findings": [],
+  "structure": {
+    "verdict": "PASS",
+    "checks": 273,
+    "findings": [],
+    "limits": "Deterministic source and structure checks, not a language-model judgment of tone, complete lore, balance, or faithful tabletop mechanics. Digital effects are compared with the labeled prototype configuration, not promoted to printed rules."
+  },
+  "semantics": {
+    "verdict": "PASS",
+    "checks": 104,
+    "findings": [],
+    "limits": "Exact factual/structural checks against pinned sources and approved controlled language. Free-form tone, full lore, balance and faithful tabletop conversion require separate review. Unknown source directions hold rather than silently using stale templates."
+  }
+}
