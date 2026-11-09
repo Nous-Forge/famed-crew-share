@@ -25,3 +25,14 @@ content-pipeline/shared/runs-v2/
 content-pipeline/shared/runs-v3/
 content-pipeline/shared/runs-v4/
 integrated-verification-*.json
+
+# Local environments, test cache and coverage
+.venv/
+venv/
+.pytest_cache/
+coverage/
+.coverage
+
+# Local agent working folders never belong in repositories
+.claude/
+.codex/

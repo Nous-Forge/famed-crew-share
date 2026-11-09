@@ -1,11 +1,11 @@
 {
-  "kind": "Current public payload manifest after documentation-only V15 update; runtime and previously tracked Word bytes retained",
+  "kind": "Current public payload manifest after owner-requested local-work ignore rules; all other payload bytes unchanged",
   "pdfSha256": "732e3b3955a48928915f44ac95aaece923704048ad010c75cdde747e79d60ad6",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 479,
-      "sha256": "37e0f62d0a7c87fc67f7398dc3ca69d6eb85a5a1c974a732ae5243e9fbd00322"
+      "bytes": 662,
+      "sha256": "3e9b5fa50d11d67c4f3281c3db8890e9f92ad6af6fc6f6dc0aecf1300bcac784"
     },
     {
       "path": "README.detailed-v15.md",
@@ -583,6 +583,6 @@
       "sha256": "4c0d903a820c78db25951b847d05a06c4ee86f2b36599eb236475db3d6871148"
     }
   ],
-  "previousManifestSha256": "8551a112dc9d28714f090cbd58158bc23108d3fb3b5ae4d6c1e21643c672bf8e",
-  "previousPublicCommit": "b7e87ad04cede07a584a6e177b0faca83c94639a"
+  "previousManifestSha256": "b22989a88a45a6580fd431be529f40f2ada5e5052274373b0af974c22258088a",
+  "previousPublicCommit": "38bde4a5d6509e0064ce95ceff868280dd145486"
 }
