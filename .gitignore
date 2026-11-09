@@ -17,6 +17,7 @@ private-rag-library/
 # Installed dependencies and local runtime/cache output
 node_modules/
 __pycache__/
+runs/
 *.pyc
 .DS_Store
 Thumbs.db

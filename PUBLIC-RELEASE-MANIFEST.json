@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 472,
-      "sha256": "75b171e57a5031090fcf610047a4f5f4b0e0594bf7fd30ed7cdf2651501661b2"
+      "bytes": 479,
+      "sha256": "37e0f62d0a7c87fc67f7398dc3ca69d6eb85a5a1c974a732ae5243e9fbd00322"
     },
     {
       "path": "README.detailed-v15.md",
@@ -16,6 +16,11 @@
       "path": "README.md",
       "bytes": 3777,
       "sha256": "1316b461cc8551ad3851d3b1b2b5ba3f7b09b13fa35b91bb1ce6bbf7d68344c9"
+    },
+    {
+      "path": "archive/v15-before-doc-update-20261109T050159Z/.gitignore",
+      "bytes": 25,
+      "sha256": "26029d620d2d97401e000db34d97c2278791979dc966998417316e35b7bdca9f"
     },
     {
       "path": "archive/v15-before-doc-update-20261109T050159Z/FAMED_Agent_Crew_Report_v15.pdf",
