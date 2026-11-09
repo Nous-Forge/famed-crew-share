@@ -18,26 +18,6 @@
       "sha256": "ee2ec266f3c1027db965fe9ed16490f3b8c3157e50216129b165b4e43f048424"
     },
     {
-      "path": "archive/v15-before-doc-update-20261109T050159Z/.gitignore",
-      "bytes": 25,
-      "sha256": "26029d620d2d97401e000db34d97c2278791979dc966998417316e35b7bdca9f"
-    },
-    {
-      "path": "archive/v15-before-doc-update-20261109T050159Z/FAMED_Agent_Crew_Report_v15.pdf",
-      "bytes": 1890250,
-      "sha256": "52405f9d61a974a690265294c217b9fa90177d1ed61b9c3ac87ac30ba0f1e741"
-    },
-    {
-      "path": "archive/v15-before-doc-update-20261109T050159Z/PUBLIC-RELEASE-MANIFEST.json",
-      "bytes": 19653,
-      "sha256": "8551a112dc9d28714f090cbd58158bc23108d3fb3b5ae4d6c1e21643c672bf8e"
-    },
-    {
-      "path": "archive/v15-before-doc-update-20261109T050159Z/README.md",
-      "bytes": 3501,
-      "sha256": "be5cdcb76e0b567ae67aa4a1581f238cf31cb7f077ac19c58719d28ed9571cd2"
-    },
-    {
       "path": "content-consumer.cjs",
       "bytes": 2397,
       "sha256": "0ba253ee7e112cb6564509bc8b8791575008fd175acb3d95c97d2044f432e62d"
@@ -273,81 +253,6 @@
       "sha256": "5cde426d7d0f782186336242eb8dfa684cd890e3c9a847379c9480c849f7a308"
     },
     {
-      "path": "examples/content/boss-rules.json",
-      "bytes": 1753,
-      "sha256": "582bf39346427992467fcac41538c9bc2c03ef6dc3e868607bcdffdfa17570e3"
-    },
-    {
-      "path": "examples/content/card-text.json",
-      "bytes": 33355,
-      "sha256": "77344b9dc1fd2eb38afddebfacf2090a43e0b73b0b2ebb0dbbef3b75319c15b3"
-    },
-    {
-      "path": "examples/content/crew-dialogue.json",
-      "bytes": 1748,
-      "sha256": "895d13b085bb23ebb84f6d2cfed5bf6a872c01477c1c94597811f680ed50c9c4"
-    },
-    {
-      "path": "examples/content/critic-trace.json",
-      "bytes": 5816,
-      "sha256": "1e09f37a655dba92977f69e7ad6c85e7c3bfbebac0af8295933982dbb6eec1cf"
-    },
-    {
-      "path": "examples/reviewed-content/boss-rules.json",
-      "bytes": 2363,
-      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
-    },
-    {
-      "path": "examples/reviewed-content/card-text.json",
-      "bytes": 20169,
-      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
-    },
-    {
-      "path": "examples/reviewed-content/crew-dialogue.json",
-      "bytes": 3004,
-      "sha256": "0c707cd03a8b4db9454a2acfcb58736a9ec0e830da6ecf6956bf3ee6ce57bd46"
-    },
-    {
-      "path": "examples/reviewed-content/critic-after.json",
-      "bytes": 314,
-      "sha256": "a971d37b946ac1fcc0d68fddd4e8c21a366008ac3fe83b0dedc05e335536a79a"
-    },
-    {
-      "path": "examples/reviewed-content/critic-before.json",
-      "bytes": 1599,
-      "sha256": "66a8cc998fc6f99ee3030b0573936847b02e41411cbbd04c0b8a8e58040bac97"
-    },
-    {
-      "path": "examples/reviewed-content/critic-trace.json",
-      "bytes": 7474,
-      "sha256": "c68374cbfd97ef3677337230e3a39fe164a6a2ddf8cac11cdbd65003892f71eb"
-    },
-    {
-      "path": "examples/reviewed-content/drafts/boss-rules.json",
-      "bytes": 2366,
-      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
-    },
-    {
-      "path": "examples/reviewed-content/drafts/card-text.json",
-      "bytes": 20136,
-      "sha256": "c717007d8d901f9dbd8b14b6a94f9bf77c8bda9a12807d8bf767b372596fa352"
-    },
-    {
-      "path": "examples/reviewed-content/drafts/crew-dialogue.json",
-      "bytes": 3004,
-      "sha256": "0c707cd03a8b4db9454a2acfcb58736a9ec0e830da6ecf6956bf3ee6ce57bd46"
-    },
-    {
-      "path": "examples/reviewed-content/engine-consumption.json",
-      "bytes": 760,
-      "sha256": "c1f927b63380e9fd421b96958719ad8ffdf8cac1dab829f3fc838b26c696a278"
-    },
-    {
-      "path": "examples/reviewed-content/repairs.json",
-      "bytes": 782,
-      "sha256": "25501202c468f2293679a3d7e7618d992c3e544dad714db5df77758c82b7d5b7"
-    },
-    {
       "path": "examples/reviewed-v15-final/boss-rules.json",
       "bytes": 2363,
       "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
@@ -399,66 +304,6 @@
     },
     {
       "path": "examples/reviewed-v15-final/repairs.json",
-      "bytes": 2300,
-      "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
-    },
-    {
-      "path": "examples/reviewed-v15/F1-read-binding-regression.json",
-      "bytes": 488,
-      "sha256": "60c1fbded4d1c2e33cabc48ff5cf7634c46d4965967c3d05a6b0066c5842347f"
-    },
-    {
-      "path": "examples/reviewed-v15/boss-rules.json",
-      "bytes": 2363,
-      "sha256": "f976a7ceb3b5e74dd181b43790793ae697a632512500c0695e6caf3e4bcf5fbc"
-    },
-    {
-      "path": "examples/reviewed-v15/card-text.json",
-      "bytes": 20169,
-      "sha256": "0464e0aa4f3991fe65d779f861477f31f85f2a4feedb55d86dbad083ead3800b"
-    },
-    {
-      "path": "examples/reviewed-v15/complete-fights.json",
-      "bytes": 77524,
-      "sha256": "cf523fa29260da18e029b91326f7b7898c84dc927f12d20c130b8fb9e67c06aa"
-    },
-    {
-      "path": "examples/reviewed-v15/crew-dialogue.json",
-      "bytes": 8267,
-      "sha256": "e9ec313c8d51658e4bdd9a5dc2b9d30c5f78df17faa61d1d63d428ccc4122cfd"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-after.json",
-      "bytes": 756,
-      "sha256": "af8d3a0622d83edcc613106200aa3d747cffead80f67f81de85019e534969508"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-before.json",
-      "bytes": 7058,
-      "sha256": "e46ec0777b64972c374403e98c2cfa11e145b71caf80d672a97a177c611325bc"
-    },
-    {
-      "path": "examples/reviewed-v15/critic-trace.json",
-      "bytes": 25015,
-      "sha256": "b18e8bf46aeeaf8d20b06aa963045afe3d32ff652bdcdb9e08a64b30f97f98d3"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/boss-rules.json",
-      "bytes": 2366,
-      "sha256": "208058c048ff43e3df5be5c245b9a0d615ab033af0522124d62cc77729d744e3"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/card-text.json",
-      "bytes": 20048,
-      "sha256": "19912acd61ed52dfbe93c5e75b349d92924677ccc7fafe7b471fe896636db871"
-    },
-    {
-      "path": "examples/reviewed-v15/drafts/crew-dialogue.json",
-      "bytes": 8265,
-      "sha256": "f2a77777553de41f5e233aa56a0ddff22009018c76845f753d1aa105ce7063e2"
-    },
-    {
-      "path": "examples/reviewed-v15/repairs.json",
       "bytes": 2300,
       "sha256": "bbb154453a6510d7602905361969dc8e19dbeec919a6985c4a3547f165842688"
     },
