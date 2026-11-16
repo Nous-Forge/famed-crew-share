@@ -1,0 +1,9 @@
+A5 seed scan, normal all-AI main-scene fights (X:/FAMED game ce11153 + bc6c6a2), Lead Eng 2026-11-15 18:15-18:22 PT.
+Scripts: game/godot/tests/agent_exhaust_seed_scan.gd (seeds 1-60), agent_exhaust_seed_scan2.gd (seeds 61-300, stopped at its 580 s time limit after seed 160).
+SCAN|seeds 1-60: natural reshuffles 0, most boss draws 26 (seed 56)
+SCAN|at seed 80: most boss draws 22 (seed 62), natural 0
+SCAN|at seed 100: most boss draws 22 (seed 62), natural 0
+SCAN|at seed 120: most boss draws 25 (seed 100), natural 0
+SCAN|at seed 140: most boss draws 28 (seed 133), natural 0
+SCAN|at seed 160: most boss draws 28 (seed 133), natural 0
+RESULT: seeds 1-160, 0 natural boss reshuffles; most boss draws 28 of 30 (seed 133).
