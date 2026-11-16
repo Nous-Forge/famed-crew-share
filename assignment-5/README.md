@@ -8,10 +8,10 @@ The agent is one Python file, `agent.py`. It runs outside the game as a build to
 
 | Feature | What it does | Checks |
 |---|---|---|
-| Exhaust and reshuffle | When the boss's action deck runs out, its used actions are shuffled back with the seeded random number generator, and the combat log says "Boss action deck is exhausted and reshuffled." Live combat calls it on every boss turn (`scripts/combat.gd` `_exhaust_action_deck()`, called in `npc_turn`). A short fight uses 9 to 17 of the boss's 30 action draws, so the reshuffle shows in long fights. | 9 of 9 unit checks and 4 of 4 live-turn checks pass |
+| Exhaust and reshuffle | When the boss's action deck runs out, its used actions are shuffled back with the seeded random number generator, and the combat log says "Boss action deck is exhausted and reshuffled." Live combat calls it on every boss turn (`scripts/combat.gd` line 1058, `_exhaust_action_deck()`, called in `npc_turn` at lines 496 and 501). A normal fight uses 9 to 17 of the boss's 30 action cards, so the reshuffle fires only in long fights. The live proof starts fights with 3 boss cards left. | 9 of 9 unit checks pass. 4 of 4 live checks pass: the boss deck refills, the same seed gives the same order, the log line appears, and hero decks never refill. |
 | Straight to combat (my change, not the agent's) | My game's own title screen now sends Start straight into Round 1 of the fight. | Passes in the full suite |
 
-The full Godot test suite gives 297 passes and 1 fail. The 1 fail is an old AI test (PIE-117) that failed before any of my changes. Live proof: `screenshots/06-exhaust-live.txt`.
+The full Godot test suite gives 297 passes and 1 fail. The 1 fail is an old AI test (PIE-117) that failed before any of my changes. Full log: `screenshots/06-exhaust-suite.txt`. Live proof: `screenshots/06-exhaust-live.txt`.
 
 Screenshots: `screenshots/04-start-screen.png` and `screenshots/05-combat.png`.
 
