@@ -180,6 +180,7 @@ CHECK|exhaust live: boss action deck refilled from its discard after the last dr
 CHECK|exhaust live: same seed gives the same boss action order|PASS
 CHECK|exhaust live: 'Boss action deck is exhausted and reshuffled.' in the event log|PASS
 CHECK|exhaust live: hero decks (health) are never refilled|PASS
+CHECK|exhaust live: a hero with an empty deck does not refill (deck = health)|PASS
 CHECK|start_screen root is Control|PASS
 CHECK|start_screen button says Start|PASS
 CHECK|start_screen targets combat scene|PASS
@@ -343,7 +344,7 @@ CHECK|BEST PARTS attack range: the 8 perimeter tiles next to the Ogre show red o
 CHECK|BEST PARTS log colors: dark movement ink on parchment and bold actor name|PASS
 MISSING: art table/tokens/reroll.png - X:/FAMED/art/table/tokens/reroll.png
 CHECK|BEST PARTS log scroll: the log has a scroll bar and a drag scrolls it up (max 2325, 2184 -> 2104)|PASS
-RESULT {"failed":1,"missing_decks":0,"passed":297}
+RESULT {"failed":1,"missing_decks":0,"passed":298}
 WARNING: 2 RIDs of type "CanvasItem" were leaked.
    at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2678)
 WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
