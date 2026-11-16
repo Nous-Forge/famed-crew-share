@@ -103,7 +103,49 @@ I did not change any logic the agent wrote. I did not merge the loot code it mad
 
 ## What I learned
 
-The game already had a title screen, but the agent did not find it. Its code signs looked for `start_screen` and `press start`, and my screen used other names. So it built a worse copy. Two fixes followed. The title screen's names now count as code signs. And before it writes, the agent now reads the v6 code nearest to the feature and is told to build on it, never replace it. A dry run after the fix finds 11 of 11 combat features built and writes nothing.
+| # | Lesson | What happened | What I do now |
+|---|---|---|---|
+| 1 | A score is only as good as its inputs | A classmate's example scores impact, urgency, confidence and risk, but a person types the numbers. Then the person decides, not the agent. | Every input comes from my sources or my code. The agent can show where each number came from. |
+| 2 | Text matching lies | "region" matched "interactive regions" in my UI notes, so a Region deck came first by mistake. | Whole-word matching and exact terms, and I read the top evidence lines before I trust a score. |
+| 3 | Unverified does not mean missing | The Region deck exists only as a card PDF, with no text the agent can read. | The agent reports it as unverified and builds nothing. No file, no fact. |
+| 4 | Old versions inflate a rule | I have rulebooks 5.0, 5.1 and 5.2. Counted 3 times, old rules look 3 times as important. | One version family counts once, and the same sentence counts once. |
+| 5 | Scope decides the order | The scores mixed world features (regions, loot) with combat. My capstone is the combat loop. | A scope flag. World features stay in the list for later. |
+| 6 | Code signs are claims | My game already had a title screen with other names, so the agent built a worse copy. | Code signs for what exists, and the agent reads the nearest v6 code before it writes. |
+| 7 | A passing test is not a working feature | The exhaust code passed 9 checks, but only the tests called it. A real fight never used it. | A feature counts as built only when live play calls it, with a live-turn check. |
+| 8 | A working feature can still break a rule | Wired into the heroes' draw, the reshuffle healed heroes, because in F.A.M-E.D. the deck is your health. The source line the agent scored was about the boss action deck. | The source line travels with the code to the person who connects it, and the review checks it against the rules, not only the tests. |
+| 9 | Tools fail, and a loop without progress repeats | The code writer's login expired, and the loop chose the same feature 4 times. | A second writer, and a stop rule when no code is written. |
+| 10 | Review is the real guardrail | Review caught 4 problems in one evening: a false gap, a duplicate screen, a feature nobody called and a rule break. | The agent never writes into the game. A second agent connects the code, and a third one audits it. |
+
+The biggest lesson: the agent is good at finding and ranking gaps. Knowing where a feature belongs in the game still needs the rules and a reviewer.
+
+## The system around the agent
+
+I run my project as a small studio of AI agents, with me as the owner on top. The chart below (version 9) shows who orders whom, who checks whom, and which sources everyone reads. The RAG ladder in its top right corner is the same ranked source list my agent scores with.
+
+![Studio chart v9](chart/studio-chart-v9.png)
+
+How the gap agent fits in:
+
+| Step | Role on the chart | Job |
+|---|---|---|
+| 1 | Owner (me) | Sets the goal and the scope: the combat loop |
+| 2 | Lead Designer | Runs the gap agent, reads the scores and the evidence, and writes the job |
+| 3 | Gap agent (`agent.py`) | Scores the gaps and writes the code into a review folder only |
+| 4 | Lead Engineer | Reviews the code, connects it to the game, and runs the tests |
+| 5 | Auditor | Checks the result against the brief and my orders. PASS or FAIL, with fixes. |
+| 6 | Owner (me) | Accepts or rejects |
+
+## Next: the agent inside Paperclip
+
+My studio's builder agents run in Paperclip, an agent task board with issues, heartbeats and reviews. For this assignment I ran the gap agent by hand as a local script. It is not in Paperclip yet. This is the plan:
+
+| Step | Plan |
+|---|---|
+| 1 | Register the gap agent in Paperclip as its own agent, with an adapter that runs `agent.py` |
+| 2 | Add it to the studio chart: who runs it, who reviews its code, who merges it |
+| 3 | Each run opens one Paperclip issue for the top gap, with the score line and the source lines as evidence |
+| 4 | A builder agent connects the code, and the Auditor checks it before it reaches the game |
+| 5 | A routine runs the agent after each merge, so the gap list stays current until nothing in the combat loop is missing |
 
 ## Files
 
@@ -114,4 +156,5 @@ The game already had a title screen, but the agent did not find it. Its code sig
 | `feature/` | The code the agent wrote, as merged into the game |
 | `screenshots/` | Agent runs, test results and the game |
 | `runs/` | Prompts, replies and logs of every run, including the failed ones |
+| `chart/` | My studio chart, version 9 |
 | `DELIVERY.md` | The short text for the class form |
