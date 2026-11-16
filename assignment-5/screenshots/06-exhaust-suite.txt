@@ -176,10 +176,10 @@ CHECK|exhaust returns to ready|PASS
 CHECK|exhaust does not recycle a nonempty deck|PASS
 CHECK|exhaust handles an exhausted draw source|PASS
 CHECK|exhaust failures emit no reshuffle event|PASS
-CHECK|exhaust live: start_turn refills an empty deck from discard|PASS
-CHECK|exhaust live: hand drawn to the limit after reshuffle|PASS
-CHECK|exhaust live: reshuffle message in the event log|PASS
-CHECK|exhaust live: same seed gives the same hand|PASS
+CHECK|exhaust live: boss action deck refilled from its discard after the last draw|PASS
+CHECK|exhaust live: same seed gives the same boss action order|PASS
+CHECK|exhaust live: 'Boss action deck is exhausted and reshuffled.' in the event log|PASS
+CHECK|exhaust live: hero decks (health) are never refilled|PASS
 CHECK|start_screen root is Control|PASS
 CHECK|start_screen button says Start|PASS
 CHECK|start_screen targets combat scene|PASS
@@ -216,14 +216,14 @@ CHECK|ogre: Regeneration shuffles 6 back|PASS
 CHECK|ogre: after Regeneration the boss takes no damage this round|PASS
 CHECK|ogre: no-damage ends at the next round|PASS
 CHECK|ogre: Regeneration with empty discard: 0 back, boss moves and attacks|PASS
-OGRE|seed 1|win|rounds 18|boss deck 0|players up 3
-OGRE|seed 2|win|rounds 20|boss deck 0|players up 3
-OGRE|seed 3|loss|rounds 19|boss deck 34|players up 0
-OGRE|seed 4|win|rounds 18|boss deck 0|players up 3
-OGRE|seed 5|win|rounds 15|boss deck 0|players up 3
-OGRE|seed 6|win|rounds 41|boss deck 0|players up 1
-OGRE|seed 7|win|rounds 32|boss deck 0|players up 1
-OGRE|seed 8|win|rounds 21|boss deck 0|players up 2
+OGRE|seed 1|loss|rounds 22|boss deck 68|players up 0
+OGRE|seed 2|loss|rounds 11|boss deck 84|players up 0
+OGRE|seed 3|loss|rounds 11|boss deck 88|players up 0
+OGRE|seed 4|loss|rounds 12|boss deck 82|players up 0
+OGRE|seed 5|loss|rounds 12|boss deck 62|players up 0
+OGRE|seed 6|loss|rounds 9|boss deck 86|players up 0
+OGRE|seed 7|loss|rounds 9|boss deck 82|players up 0
+OGRE|seed 8|loss|rounds 21|boss deck 76|players up 0
 CHECK|ogre: 8 of 8 fights end in a win or a loss (no draw)|PASS
 CHECK|ogre: same seed gives the same fight|PASS
 CHECK|ogre: all 3 boss lines happen in a full fight|PASS
@@ -267,16 +267,16 @@ CHECK|encounter: after a move tiles no longer adjacent go to the bowl|PASS
 CHECK|encounter: stepping on a revealed tile draws 1 Dungeon card and resolves it|PASS
 CHECK|encounter: TRP_08 fail activates the Ogre in the central four, health 30 x 4, Ogre AI|PASS
 CHECK|encounter: TRP_08 success reveals the Ogre; engaging it starts Combat Mode|PASS
-ENCOUNTER|seed 68|win|landscape rounds 33|keystones ["HRO_01", "HRO_02", "HRO_03", "DOM_01", "DOM_02", "DOM_03"]|dungeon rounds 2|traps ["TRP_05", "TRP_06", "TRP_02", "TRP_07", "TRP_08"]|fight rounds 28
+ENCOUNTER|seed 68|loss|landscape rounds 33|keystones ["HRO_01", "HRO_02", "HRO_03", "DOM_01", "DOM_02", "DOM_03"]|dungeon rounds 2|traps ["TRP_05", "TRP_06", "TRP_02", "TRP_07", "TRP_08"]|fight rounds 6
 CHECK|encounter seed 68: landscape -> dungeon -> traps -> Ogre fight, in order|PASS
 CHECK|encounter seed 68: 6 unique keystones before the dungeon|PASS
 CHECK|encounter seed 68: the run ends in a win or a loss|PASS
 CHECK|encounter seed 68: same seed gives the same run|PASS
-ENCOUNTER|seed 6801|win|landscape rounds 24|dungeon rounds 3|traps 10
-ENCOUNTER|seed 6802|win|landscape rounds 20|dungeon rounds 4|traps 13
-ENCOUNTER|seed 6803|win|landscape rounds 13|dungeon rounds 1|traps 2
-ENCOUNTER|seed 6804|win|landscape rounds 28|dungeon rounds 1|traps 2
-ENCOUNTER|seed 6805|win|landscape rounds 17|dungeon rounds 3|traps 10
+ENCOUNTER|seed 6801|loss|landscape rounds 24|dungeon rounds 3|traps 10
+ENCOUNTER|seed 6802|loss|landscape rounds 20|dungeon rounds 4|traps 13
+ENCOUNTER|seed 6803|loss|landscape rounds 13|dungeon rounds 1|traps 2
+ENCOUNTER|seed 6804|loss|landscape rounds 28|dungeon rounds 1|traps 2
+ENCOUNTER|seed 6805|loss|landscape rounds 17|dungeon rounds 3|traps 10
 CHECK|encounter: 5 of 5 more seeds reach the Ogre fight and end in a win or a loss|PASS
 CHECK|elite ELT_3 Thuringdir: Cone, Wall +2 & check P/C, Recover +1 & roll AI 5+ (8 seeds)|PASS
 CHECK|elite ELT_4 Bluk: range 2 +1, far range 4 +2 & check N/W double, Cleave +2 (8 seeds)|PASS
@@ -303,7 +303,7 @@ CHECK|artifact ART_03 shows its art (52x72 pixel art)|PASS
 CHECK|artifact ART_04 shows its art (52x72 pixel art)|PASS
 CHECK|artifact frame marks the party's role (captain -> ART_01 only)|PASS
 CHECK|screen fight starts: Ogre health 30, a player turn with 7 cards in hand|PASS
-CHECK|screen plays one Ogre fight to the end (win)|PASS
+CHECK|screen plays one Ogre fight to the end (loss)|PASS
 CHECK|PIE-117 start: Ogre starts in the center (4, 4)|PASS
 CHECK|PIE-117 start: the 4 characters start one in each corner|PASS
 deck traps: 8 cards (expected 8)
@@ -321,11 +321,11 @@ deck artifacts: 4 cards (expected 4)
 FAMED main scene ready
 MISSING: art table/die_green.png - X:/FAMED/art/table/die_green.png
 MISSING: art table/die_blue.png - X:/FAMED/art/table/die_blue.png
+CHECK|PIE-117 AI: 4 AI seats play a whole fight by themselves (loss, 11 rounds)|PASS
 MISSING: art table/die_yellow.png - X:/FAMED/art/table/die_yellow.png
-CHECK|PIE-117 AI: 4 AI seats play a whole fight by themselves (win, 12 rounds)|PASS
-PIE117|AI fights seeds 1-20: 18 wins, first win seed 1, cards 279, moves 662
+PIE117|AI fights seeds 1-20: 0 wins, first win seed -1, cards 148, moves 662
 CHECK|PIE-117 AI: the AI moves, plays cards and attacks|PASS
-CHECK|PIE-117 AI: an all-AI fight ends in a win (seed 1)|PASS
+CHECK|PIE-117 AI: an all-AI fight ends in a win (seed -1)|FAIL
 CHECK|PIE-117 seats: seat 1 person, seats 2-4 AI; the person's turn waits|PASS
 CHECK|PIE-117 auto combat: AUTO on, the AI plays the person seat too and the fight ends (loss)|PASS
 CHECK|PIE-117 auto combat: AUTO off gives the surviving owned seat back to its person|PASS
@@ -343,4 +343,8 @@ CHECK|BEST PARTS attack range: the 8 perimeter tiles next to the Ogre show red o
 CHECK|BEST PARTS log colors: dark movement ink on parchment and bold actor name|PASS
 MISSING: art table/tokens/reroll.png - X:/FAMED/art/table/tokens/reroll.png
 CHECK|BEST PARTS log scroll: the log has a scroll bar and a drag scrolls it up (max 2325, 2184 -> 2104)|PASS
-RESULT {"failed":0,"missing_decks":0,"passed":298}
+RESULT {"failed":1,"missing_decks":0,"passed":297}
+WARNING: 2 RIDs of type "CanvasItem" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2678)
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object/object.cpp:2514)
