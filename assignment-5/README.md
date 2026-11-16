@@ -1,6 +1,6 @@
 # Assignment 5: Goal-Oriented Coding Agent
 
-F.A.M-E.D. is my co-op deck-building dungeon crawl. For this course I build its combat loop in Godot. For this assignment I built an agent that decides what that combat loop is still missing, decides what to build first, and writes the code for it.
+F.A.M-E.D. is my co-op deck-building dungeon crawl. My capstone for this course is its combat loop, built in Godot. For this assignment I built an agent that decides what that combat loop is still missing, decides what to build first, and writes the code for it.
 
 The agent is one Python file, `agent.py`. It runs outside the game as a build tool. The game lives in my own game repository. This folder holds copies of the agent, the code it wrote, the run logs and the screenshots.
 
