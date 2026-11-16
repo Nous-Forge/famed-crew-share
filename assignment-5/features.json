@@ -1,0 +1,205 @@
+{
+ "_note": "Requirement list for the A5 agent. Each feature names the words the RAG uses for it (rag_terms), the code signs that prove it exists in game/godot (code_signs), and the features it needs first (needs). The agent computes every score from the RAG and the scan; nothing here is a score. scope: combat = the course capstone loop now; world = kept for the full game later (run --scope all).",
+ "features": [
+  {
+   "id": "start_screen",
+   "kind": "ui",
+   "name": "Start screen into combat",
+   "rag_terms": [
+    "start screen",
+    "title screen",
+    "press start",
+    "main menu",
+    "start button"
+   ],
+   "code_signs": [
+    "start_screen",
+    "press start",
+    "title_panel",
+    "_title_action"
+   ],
+   "needs": [],
+   "scope": "combat"
+  },
+  {
+   "id": "draw",
+   "name": "Draw from deck",
+   "rag_terms": [
+    "draw"
+   ],
+   "code_signs": [
+    "func draw",
+    "draw_"
+   ],
+   "needs": [],
+   "scope": "combat"
+  },
+  {
+   "id": "discard",
+   "name": "Discard pile",
+   "rag_terms": [
+    "discard"
+   ],
+   "code_signs": [
+    "discard"
+   ],
+   "needs": [
+    "draw"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "dice",
+   "name": "Dice checks",
+   "rag_terms": [
+    "dice",
+    "roll"
+   ],
+   "code_signs": [
+    "roll_check",
+    "randi_range"
+   ],
+   "needs": [],
+   "scope": "combat"
+  },
+  {
+   "id": "deck_health",
+   "name": "Deck health",
+   "rag_terms": [
+    "deck health",
+    "deck-health"
+   ],
+   "code_signs": [
+    "func health"
+   ],
+   "needs": [
+    "draw",
+    "discard"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "burden",
+   "name": "Burden cards",
+   "rag_terms": [
+    "burden"
+   ],
+   "code_signs": [
+    "burden"
+   ],
+   "needs": [
+    "draw"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "heritage",
+   "name": "Heritage cards",
+   "rag_terms": [
+    "heritage"
+   ],
+   "code_signs": [
+    "heritage"
+   ],
+   "needs": [],
+   "scope": "combat"
+  },
+  {
+   "id": "artifact",
+   "name": "Artifact cards",
+   "rag_terms": [
+    "artifact"
+   ],
+   "code_signs": [
+    "activate_artifact"
+   ],
+   "needs": [],
+   "scope": "combat"
+  },
+  {
+   "id": "elite",
+   "name": "Elite enemies",
+   "rag_terms": [
+    "elite"
+   ],
+   "code_signs": [
+    "elite_health"
+   ],
+   "needs": [
+    "dice"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "keystone",
+   "name": "Keystone cards",
+   "rag_terms": [
+    "keystone"
+   ],
+   "code_signs": [
+    "keystone"
+   ],
+   "needs": [],
+   "scope": "world"
+  },
+  {
+   "id": "region",
+   "name": "Region deck",
+   "rag_terms": [
+    "region deck",
+    "region card",
+    "region cards"
+   ],
+   "code_signs": [
+    "region"
+   ],
+   "needs": [
+    "keystone"
+   ],
+   "scope": "world"
+  },
+  {
+   "id": "exhaust",
+   "name": "Exhaust and reshuffle",
+   "rag_terms": [
+    "exhaust",
+    "exhaustion",
+    "exhausted"
+   ],
+   "code_signs": [
+    "exhaust"
+   ],
+   "needs": [
+    "draw",
+    "discard"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "stun",
+   "name": "Stun effect",
+   "rag_terms": [
+    "stun"
+   ],
+   "code_signs": [
+    "stun"
+   ],
+   "needs": [
+    "dice"
+   ],
+   "scope": "combat"
+  },
+  {
+   "id": "loot",
+   "name": "Loot drops",
+   "rag_terms": [
+    "loot"
+   ],
+   "code_signs": [
+    "loot"
+   ],
+   "needs": [],
+   "scope": "world"
+  }
+ ]
+}

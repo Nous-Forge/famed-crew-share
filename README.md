@@ -52,3 +52,7 @@ Read the [\[detailed guide\]](README.detailed-v15.md) for source limits. [\[Crew
 Copyright 2026 Piero L. S. Folly, Khi-Rho Studios.
 
 Editable Word sources stay local for future updates.
+
+## Assignment 5: Goal-oriented coding agent
+
+My agent reads my ranked design sources, scans my Godot combat code, scores what is missing and writes the code for the top gap. See [assignment-5/README.md](assignment-5/README.md).
