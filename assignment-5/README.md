@@ -19,7 +19,7 @@ Screenshots: `screenshots/04-start-screen.png` and `screenshots/05-combat.png`.
 
 | Area | Before | After |
 |---|---|---|
-| Boss action deck | When the boss ran out of action cards, it had nothing left to draw. | Its used actions shuffle back with the fight's seed, so the same seed gives the same fight. The log tells the players. |
+| Boss action deck | The boss's action cards cycled in one fixed order, with no discard pile. | Drawn actions go to a discard pile. When the deck runs out, the discard pile shuffles back with the fight's seed, so the same seed gives the same fight. The log tells the players. |
 | Gap list for the combat loop | I guessed what was missing. | The agent checks 11 combat features against my sources and my code. Today all 11 are built. |
 | Build order | I picked the next task by feel. | Each gap gets a score, with the source lines behind it, and dependencies come first. |
 | Review chain | Code went from idea to game in one step. | The agent writes into a review folder. A second agent connects the code, and a third one audits it. |
