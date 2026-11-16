@@ -8,10 +8,10 @@ The agent is one Python file, `agent.py`. It runs outside the game as a build to
 
 | Feature | What it does | Checks |
 |---|---|---|
-| Exhaust and reshuffle | When the boss's action deck runs out, its used actions are shuffled back with the seeded random number generator, and the combat log says "Boss action deck is exhausted and reshuffled." Live combat calls it on every boss turn (`scripts/combat.gd` line 1058, `_exhaust_action_deck()`, called in `npc_turn` at lines 496 and 501). A normal fight uses 9 to 17 of the boss's 30 action cards, so the reshuffle fires only in long fights. The live proof starts fights with 3 boss cards left. | 9 of 9 unit checks pass. 4 of 4 live checks pass: the boss deck refills, the same seed gives the same order, the log line appears, and hero decks never refill. |
+| Exhaust and reshuffle | When the boss's action deck runs out, its used actions are shuffled back with the seeded random number generator, and the combat log says "Boss action deck is exhausted and reshuffled." Live combat calls it on every boss turn (`scripts/combat.gd` line 1058, `_exhaust_action_deck()`, called in `npc_turn` at lines 496 and 501). A normal fight uses 9 to 17 of the boss's 30 action cards, so the reshuffle fires only in long fights. The live proof starts fights with 3 boss cards left. | 9 of 9 unit checks pass. 5 of 5 live checks pass: the boss deck refills, the same seed gives the same order, the log line appears, hero decks never refill, and a hero with an empty deck stays empty. |
 | Straight to combat (my change, not the agent's) | My game's own title screen now sends Start straight into Round 1 of the fight. | Passes in the full suite |
 
-The full Godot test suite gives 297 passes and 1 fail. The 1 fail is an old AI test (PIE-117) that failed before any of my changes. Full log: `screenshots/06-exhaust-suite.txt`. Live proof: `screenshots/06-exhaust-live.txt`.
+The full Godot test suite gives 298 passes and 1 fail. The 1 fail is an old AI test (PIE-117) that failed before any of my changes. Full log: `screenshots/06-exhaust-suite.txt`. Live proof: `screenshots/06-exhaust-live.txt`.
 
 Screenshots: `screenshots/04-start-screen.png` and `screenshots/05-combat.png`.
 
@@ -107,7 +107,7 @@ After the start screen, the next pass found 11 of 11 combat features built and s
 | 4 | The agent's start screen was a bare copy of the title screen my game already had, with none of its art. | I rejected it in review and kept my v6 title screen. |
 | 5 | Start on my title screen opened party setup. I want Start to go straight into the fight. | I added a `straight_to_combat` flag (on by default). The title screen's Start uses it and starts Round 1 with the seats chosen on that screen. A lobby or world map can turn it off later. |
 | 6 | The tests still expected the old main scene. | Updated the main scene check and added the new checks to the test run |
-| 7 | Only the tests called the exhaust code, so a real fight never used it. | I connected it to live combat and added 4 live-turn checks. |
+| 7 | Only the tests called the exhaust code, so a real fight never used it. | I connected it to live combat and added live-turn checks. |
 | 8 | I first connected it to the heroes' draw. In F.A.M-E.D. the deck is your health, so each reshuffle healed a hero. The source line the agent scored was about the boss action deck ("Action draws cost no HP"). | I moved it to the boss action deck (`combat.gd`), added a boss discard pile, and put the heroes' draw back as it was. A live check now proves hero decks never refill. |
 
 I did not change any logic the agent wrote. I did not merge the loot code it made in an early run, because loot is outside the combat scope.

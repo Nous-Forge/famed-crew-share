@@ -33,3 +33,12 @@ static func run(db: CardDB, check: Callable) -> void:
 	for v in a["hero_before"]: hero_total_before += int(v)
 	for v in a["hero_after"]: hero_total_after += int(v)
 	check.call("exhaust live: hero decks (health) are never refilled", hero_total_after <= hero_total_before)
+	# Auditor 18:08 item 3: a hero with an empty deck does NOT refill from the discard (deck = health).
+	var r := Rules.new(db, 4509)
+	var h := r.new_player("captain", "men")
+	h["discard"].append_array(h["hand"]); h["discard"].append_array(h["deck"])
+	h["hand"] = []; h["deck"] = []
+	var k: int = h["discard"].size()
+	r.start_turn(h)
+	check.call("exhaust live: a hero with an empty deck does not refill (deck = health)",
+		h["deck"].is_empty() and h["hand"].is_empty() and h["discard"].size() == k)
