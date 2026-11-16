@@ -1,0 +1,83 @@
+You write GDScript 4.5 for the F.A.M-E.D. Godot game.
+Feature to add: Exhaust and reshuffle (id exhaust).
+RAG evidence (the design sources):
+[rag/terra-crew-tests] challenge the lead review itself says k03 to k06 stand as one were covered by one combined test exhaust expire no stack sub cases not separately named
+[rag/terra-crew-tests] exhaustion reshuffles action ids with seeded rng
+[rag/terra-crew-tests] _log bauglor action deck is exhausted and reshuffled
+[rag/terra-artifacts] group 09 had one group 10 did not stages lead review json the lead review itself says k03 to k06 stand as one were covered by one combined test exhaust expire no stack sub cases not separately named
+[rag/terra-artifacts] reviewers systems designer 4 5 adversarial qa 3 and 5 production business analyst 3 player psychologist 5 narrative critic 1 adds the conditional world payoff n ndefine participation and reward eligibility event attrition bounds boss access
+[rag/terra-artifacts] gdd owner decision choose the cheapest demonstrable completion guarantee consistent with the crawl document its connectivity boss access meaning and recovery accounting then test unplaceable tiles and exhausted draws
+[rag/terra-artifacts] the single most important change is to make an explicit tested digital combat contract the prerequisite for implementation settling card recovery and exhaustion defence declarations response commitment and terminal precedence before bots re
+[rag/terra-artifacts] if damage discarded cards recycle whenever the deck empties damage may simply restore the same health pool if they do not ordinary card use and drawing can exhaust a character
+[rag/terra-artifacts] there is no direct disagreement with their technical findings n n connections their finding 1 and my finding 2 share a dependency settle recycling and exhaustion first then describe those events faithfully in card language and presentation
+[rag/terra-artifacts] specify and test the resolution sequence including chained responses and deck exhaustion before treating combat as implementation ready n n 2
+[rag/terra-artifacts] extend finding 4 s end to end validation to include an unplaceable tile and exhausted draw source before declaring the dungeon complete
+[rag/terra-artifacts] card recycling has no trigger leaving both survival and exhaustion undefined n n severity blocking n n passage omission 2 1 says damage discards cards deck first then the hand in any order unconsciousness occurs with deck empty then hand em
+
+Existing Rules API (scripts/rules.gd):
+class_name Rules
+var rng := RandomNumberGenerator.new()
+var skill_subtypes: Dictionary = {}
+var db: CardDB
+var events: Array[String] = []                   # every automatic step, in order
+var piles := {"skills": [], "consumables": [], "bad_rewards": []}   # reward piles, 1 entry per copy
+var heritage_errors: Array[String] = []          # PIE-65: heritage cards that disagree with HERITAGES
+var on_attack := Callable()
+func _init(card_db: CardDB, seed_value: int = 0) -> void:
+static func heritage_from_card(row: Dictionary) -> Dictionary:
+func new_player(role: String, heritage: String) -> Dictionary:
+func start_turn(p: Dictionary, burdens: Array = []) -> void:
+func start_round(players: Array) -> void:
+func artifact_of(p: Dictionary) -> Dictionary:
+func activate_artifact(actor: Dictionary, owner: Dictionary, ctx: Dictionary = {}) -> Dictionary:
+func health(p: Dictionary) -> int:
+func can_play(p: Dictionary, c: Dictionary) -> bool:
+func play(p: Dictionary, c: Dictionary) -> bool:
+func check(p: Dictionary, stat: String, player_mod: int = 0, ai_mod: int = 0, reward_pile: String = "skills", with_reward: bool = true, tags: Array = []) -> Dictionary:
+func roll_check(p: Dictionary, stat: String, player_mod: int = 0, ai_mod: int = 0, tags: Array = []) -> Dictionary:
+func finish_check(p: Dictionary, stat: String, res: Dictionary, reward_pile: String = "skills", with_reward: bool = true) -> Dictionary:
+func give_reward(p: Dictionary, res: Dictionary, reward_pile: String = "skills") -> void:
+static func elite_health(base: int, characters: int) -> int:
+static func damage(attack_roll: int, attack_mod: int, defense_roll: int) -> int:
+func attack(attacker_mod: int, target: Dictionary, defends: bool, attacker: Dictionary = {}, defense_mod: int = 0, mult: int = 1) -> int:
+func roll_attack(attacker_mod: int, target: Dictionary, defends: bool, attacker: Dictionary = {}, defense_mod: int = 0, mult: int = 1) -> Dictionary:
+func apply_attack_roll(result: Dictionary) -> int:
+func take_damage(p: Dictionary, n: int) -> void:
+func discard_top(p: Dictionary, n: int) -> int:
+func add_effect(u: Dictionary, id: String, rounds: int, value: int = 1) -> void:
+func effect(u: Dictionary, id: String) -> int:
+func use_effect(u: Dictionary, id: String) -> int:
+static func is_negative(id: String, value: int) -> bool:
+func tick_effects(u: Dictionary) -> void:
+func discard_pile(p: Dictionary) -> String:
+static func card_tags(row: Dictionary) -> Array:
+func legal_card_context(p: Dictionary, card: Dictionary, block: String, ctx: Dictionary) -> bool:
+func play_skill(p: Dictionary, c: Dictionary, block: String, ctx: Dictionary = {}) -> Dictionary:
+func _skill_check_block(p: Dictionary, id: String, row: Dictionary, party: Array, target: Dictionary, ctx: Dictionary, out: Dictionary) -> void:
+func _skill_combat_block(p: Dictionary, id: String, party: Array, target: Dictionary, ctx: Dictionary) -> void:
+func _skill_leap(p: Dictionary, id: String, cb, target: Dictionary, ctx: Dictionary) -> void:
+func play_consumable(p: Dictionary, c: Dictionary, block: String, ctx: Dictionary = {}) -> Dictionary:
+func discard_burden(p: Dictionary, c: Dictionary) -> bool:
+func draw_back(p: Dictionary, from: String = "discard") -> bool:
+func _draw_reward(p: Dictionary, pile: String, n: int) -> void:
+func _other(p: Dictionary, party: Array) -> Dictionary:
+func _skill_bypass(p: Dictionary, tags: Array) -> String:
+func _skill_reroll(u: Dictionary, first: int, once_id: String, die: String) -> int:
+func men_reroll(p: Dictionary, first: int, die: String) -> int:
+func roll_d6() -> int:
+func roll_combat() -> int:
+static func response_timing(phase: String) -> String:
+static func timing_family(phase: String) -> String:
+func _card(row: Dictionary, deck: String) -> Dictionary:
+func _draw_pile(id: String):
+func _draw_to_limit(p: Dictionary) -> void:
+func _shuffle(a: Array) -> void:
+func _say(s: String) -> void:
+
+Follow Game Programming Patterns (gameprogrammingpatterns.com): Command for actions, State for phases, Observer (signals) for events. Match the style of the existing scripts.
+Write exactly 2 files and nothing else, each in its own fenced block that starts with a line `# FILE: <path>`:
+1. scripts/agent/exhaust.gd : `class_name ExhaustFeature`, `extends RefCounted`,
+   pure logic on the player Dictionary (keys deck, hand, discard). It must contain the text "exhaust".
+2. tests/agent_exhaust_check.gd : `extends RefCounted`, `static func run(db: CardDB, check: Callable) -> void`,
+   calling check.call(name, bool) at least 3 times. Use only plain Dictionaries, no scenes.
+Keep each file under 80 lines.

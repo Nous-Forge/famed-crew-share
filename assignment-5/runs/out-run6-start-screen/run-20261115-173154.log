@@ -1,0 +1,12 @@
+SCOPE: combat (11 features); out of scope, kept for later: ['keystone', 'region', 'loot']
+RAG: 10 source groups, 29541 unique sentences
+
+PASS 1: built 10/11: ['artifact', 'burden', 'deck_health', 'dice', 'discard', 'draw', 'elite', 'exhaust', 'heritage', 'stun']
+  gap start_screen score 0.141 = 0.40*U0.0 + 0.30*I0.204 + 0.20*C0.5 - 0.10*R0.2  deps_met=True mentions=3
+  CHOSEN: start_screen (highest score with dependencies met)
+  writer claude: exit 1, 0 file block(s)
+  writer codex: exit 0, 3 file block(s)
+  wrote 3 file(s) to tools\a5-agent\out\pass_1
+
+PASS 2: built 11/11: ['artifact', 'burden', 'deck_health', 'dice', 'discard', 'draw', 'elite', 'exhaust', 'heritage', 'start_screen', 'stun']
+STOP: no confirmed gap with its dependencies met.
