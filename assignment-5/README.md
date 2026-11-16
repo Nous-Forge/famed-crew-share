@@ -8,7 +8,7 @@ The agent is one Python file, `agent.py`. It runs outside the game as a build to
 
 | Feature | What it does | Checks |
 |---|---|---|
-| Exhaust and reshuffle | When a deck runs out, the discard pile is shuffled with the seeded random number generator and becomes the new deck. Live combat calls it at `scripts/rules.gd` line 1004, in `_draw_to_limit`, every time a hero draws up to the hand limit. | 9 of 9 unit checks and 4 of 4 live-turn checks pass |
+| Exhaust and reshuffle | When a deck runs out, the discard pile is shuffled with the seeded random number generator and becomes the new deck. Live combat calls it at `scripts/rules.gd` line 1004, in `_draw_to_limit`, every time a hero draws up to the hand limit. Known issue: wired into the heroes' draw, it heals heroes (lesson 8). The fix moves it to the boss action deck. | 9 of 9 unit checks and 4 of 4 live-turn checks pass |
 | Straight to combat (my change, not the agent's) | My game's own title screen now sends Start straight into Round 1 of the fight. | Passes in the full suite |
 
 The full Godot test suite gives 298 passes and 0 fails (`screenshots/06-exhaust-live-tests.txt`).
